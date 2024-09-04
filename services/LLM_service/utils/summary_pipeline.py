@@ -81,7 +81,7 @@ class SummaryPipeline:
         """
     
   
-  def summarize(self, article):
+  def summarize(self, article, return_initial_summary=False):
     
     self._set_prompt(article)
 
@@ -104,8 +104,6 @@ class SummaryPipeline:
       response_format={"type": "json_object"},
     )
 
-    print(type(chat_completion.choices[0].message.content))
-
     try:
       summary_collection = SummaryCollection.model_validate_json(chat_completion.choices[0].message.content)
     except Exception as e:
@@ -113,15 +111,17 @@ class SummaryPipeline:
       return {"error": "Invalid JSON response from the model."}
     summary_count = len(summary_collection.summaries_per_step)
 
+    # take the most dense summary
     initial_summary = summary_collection.summaries_per_step[summary_count - 1].denser_summary
 
     final_summary = self._optimize_summary(article, initial_summary)
 
+    if return_initial_summary:
+      return final_summary, initial_summary
     return final_summary
   
 
-  def _optimize_summary(self, original_input, initial_summary, return_original_summary=False):
-    print(initial_summary)
+  def _optimize_summary(self, original_input, initial_summary):
     input_summary = tg.Variable(initial_summary,
                        role_description="initial summary for LLM to evaluate",
                        requires_grad=True)
@@ -138,8 +138,5 @@ class SummaryPipeline:
     loss = loss_fn(input_summary)
     loss.backward()
     self.optimizer.step()
-
-    if return_original_summary:
-        return input_summary.value, initial_summary
     
     return input_summary.value

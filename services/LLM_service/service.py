@@ -37,7 +37,6 @@ EXAMPLE_PARAGRAPH_LIST = [
             "access_control_allow_methods": ["GET", "OPTIONS", "POST", "HEAD", "PUT"],
             "access_control_allow_credentials": True,
             "access_control_allow_headers": ["*"],
-            "access_control_allow_origin_regex": "https://.*\.my_org\.com",
             "access_control_max_age": 1200,
             "access_control_expose_headers": ["Content-Length"]
         }
@@ -57,7 +56,8 @@ class LLMService():
         # article consists of multiple paragraphs
         articles = split_into_articles(params["paragraph_list"], self.max_paragraph_per_article)
 
-        # for article in articles:
-        #     self.summary_pipeline.summarize(article)
+        article_summaries = []
+        for article in articles:
+            article_summaries.append(self.summary_pipeline.summarize(article, return_initial_summary=False))
 
-        return self.summary_pipeline.summarize(articles[0])
+        return {"article_summaries": article_summaries}
