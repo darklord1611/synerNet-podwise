@@ -77,7 +77,7 @@ class SummaryPipeline:
 
   def _set_evaluation_instruction(self, article):
     self.evaluation_instruction = f"""
-        Here's a paragraph of text: {article}. Evaluate any given summary of this question, be smart, logical, and very critical. Just provide concise feedback.
+        Here's a paragraph of text: {article}. Evaluate any given summary of this article, be smart, logical, and very critical. Just provide concise feedback.
         """
     
   

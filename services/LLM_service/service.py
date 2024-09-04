@@ -12,6 +12,7 @@ from utils.requests import SummaryRequest
 from utils.preprocess import split_into_articles
 from groq import Groq
 from utils.summary_pipeline import SummaryPipeline
+from utils.keyword_pipeline import KeywordPipeline
 
 
 
@@ -48,6 +49,7 @@ class LLMService():
     def __init__(self) -> None:
         self.max_paragraph_per_article = 5
         self.summary_pipeline = SummaryPipeline()
+        self.keyword_pipeline = KeywordPipeline()
 
     @bentoml.api(input_spec=SummaryRequest, route="/summarize")
     def create_summary(self, **params: t.Any) -> dict:
@@ -61,3 +63,18 @@ class LLMService():
             article_summaries.append(self.summary_pipeline.summarize(article, return_initial_summary=False))
 
         return {"article_summaries": article_summaries}
+
+
+    @bentoml.api(input_spec=SummaryRequest, route="/extract_keywords")
+    def extract_keyword(self, **params: t.Any) -> dict:
+        """Extract keywords of an epsiode of a podcast."""
+
+        # article consists of multiple paragraphs
+        articles = split_into_articles(params["paragraph_list"], self.max_paragraph_per_article)
+
+        keywords = []
+        for article in articles:
+            keywords.extend(self.keyword_pipeline.extract_keywords(article))
+
+        print(keywords)
+        return {"status": "success", "keywords": keywords}
