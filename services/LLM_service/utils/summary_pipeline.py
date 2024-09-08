@@ -1,6 +1,6 @@
 from groq import Groq
 from config import GROQ_API_KEY
-from utils.summary import Summary, SummaryCollection
+from utils.entities import Summary, SummaryCollection, TakeawayCollection
 import json
 import textgrad as tg
 
@@ -15,7 +15,24 @@ class SummaryPipeline:
 
 
   def _set_prompt(self, article):
-    self.prompt = f"""
+    self.gen_takeaway_prompt = f"""
+        Article:
+        {article}
+        ----
+        You will extract increasingly concise, relevant Takeaways of the
+        above Article and rewrite in a simple and concise manner.
+
+        Guidelines:
+        - Focus on the most important points, insights, or lessons discussed in the episode. 
+        - Paraphrase the key takeaways, making them simpler to understand and more concise. 
+        - Ensure that the core message of each takeaway is preserved while using clear and straightforward language.
+        - Return the result in the following JSON format:
+        {{
+            "takeaways": "list of strings"
+        }}
+        """
+
+    self.gen_summary_prompt = f"""
         Article:
         {article}
         ----
@@ -81,6 +98,37 @@ class SummaryPipeline:
         """
     
   
+  def extract_takeaways(self, article):
+      
+      self._set_prompt(article)
+  
+      chat_completion = self.client.chat.completions.create(
+        messages=[
+              {
+                  "role": "system",
+                  "content": "You are an AI assistant that specializes in extracting takeaways from paragraphs of text and providing them in JSON.\n"
+                  # Pass the json schema to the model. Pretty printing improves results.
+                  f" The JSON object must use the schema: {json.dumps(TakeawayCollection.model_json_schema(), indent=2)}",
+              },
+              {
+                  "role": "user",
+                  "content": self.gen_takeaway_prompt,
+              }
+        ],
+        model="llama3-8b-8192",
+        temperature=0,
+        stream=False,
+        response_format={"type": "json_object"},
+      )
+      print(chat_completion.choices[0].message.content)
+      try:
+        takeaway_collection = TakeawayCollection.model_validate_json(chat_completion.choices[0].message.content)
+      except Exception as e:
+        print(e)
+        return {"error": "Invalid JSON response from the model."}
+      return takeaway_collection.takeaways
+
+
   def summarize(self, article, return_initial_summary=False):
     
     self._set_prompt(article)
@@ -95,7 +143,7 @@ class SummaryPipeline:
             },
             {
                 "role": "user",
-                "content": self.prompt,
+                "content": self.gen_summary_prompt,
             }
       ],
       model="llama3-8b-8192",
@@ -107,7 +155,7 @@ class SummaryPipeline:
     try:
       summary_collection = SummaryCollection.model_validate_json(chat_completion.choices[0].message.content)
     except Exception as e:
-      print(e)
+      print(chat_completion.choices[0].message.content)
       return {"error": "Invalid JSON response from the model."}
     summary_count = len(summary_collection.summaries_per_step)
 

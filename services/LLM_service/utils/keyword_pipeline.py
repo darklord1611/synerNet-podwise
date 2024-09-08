@@ -1,6 +1,6 @@
 from groq import Groq
 from config import GROQ_API_KEY
-from utils.keyword import Keyword, KeywordCollection
+from utils.entities import Keyword, KeywordCollection
 import json
 import textgrad as tg
 
@@ -37,7 +37,7 @@ class KeywordPipeline:
         - Anywhere: located anywhere in the Article
 
         Guidelines:
-        - Extract only the sophisticated or advanced keywords from the following paragraph. 
+        - Extract only the sophisticated or advanced keywords from the Article. 
         - Focus on terms that may be more difficult to understand or are specific to a particular field or subject. 
         - Ignore common or easily understandable words.
 
@@ -79,7 +79,7 @@ class KeywordPipeline:
       messages=[
             {
                 "role": "system",
-                "content": "You are an expert text analyst that specializes in extracting relevant keywords from a paragraph of and providing the response in JSON.\n"
+                "content": "You are an expert text analyst that specializes in extracting relevant keywords from a paragraph and providing the response in JSON.\n"
                 # Pass the json schema to the model. Pretty printing improves results.
                 f" The JSON object must use the schema: {json.dumps(KeywordCollection.model_json_schema(), indent=2)}",
             },
