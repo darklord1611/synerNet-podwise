@@ -20,5 +20,8 @@ class SummaryCollection(BaseModel):
     summaries_per_step: List[Summary]
 
 
+class HighlightCollection(BaseModel):
+    highlights: List[str]
+
 class TakeawayCollection(BaseModel):
     takeaways: List[str]

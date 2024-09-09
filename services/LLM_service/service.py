@@ -8,6 +8,7 @@ import typing as t
 import bentoml
 from time import time
 from config import LLM_SERVICE_PORT, GROQ_API_KEY
+from utils.highlight_pipeline import HighlightPipeline
 from utils.requests import SummaryRequest
 from utils.preprocess import split_into_articles
 from groq import Groq
@@ -61,6 +62,7 @@ class LLMService():
         self.max_paragraph_per_article = 2
         self.summary_pipeline = SummaryPipeline()
         self.keyword_pipeline = KeywordPipeline()
+        self.highlight_pipeline = HighlightPipeline()
 
     @bentoml.api(input_spec=SummaryRequest, route="/summarize")
     def create_summary(self, **params: t.Any) -> dict:
@@ -98,7 +100,7 @@ class LLMService():
 
 
     @bentoml.api(input_spec=SummaryRequest, route="/extract_keywords")
-    def extract_keyword(self, **params: t.Any) -> dict:
+    def extract_keywords(self, **params: t.Any) -> dict:
         """Extract keywords of an epsiode of a podcast."""
 
         # article consists of multiple paragraphs
@@ -110,6 +112,25 @@ class LLMService():
 
         json_data = {"status": "success", "keywords": keywords}
         with open('temp_keywords.json', 'w') as out_file:
+            json.dump(json_data, out_file, default=lambda o: o.__dict__, indent = 4,
+                    ensure_ascii = False)
+        return json_data
+    
+    @bentoml.api(input_spec=SummaryRequest, route="/extract_highlights")
+    def extract_highlight(self, **params: t.Any) -> dict:
+        """Extract highlights of an epsiode of a podcast."""
+
+        # article consists of multiple paragraphs
+        articles = split_into_articles(params["paragraph_list"], self.max_paragraph_per_article)
+
+        highlights = []
+        for article in articles:
+            temp = self.highlight_pipeline.extract_highlights(article)
+            cur_highlights = [{"timestamp": 100, "highlight": h} for h in temp]
+            highlights.extend(cur_highlights)
+
+        json_data = {"status": "success", "highlights": highlights}
+        with open('temp_highlights.json', 'w') as out_file:
             json.dump(json_data, out_file, default=lambda o: o.__dict__, indent = 4,
                     ensure_ascii = False)
         return json_data
