@@ -1,5 +1,5 @@
 from groq import Groq
-from config import GROQ_API_KEY
+from config import GROQ_API_KEY, MODEL_NAME
 from utils.entities import Keyword, KeywordCollection
 import json
 import textgrad as tg
@@ -38,17 +38,20 @@ class KeywordPipeline:
 
         Guidelines:
         - Extract only the sophisticated or advanced keywords from the Article. 
-        - Focus on terms that may be more difficult to understand or are specific to a particular field or subject. 
-        - Ignore common or easily understandable words.
-
+        - Focus more on terms that may be more difficult to understand or are specific to a particular field or subject.
+        - Focus on terms that assume previous knowledge in the field or may require explanation.
+        - Identify longer or technical terms that may represent advanced concepts, frameworks, or theories.
+        - Ignore common, everyday words that are easily understood by a general audience.
+        
         Answer in JSON.
         - Return the result in the following JSON format:
         {{
             "keywords": [
                 {{
-                    "word": "string",
+                    "keyword": "string",
                     "definition": "string"
                 }},
+                ...
             ]
         }}
         """
@@ -88,7 +91,7 @@ class KeywordPipeline:
                 "content": self.prompt,
             }
       ],
-      model="llama3-8b-8192",
+      model=MODEL_NAME,
       temperature=0,
       stream=False,
       response_format={"type": "json_object"},

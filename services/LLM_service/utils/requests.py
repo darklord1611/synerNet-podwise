@@ -2,9 +2,11 @@ from pydantic import BaseModel
 from typing import List
 
 
+class ChunkInput(BaseModel):
+    chunk: int
+    text: str
 
-class SummaryRequest(BaseModel):
-    paragraph_list: List[str]
 
-
+class BaseRequest(BaseModel):
+    transcript: List[ChunkInput]
 

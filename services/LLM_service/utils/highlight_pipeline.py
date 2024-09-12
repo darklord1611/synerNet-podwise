@@ -1,5 +1,5 @@
 from groq import Groq
-from config import GROQ_API_KEY
+from config import GROQ_API_KEY, MODEL_NAME
 from utils.entities import HighlightCollection
 import json
 import textgrad as tg
@@ -29,13 +29,19 @@ class HighlightPipeline:
         - Anywhere: located anywhere in the Article
 
         Guidelines:
-        - Provide the exact text of the highlight (keep it concise, ideally a few sentences or a short paragraph).
+        - Provide the exact text of the highlight in the article (keep it concise, ideally a few sentences).
         - Focus on quotes or statements that convey critical concepts, valuable advice, or significant moments in the discussion.
+        - Focus on 1 to 3 most important highlights.
 
         Answer in JSON.
         - Return the result in the following JSON format:
         {{
             "highlights": "list of strings"
+        }}
+
+        Below is an example of the JSON format:
+        {{
+            "highlights": ["highlight 1", "highlight 2", "highlight 3"]
         }}
         """
 
@@ -74,13 +80,12 @@ class HighlightPipeline:
                 "content": self.prompt,
             }
       ],
-      model="llama3-8b-8192",
+      model=MODEL_NAME,
       temperature=0,
       stream=False,
       response_format={"type": "json_object"},
     )
 
-    print(chat_completion.choices[0].message.content)
     try:
       highlight_collection = HighlightCollection.model_validate_json(chat_completion.choices[0].message.content)
     except Exception as e:

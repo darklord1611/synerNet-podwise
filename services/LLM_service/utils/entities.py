@@ -1,9 +1,9 @@
 from pydantic import BaseModel
-from typing import List
+from typing import List, Optional
 
 
 class Keyword(BaseModel):
-    word: str
+    keyword: str
     definition: str
 
 
@@ -16,7 +16,13 @@ class Summary(BaseModel):
     denser_summary: str
 
 
+class BackupSummary(BaseModel):
+    title: str
+    summary: str
+
+
 class SummaryCollection(BaseModel):
+    title: str
     summaries_per_step: List[Summary]
 
 
@@ -25,3 +31,17 @@ class HighlightCollection(BaseModel):
 
 class TakeawayCollection(BaseModel):
     takeaways: List[str]
+
+
+
+# Define the subtopic structure
+class Subpoint(BaseModel):
+    title: str
+    points: Optional[List['Subpoint']] = []
+
+# Define the main topic structure
+class Keypoint(BaseModel):
+    title: str
+    timestamp: int
+    points: List[Subpoint]
+

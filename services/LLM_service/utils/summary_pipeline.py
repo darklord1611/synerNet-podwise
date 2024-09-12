@@ -1,6 +1,6 @@
 from groq import Groq
-from config import GROQ_API_KEY
-from utils.entities import Summary, SummaryCollection, TakeawayCollection
+from config import GROQ_API_KEY, MODEL_NAME
+from utils.entities import Summary, SummaryCollection, TakeawayCollection, BackupSummary
 import json
 import textgrad as tg
 
@@ -38,7 +38,7 @@ class SummaryPipeline:
         ----
 
         You will generate increasingly concise, entity-dense summaries of the
-        above Article.
+        above Article and also a title for the Article.
 
         Repeat the following 2 steps 5 times.
 
@@ -85,19 +85,44 @@ class SummaryPipeline:
 
         > The JSON in `summaries_per_step` should be a list (length 5) of the following schema:
         {{  
+            "title": "string",
             "summaries_per_step": [{{
                 "missing_entities": "list of strings",
                 "denser_summary": "string"
             }}]
         }}
         """
+    self.backup_prompt = f"""
+        Article:
+        {article}
+
+        ----
+        You will generate a concise, relevant summary and a title of the
+        above Article.
+
+
+        Answer in JSON.
+
+        > The JSON should be of the following schema:
+        {{  
+            "title": "string",
+            "summary": "string"
+        }}
+
+        Below is an example of the JSON format:
+        {{
+            "title": "Title of the Article",
+            "summary": "Summary of the Article"
+        }}
+        """
+
 
   def _set_evaluation_instruction(self, article):
     self.evaluation_instruction = f"""
         Here's a paragraph of text: {article}. Evaluate any given summary of this article, be smart, logical, and very critical. Just provide concise feedback.
         """
     
-  
+
   def extract_takeaways(self, article):
       
       self._set_prompt(article)
@@ -106,7 +131,7 @@ class SummaryPipeline:
         messages=[
               {
                   "role": "system",
-                  "content": "You are an AI assistant that specializes in extracting takeaways from paragraphs of text and providing them in JSON.\n"
+                  "content": "You are an expert podcast analyst in extracting takeaway messages from a podcast episode and providing them in JSON.\n"
                   # Pass the json schema to the model. Pretty printing improves results.
                   f" The JSON object must use the schema: {json.dumps(TakeawayCollection.model_json_schema(), indent=2)}",
               },
@@ -115,7 +140,7 @@ class SummaryPipeline:
                   "content": self.gen_takeaway_prompt,
               }
         ],
-        model="llama3-8b-8192",
+        model=MODEL_NAME,
         temperature=0,
         stream=False,
         response_format={"type": "json_object"},
@@ -124,20 +149,17 @@ class SummaryPipeline:
       try:
         takeaway_collection = TakeawayCollection.model_validate_json(chat_completion.choices[0].message.content)
       except Exception as e:
-        print(e)
+        print("Error")
         return {"error": "Invalid JSON response from the model."}
       return takeaway_collection.takeaways
 
 
-  def summarize(self, article, return_initial_summary=False):
-    
-    self._set_prompt(article)
-
+  def generate_summary(self, article):
     chat_completion = self.client.chat.completions.create(
       messages=[
             {
                 "role": "system",
-                "content": "You are an AI assistant that specializes in summarizing paragraphs of text and providing the summary in JSON.\n"
+                "content": "You are an expert podcast analyst in summarizing the content of a podcast episode and providing the summary in JSON.\n"
                 # Pass the json schema to the model. Pretty printing improves results.
                 f" The JSON object must use the schema: {json.dumps(SummaryCollection.model_json_schema(), indent=2)}",
             },
@@ -146,27 +168,62 @@ class SummaryPipeline:
                 "content": self.gen_summary_prompt,
             }
       ],
-      model="llama3-8b-8192",
+      model=MODEL_NAME,
       temperature=0,
       stream=False,
       response_format={"type": "json_object"},
     )
 
+    return chat_completion.choices[0].message.content
+
+  def generate_backup_summary(self, article):
+    chat_completion = self.client.chat.completions.create(
+      messages=[
+            {
+                "role": "system",
+                "content": "You are an expert podcast analyst in summarizing the content of a podcast episode and providing the summary in JSON.\n"
+                # Pass the json schema to the model. Pretty printing improves results.
+                f" The JSON object must use the schema: {json.dumps(BackupSummary.model_json_schema(), indent=2)}",
+            },
+            {
+                "role": "user",
+                "content": self.backup_prompt,
+            }
+      ],
+      model=MODEL_NAME,
+      temperature=0,
+      stream=False,
+    )
+
+
+    return chat_completion.choices[0].message.content
+
+
+
+  def summarize(self, article, optimize=False):
+    
+    self._set_prompt(article)
+
+
     try:
-      summary_collection = SummaryCollection.model_validate_json(chat_completion.choices[0].message.content)
+      summary_collection = SummaryCollection.model_validate_json(self.generate_summary(article))
+
+      summary_count = len(summary_collection.summaries_per_step)
+      # take the most dense summary
+      initial_summary = summary_collection.summaries_per_step[summary_count - 1].denser_summary
+      title = summary_collection.title
     except Exception as e:
-      print(chat_completion.choices[0].message.content)
-      return {"error": "Invalid JSON response from the model."}
-    summary_count = len(summary_collection.summaries_per_step)
+      summary_collection = BackupSummary.model_validate_json(self.generate_backup_summary(article))
 
-    # take the most dense summary
-    initial_summary = summary_collection.summaries_per_step[summary_count - 1].denser_summary
-
-    final_summary = self._optimize_summary(article, initial_summary)
-
-    if return_initial_summary:
-      return final_summary, initial_summary
-    return final_summary
+      initial_summary = summary_collection.summary
+      title = summary_collection.title
+    
+    if optimize:
+      final_summary = self._optimize_summary(article, initial_summary)
+    else:
+      final_summary = initial_summary
+    
+    return final_summary, title
   
 
   def _optimize_summary(self, original_input, initial_summary):
