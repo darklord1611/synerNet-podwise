@@ -6,3 +6,5 @@ python-multipart
 pyyaml
 uvicorn
 redis
+supabase
+python-dotenv
