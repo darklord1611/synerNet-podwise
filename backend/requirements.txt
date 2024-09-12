@@ -1,0 +1,8 @@
+celery==5.4.0
+fastapi
+opencv-python
+aiofiles
+python-multipart
+pyyaml
+uvicorn
+redis

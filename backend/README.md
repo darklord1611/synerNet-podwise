@@ -1,206 +1,181 @@
-# FastAPI Project - Backend
+# YOLO v5 object detection end-to-end with FastAPI, Celery, Redis, RabbitMQ and Containers
 
-## Requirements
+This repository show the code created to be as a "template" to deploy applications with containers using FastAPI, Celery, Redis and RabbitMQ.
 
-* [Docker](https://www.docker.com/).
-* [Poetry](https://python-poetry.org/) for Python package and environment management.
+As a demo application, it was build a API service using [YOLO v5](https://github.com/ultralytics/yolov5) to perform object detection.
 
-## Local Development
+Since Yolo is a deep model which may take some time to return results, we will use Celery, Redis and RabbitMQ to control the tasks in background.
+- [FastAPI](https://fastapi.tiangolo.com): high performance python framework for building APIs.
+- [Celery](https://celeryproject.org): A Task Queue with focus on real-time processing, while also supporting task scheduling.
+- [RabbitMQ](https://www.rabbitmq.com): A message broker used to route messages between API and the workers from Celery.
+- [Redis](https://redis.io): An in-memory database to store results and process status from the tasks.
 
-* Start the stack with Docker Compose:
+The image below ilustrate the data flow from all components.
+<img src=img/schema.jpg>
 
+
+# Overview of the code
+- [api/app.py](api/app.py): expose the endpoints and send the request task to celery.
+- [celery_tasks/tasks.py](celery_tasks/tasks.py): receive the task and send (enqueue) to workers process.
+- [celery_tasks/yolo.py](celery_tasks/yolo.py): code to initilize and expose a method receive a picture and return the predictions.
+
+
+# Services available
+| Endpoint | Method | Description
+| --- | --- | --- |
+| http://localhost:8000/api/process | POST | Send one or more pictures to be processed by Yolo. Return the task_id of each task.
+| http://localhost:8000/api/status/<task_id>  | GET  | Retrieve the status of a given task
+| http://localhost:8000/api/result/<task_id>    | GET  | Retrieve the results of a given task
+| http://localhost:8000/docs   | GET  | Documentation generated for each endpoint
+| http://localhost:15672   | GET  | RabbitMQ monitor. User: guest     Password: guest.
+| http://localhost   | GET  | Simple webapp to show how to use and display results from the API.
+
+
+
+### POST: /api/process
+Input
+
+Form with enctype=multipart/form-data and imagens in attribute files. See the example in Ajax.
+
+```javascript
+var form_data = new FormData();
+files = $('#input_file_form').prop('files')
+for (i = 0; i < files.length; i++)
+    form_data.append('files', $('#input_file_form').prop('files')[i]);
+
+$.ajax({
+    url: URL + '/api/process',
+    type: "post",
+    data: form_data,
+    enctype: 'multipart/form-data',
+    contentType: false,
+    processData: false,
+    cache: false,
+}).done(function (jsondata, textStatus, jqXHR) {
+    console.log(jsondata)
+
+}).fail(function (jsondata, textStatus, jqXHR) {
+    console.log(jsondata)
+
+});
+``` 
+
+Output: 
+```json
+[
+  {
+    "task_id": "2b593c5c-3f0b-49c1-a145-ad613f4ecda5",
+    "status": "PROCESSING",
+    "url_result": "/api/result/2b593c5c-3f0b-49c1-a145-ad613f4ecda5"
+  }
+]
+```
+
+Using CURL
 ```bash
-docker compose up -d
+curl -X POST "http://localhost:8000/api/process" -H  "accept: application/json" -H  "Content-Type: multipart/form-data" -F "files=@image.jpg;type=image/jpeg"
 ```
 
-* Now you can open your browser and interact with these URLs:
+### GET: /api/status/<task_id>
+Input
+```
+task_uid
+``` 
 
-Frontend, built with Docker, with routes handled based on the path: http://localhost
+Output: 
+```json
+{
+  "task_id": "2b593c5c-3f0b-49c1-a145-ad613f4ecda5",
+  "status": "PROCESSING",
+  "result": ""
+}
+```
 
-Backend, JSON based web API based on OpenAPI: http://localhost/api/
-
-Automatic interactive documentation with Swagger UI (from the OpenAPI backend): http://localhost/docs
-
-Adminer, database web administration: http://localhost:8080
-
-Traefik UI, to see how the routes are being handled by the proxy: http://localhost:8090
-
-**Note**: The first time you start your stack, it might take a minute for it to be ready. While the backend waits for the database to be ready and configures everything. You can check the logs to monitor it.
-
-To check the logs, run:
-
+Using CURL
 ```bash
-docker compose logs
+curl -X GET "http://localhost/api/status/ren123/"
+``` 
+
+### GET: /api/results/<task_id>
+Input
+``` 
+task_id
+```
+Output (if it is done):
+```json
+{
+  "task_id": "2b593c5c-3f0b-49c1-a145-ad613f4ecda5",
+  "status": "SUCCESS",
+  "result": {
+    "file_name": "static/f5956eea.jpg",
+    "bbox": [
+      {
+        "x": "0.4734227",
+        "y": "0.63320345",
+        "w": "0.76526415",
+        "h": "0.7137341",
+        "prob": "0.8920207",
+        "class": "person"
+      },
+      {
+        "x": "0.3752669",
+        "y": "0.8009622",
+        "w": "0.07171597",
+        "h": "0.38714227",
+        "prob": "0.89087594",
+        "class": "tie"
+      },
+      {
+        "x": "0.8268833",
+        "y": "0.6996484",
+        "w": "0.11784973",
+        "h": "0.5577593",
+        "prob": "0.28665677",
+        "class": "tie"
+      }
+    ]
+  }
+}
+```
+If it is processing:
+```json
+{
+  "task_id": "2b593c5c-3f0b-49c1-a145-ad613f4ecda5",
+  "status": "PROCESSING",
+  "result": ""
+}
 ```
 
-To check the logs of a specific service, add the name of the service, e.g.:
 
+# Install
+1. Clone this repository
 ```bash
-docker compose logs backend
+git clone https://github.com/renatoviolin/Deploying-YOLOv5-fastapi-celery-redis-rabbitmq.git
+cd Deploying-YOLOv5-fastapi-celery-redis-rabbitmq
 ```
 
-If your Docker is not running in `localhost` (the URLs above wouldn't work) you would need to use the IP or domain where your Docker is running.
-
-## Backend local development, additional details
-
-### General workflow
-
-By default, the dependencies are managed with [Poetry](https://python-poetry.org/), go there and install it.
-
-From `./backend/` you can install all the dependencies with:
-
-```console
-$ poetry install
-```
-
-Then you can start a shell session with the new environment with:
-
-```console
-$ poetry shell
-```
-
-Make sure your editor is using the correct Python virtual environment.
-
-Modify or add SQLModel models for data and SQL tables in `./backend/app/models.py`, API endpoints in `./backend/app/api/`, CRUD (Create, Read, Update, Delete) utils in `./backend/app/crud.py`.
-
-### VS Code
-
-There are already configurations in place to run the backend through the VS Code debugger, so that you can use breakpoints, pause and explore variables, etc.
-
-The setup is also already configured so you can run the tests through the VS Code Python tests tab.
-
-### Docker Compose Override
-
-During development, you can change Docker Compose settings that will only affect the local development environment in the file `docker-compose.override.yml`.
-
-The changes to that file only affect the local development environment, not the production environment. So, you can add "temporary" changes that help the development workflow.
-
-For example, the directory with the backend code is mounted as a Docker "host volume", mapping the code you change live to the directory inside the container. That allows you to test your changes right away, without having to build the Docker image again. It should only be done during development, for production, you should build the Docker image with a recent version of the backend code. But during development, it allows you to iterate very fast.
-
-There is also a command override that runs `/start-reload.sh` (included in the base image) instead of the default `/start.sh` (also included in the base image). It starts a single server process (instead of multiple, as would be for production) and reloads the process whenever the code changes. Have in mind that if you have a syntax error and save the Python file, it will break and exit, and the container will stop. After that, you can restart the container by fixing the error and running again:
-
-```console
-$ docker compose up -d
-```
-
-There is also a commented out `command` override, you can uncomment it and comment the default one. It makes the backend container run a process that does "nothing", but keeps the container alive. That allows you to get inside your running container and execute commands inside, for example a Python interpreter to test installed dependencies, or start the development server that reloads when it detects changes.
-
-To get inside the container with a `bash` session you can start the stack with:
-
-```console
-$ docker compose up -d
-```
-
-and then `exec` inside the running container:
-
-```console
-$ docker compose exec backend bash
-```
-
-You should see an output like:
-
-```console
-root@7f2607af31c3:/app#
-```
-
-that means that you are in a `bash` session inside your container, as a `root` user, under the `/app` directory, this directory has another directory called "app" inside, that's where your code lives inside the container: `/app/app`.
-
-There you can use the script `/start-reload.sh` to run the debug live reloading server. You can run that script from inside the container with:
-
-```console
-$ bash /start-reload.sh
-```
-
-...it will look like:
-
-```console
-root@7f2607af31c3:/app# bash /start-reload.sh
-```
-
-and then hit enter. That runs the live reloading server that auto reloads when it detects code changes.
-
-Nevertheless, if it doesn't detect a change but a syntax error, it will just stop with an error. But as the container is still alive and you are in a Bash session, you can quickly restart it after fixing the error, running the same command ("up arrow" and "Enter").
-
-...this previous detail is what makes it useful to have the container alive doing nothing and then, in a Bash session, make it run the live reload server.
-
-### Backend tests
-
-To test the backend run:
-
-```console
-$ bash ./scripts/test.sh
-```
-
-The tests run with Pytest, modify and add tests to `./backend/app/tests/`.
-
-If you use GitHub Actions the tests will run automatically.
-
-#### Test running stack
-
-If your stack is already up and you just want to run the tests, you can use:
-
+2. Install [docker](https://www.docker.com/get-started). If you already have, create the container with the command:
 ```bash
-docker compose exec backend bash /app/tests-start.sh
+docker-compose build
 ```
 
-That `/app/tests-start.sh` script just calls `pytest` after making sure that the rest of the stack is running. If you need to pass extra arguments to `pytest`, you can pass them to that command and they will be forwarded.
-
-For example, to stop on first error:
-
+3. Run all containers
 ```bash
-docker compose exec backend bash /app/tests-start.sh -x
+docker-compose up
 ```
+This will start:
+- rabbitmq: message broker
+- redis: in-memory database
+- worker: application logic (Yolo model, FastAPI and Celery)
+- webapp: demo application
 
-#### Test Coverage
 
-When the tests are run, a file `htmlcov/index.html` is generated, you can open it in your browser to see the coverage of the tests.
+4. Perform some requests using the integrated Swagger UI.
+http://localhost:8000/docs
+<img src=img/doc.gif>
 
-### Migrations
 
-As during local development your app directory is mounted as a volume inside the container, you can also run the migrations with `alembic` commands inside the container and the migration code will be in your app directory (instead of being only inside the container). So you can add it to your git repository.
+5. Open the demo webapp.
+http://localhost/
+<img src=img/webapp.gif>
 
-Make sure you create a "revision" of your models and that you "upgrade" your database with that revision every time you change them. As this is what will update the tables in your database. Otherwise, your application will have errors.
-
-* Start an interactive session in the backend container:
-
-```console
-$ docker compose exec backend bash
-```
-
-* Alembic is already configured to import your SQLModel models from `./backend/app/models.py`.
-
-* After changing a model (for example, adding a column), inside the container, create a revision, e.g.:
-
-```console
-$ alembic revision --autogenerate -m "Add column last_name to User model"
-```
-
-* Commit to the git repository the files generated in the alembic directory.
-
-* After creating the revision, run the migration in the database (this is what will actually change the database):
-
-```console
-$ alembic upgrade head
-```
-
-If you don't want to use migrations at all, uncomment the lines in the file at `./backend/app/core/db.py` that end in:
-
-```python
-SQLModel.metadata.create_all(engine)
-```
-
-and comment the line in the file `prestart.sh` that contains:
-
-```console
-$ alembic upgrade head
-```
-
-If you don't want to start with the default models and want to remove them / modify them, from the beginning, without having any previous revision, you can remove the revision files (`.py` Python files) under `./backend/app/alembic/versions/`. And then create a first migration as described above.
-
-## Email Templates
-
-The email templates are in `./backend/app/email-templates/`. Here, there are two directories: `build` and `src`. The `src` directory contains the source files that are used to build the final email templates. The `build` directory contains the final email templates that are used by the application.
-
-Before continuing, ensure you have the [MJML extension](https://marketplace.visualstudio.com/items?itemName=attilabuti.vscode-mjml) installed in your VS Code.
-
-Once you have the MJML extension installed, you can create a new email template in the `src` directory. After creating the new email template and with the `.mjml` file open in your editor, open the command palette with `Ctrl+Shift+P` and search for `MJML: Export to HTML`. This will convert the `.mjml` file to a `.html` file and now you can save it in the build directory.
