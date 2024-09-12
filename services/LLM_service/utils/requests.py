@@ -4,6 +4,7 @@ from typing import List
 
 class ChunkInput(BaseModel):
     chunk: int
+    timestamp: float
     text: str
 
 

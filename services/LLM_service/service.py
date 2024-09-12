@@ -8,19 +8,16 @@ import typing as t
 import bentoml
 from time import time
 from config import LLM_SERVICE_PORT, GROQ_API_KEY
-from utils.highlight_pipeline import HighlightPipeline
 from utils.requests import BaseRequest
-from utils.preprocess import split_into_articles
 from groq import Groq
-from utils.summary_pipeline import SummaryPipeline
-from utils.keyword_pipeline import KeywordPipeline
-from utils.keypoint_pipeline import KeypointPipeline
+
+from utils.pipeline import LLMPipeline
 import json
 
 
 
 @bentoml.service(
-    resources={"cpu": "1"},
+    resources={"cpu": "2"},
     traffic={"timeout": 100000},
     http={
         "port": int(LLM_SERVICE_PORT),
@@ -40,10 +37,7 @@ import json
 class LLMService():
     def __init__(self) -> None:
         self.max_paragraph_per_article = 10
-        self.summary_pipeline = SummaryPipeline()
-        self.keyword_pipeline = KeywordPipeline()
-        self.highlight_pipeline = HighlightPipeline()
-        self.keypoint_pipeline = KeypointPipeline()
+        self.pipeline = LLMPipeline()
 
     @bentoml.api(input_spec=BaseRequest, route="/summary")
     def create_summary(self, **params: t.Any) -> dict:
@@ -55,7 +49,7 @@ class LLMService():
             
             print("Current chunk: ", i)
             article = " ".join(chunk_input.text)
-            summary, title = self.summary_pipeline.summarize(article)
+            summary, title = self.pipeline.summarize(article)
             chunk_summaries.append(summary)
             outline_temp = {
                 "timestamp": chunk_input.timestamp,
@@ -66,9 +60,9 @@ class LLMService():
         
 
         entire_transcript = " ".join(chunk_summaries)
-        entire_transcript_summary, general_title = self.summary_pipeline.summarize(entire_transcript, optimize=True)
+        entire_transcript_summary, general_title = self.pipeline.summarize(entire_transcript, optimize=True)
 
-        entire_transcript_takeaways = self.summary_pipeline.extract_takeaways(entire_transcript)
+        entire_transcript_takeaways = self.pipeline.extract_takeaways(entire_transcript)
 
         json_data = {
             "summary": entire_transcript_summary,
@@ -84,7 +78,8 @@ class LLMService():
 
         keywords = []
         for i, chunk_input in enumerate(params["transcript"]):
-            keywords.extend(self.keyword_pipeline.extract_keywords(chunk_input.text))
+            print("Current chunk: ", i)
+            keywords.extend(self.pipeline.extract_keywords(chunk_input.text))
 
         json_data = {"status": "success", "keywords": keywords}
 
@@ -98,7 +93,7 @@ class LLMService():
         highlights = []
         for i, chunk_input in enumerate(params["transcript"]):
             print("Current chunk: ", i)
-            temp = self.highlight_pipeline.extract_highlights(chunk_input.text)
+            temp = self.pipeline.extract_highlights(chunk_input.text)
             cur_highlights = [{"timestamp": 100, "highlight": h} for h in temp]
             highlights.extend(cur_highlights)
 
@@ -114,12 +109,12 @@ class LLMService():
         for i, chunk_input in enumerate(params["transcript"]):
 
             print("Current chunk: ", i)
-            temp = self.keypoint_pipeline.extract_keypoints(chunk_input.text)
-            cur_keypoints = [{"keypoint": h} for h in temp]
-            keypoints.extend(cur_keypoints)
+            keypoint = self.pipeline.extract_keypoints(chunk_input.text)
+            keypoints.append({"keypoint": keypoint})
 
-        print(keypoints)
 
         json_data = {"status": "success", "keypoints": keypoints}
         
+        with open("keypoints.json", "w") as f:
+            json.dump(json_data, f, default=lambda o: o.__dict__, indent=4, ensure_ascii=False)
         return json_data

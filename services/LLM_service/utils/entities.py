@@ -42,6 +42,6 @@ class Subpoint(BaseModel):
 # Define the main topic structure
 class Keypoint(BaseModel):
     title: str
-    timestamp: int
+    timestamp: int = 0
     points: List[Subpoint]
 
