@@ -1,160 +1,118 @@
-# FastAPI Project - Frontend
+# [Horizon UI TypeScript ⚡️](https://horizon-ui.com/horizon-ui-chakra-ts) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://horizon-ui.com/&text=Check%20Horizon%20UI,%20the%20trendiest%20open-source%20admin%20template%20for%20Chakra%20UI%20&%20React!)
 
-The frontend is built with [Vite](https://vitejs.dev/), [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/), [TanStack Query](https://tanstack.com/query), [TanStack Router](https://tanstack.com/router) and [Chakra UI](https://chakra-ui.com/).
+![version](https://img.shields.io/badge/version-2.0.0-blue.svg)
+![license](https://img.shields.io/badge/license-MIT-blue.svg)
+[![GitHub issues open](https://img.shields.io/github/issues/horizon-ui/horizon-ui-chakra-ts.svg?maxAge=2592000)](https://github.com/horizon-ui/horizon-ui-chakra-ts/issues?q=is%3Aopen+is%3Aissue)
 
-## Frontend development
+<p>&nbsp;</p>
 
-Before you begin, ensure that you have either the Node Version Manager (nvm) or Fast Node Manager (fnm) installed on your system.
+[<img alt="Horizon UI TypeScript" src="https://i.ibb.co/KV6FDvK/introduction-image-ts.png" /> ](https://github.com/horizon-ui/horizon-ui-chakra-ts)
 
-* To install fnm follow the [official fnm guide](https://github.com/Schniz/fnm#installation). If you prefer nvm, you can install it using the [official nvm guide](https://github.com/nvm-sh/nvm#installing-and-updating).
+<p>&nbsp;</p>
 
-* After installing either nvm or fnm, proceed to the `frontend` directory:
+
+Get started and build your dream web app with Horizon UI, the most trendiest &
+innovative Open Source Admin Template for Chakra UI & React!
+
+---
+
+### Introduction
+
+Designed for those who like modern UI elements and beautiful websites. Made of
+hundred of elements, designed blocks and fully coded pages, Horizon UI is ready
+to help you create stunning websites and webapps.
+
+Save hundreds of hours trying to create and develop a dashboard from scratch.
+The fastest, most responsive & trendiest dashboard is here. Seriously.
+
+With Horizon UI you will find many examples for pages like NFTs Pages,
+Authentication Pages, Profile and so on. Just choose between a Basic Design or a
+cover and you are good to go!
+
+### 🎉 [NEW] React Tables V8
+Horizon is also using the latest version of the React Tables (v8) library, you can access it by cloning the [/feature/react-table-v8](https://github.com/horizon-ui/horizon-ui-chakra-ts/tree/feature/react-table-v8) branch!
+
+### 🎉 [NEW] Horizon UI Components
+All the main components from both versions, this will help you to see and interact with all & the latest added components of Horizon (also, new components are on the way, stay tuned)! ⚡️
+<a href="https://horizon-ui.com/components/?ref=readme-horizon-ts" target="_blank">See all components</a>
+
+
+### Documentation
+
+Each element is well presented in a very complex documentation. You can read
+more about the <a href="https://horizon-ui.com/documentation/docs/introduction?ref=readme-horizon-ts" target="_blank">documentation
+here.</a>
+
+### Quick Start
+
+Install Horizon UI by running either of the following:
+
+- Install NodeJS LTS from
+  [NodeJs Official Page](https://nodejs.org/en/?ref=horizon-documentation)
+  (NOTE: Product only works with LTS version)
+
+Clone the repository with the following command:
 
 ```bash
-cd frontend
-```
-* If the Node.js version specified in the `.nvmrc` file isn't installed on your system, you can install it using the appropriate command:
-
-```bash
-# If using fnm
-fnm install
-
-# If using nvm
-nvm install
+git clone https://github.com/horizon-ui/horizon-ui-chakra-ts.git
 ```
 
-* Once the installation is complete, switch to the installed version:
-
-```bash
-# If using fnm
-fnm use
-
-# If using nvm
-nvm use
-```
-
-* Within the `frontend` directory, install the necessary NPM packages:
+Run in terminal this command:
 
 ```bash
 npm install
 ```
 
-* And start the live server with the following `npm` script:
+Then run this command to start your local server
 
 ```bash
-npm run dev
+npm start
 ```
 
-* Then open your browser at http://localhost:5173/.
+### Example Pages
 
-Notice that this live server is not running inside Docker, it's for local development, and that is the recommended workflow. Once you are happy with your frontend, you can build the frontend Docker image and start it, to test it in a production-like environment. But building the image at every change will not be as productive as running the local development server with live reload.
+If you want to get inspiration or just show something directly to your clients,
+you can jump start your development with our pre-built example pages. You will
+be able to quickly set up the basic structure for your web project. View
+<a href="https://horizon-ui.com/horizon-ui-chakra-ts/?ref=readme-horizon-ts" target="_blank">example
+pages here.</a>
 
-Check the file `package.json` to see other available options.
+### Versions
 
-### Removing the frontend
+| Free Version                                                                                                       | PRO Version                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| [![Horizon UI](https://i.ibb.co/KV6FDvK/introduction-image-ts.png)](https://www.horizon-ui.com/?ref=readme-horizon-ts) | [![Horizon UI PRO](https://i.ibb.co/R6jFKRM/introduction-image-1.png)](https://www.horizon-ui.com/pro?ref=readme-horizon-ts) |
 
-If you are developing an API-only app and want to remove the frontend, you can do it easily:
+### Figma Version
 
-* Remove the `./frontend` directory.
+Horizon UI is available in Figma format as well! Check it out on Figma
+Community! 🎨
+[See the Horizon UI Figma design files](https://bit.ly/horizon-figma)
 
-* In the `docker-compose.yml` file, remove the whole service / section `frontend`.
+### Reporting Issues
 
-* In the `docker-compose.override.yml` file, remove the whole service / section `frontend`.
+We use GitHub Issues as the official bug tracker for the Horizon UI. Here are
+some advices for our users that want to report an issue:
 
-Done, you have a frontend-less (api-only) app. 🤓
+1. Make sure that you are using the latest version of the Horizon UI Dashbaord.
+   Check the CHANGELOG from your dashboard on our
+   [CHANGE LOG File](https://github.com/horizon-ui/horizon-ui-chakra-ts/blob/main/CHANGELOG.md?ref=readme-horizon-ts).
+2. Providing us reproducible steps for the issue will shorten the time it takes
+   for it to be fixed.
+3. Some issues may be browser specific, so specifying in what browser you
+   encountered the issue might help.
 
 ---
 
-If you want, you can also remove the `FRONTEND` environment variables from:
+### Community
 
-* `.env`
-* `./scripts/*.sh`
+Connect with the community! Feel free to ask questions, report issues, and meet
+new people that already use Horizon UI!
 
-But it would be only to clean them up, leaving them won't really have any effect either way.
+💬 [Join the #HorizonUI Discord Community!](https://discord.gg/f6tEKFBd4m)
 
-## Generate Client
+### Copyright and license
 
-### Automatically
+⭐️ [Copyright 2022 Simmmple ](https://www.simmmple.com/?ref=readme-horizon-ts)
 
-* Activate the backend virtual environment.
-* From the top level project directory, run the script:
-
-```bash
-./scripts/generate-frontend-client.sh
-```
-
-* Commit the changes.
-
-### Manually
-
-* Start the Docker Compose stack.
-
-* Download the OpenAPI JSON file from `http://localhost/api/v1/openapi.json` and copy it to a new file `openapi.json` at the root of the `frontend` directory.
-
-* To simplify the names in the generated frontend client code, modify the `openapi.json` file by running the following script:
-
-```bash
-node modify-openapi-operationids.js
-```
-
-* To generate the frontend client, run:
-
-```bash
-npm run generate-client
-```
-
-* Commit the changes.
-
-Notice that everytime the backend changes (changing the OpenAPI schema), you should follow these steps again to update the frontend client.
-
-## Using a Remote API
-
-If you want to use a remote API, you can set the environment variable `VITE_API_URL` to the URL of the remote API. For example, you can set it in the `frontend/.env` file:
-
-```env
-VITE_API_URL=https://my-remote-api.example.com
-```
-
-Then, when you run the frontend, it will use that URL as the base URL for the API.
-
-## Code Structure
-
-The frontend code is structured as follows:
-
-* `frontend/src` - The main frontend code.
-* `frontend/src/assets` - Static assets.
-* `frontend/src/client` - The generated OpenAPI client.
-* `frontend/src/components` -  The different components of the frontend.
-* `frontend/src/hooks` - Custom hooks.
-* `frontend/src/routes` - The different routes of the frontend which include the pages.
-* `theme.tsx` - The Chakra UI custom theme.
-
-## End-to-End Testing with Playwright
-
-The frontend includes initial end-to-end tests using Playwright. To run the tests, you need to have the Docker Compose stack running. Start the stack with the following command:
-
-```bash
-docker compose up -d
-```
-
-Then, you can run the tests with the following command:
-
-```bash
-npx playwright test
-```
-
-You can also run your tests in UI mode to see the browser and interact with it running:
-
-```bash
-npx playwright test --ui
-```
-
-To stop and remove the Docker Compose stack and clean the data created in tests, use the following command:
-
-```bash
-docker compose down -v
-```
-
-To update the tests, navigate to the tests directory and modify the existing test files or add new ones as needed.
-
-For more information on writing and running Playwright tests, refer to the official [Playwright documentation](https://playwright.dev/docs/intro).
+📄 [Horizon UI License](https://www.simmmple.com/licenses?ref=readme-horizon-ts)
