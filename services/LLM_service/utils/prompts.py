@@ -1,27 +1,27 @@
 def set_keyword_prompt(article):
     return f"""
-        Article:
+        Episode:
         {article}
         ----
 
         You will extract increasingly concise, relevant keywords of the
-        above Article and provide a definition for each keyword.
+        above Episode and provide a definition for each keyword.
 
         Execute the following 2 steps.
 
-        - Step 1: Identify the most informative and relevant Keywords from the Article.
+        - Step 1: Identify the most informative and relevant Keywords from the Episode.
 
-        - Step 2: For each Keyword, provide an accurate and detailed definition, taken into account the context of the Article.
+        - Step 2: For each Keyword, provide an accurate and detailed definition, taken into account the context of the Episode.
 
         A Keyword is:
 
         - Relevant: to the main story
         - Specific: descriptive yet concise (3 words or fewer)
-        - Faithful: present in the Article
-        - Anywhere: located anywhere in the Article
+        - Faithful: present in the Episode
+        - Anywhere: located anywhere in the Episode
 
         Guidelines:
-        - Extract only the sophisticated or advanced keywords from the Article. 
+        - Extract only the sophisticated or advanced keywords from the Episode. 
         - Focus more on terms that may be more difficult to understand or are specific to a particular field or subject.
         - Focus on terms that assume previous knowledge in the field or may require explanation.
         - Identify longer or technical terms that may represent advanced concepts, frameworks, or theories.
@@ -44,20 +44,20 @@ def set_keyword_prompt(article):
 
 def set_highlight_prompt(article):
     return f"""
-        Article:
+        Episode:
         {article}
         ----
 
-        You will extract relevant Highlights of the above Article.
+        You will extract relevant Highlights of the above Episode.
 
         A Highlight is:
 
         - Relevant: to the main story
-        - Faithful: present in the Article
-        - Anywhere: located anywhere in the Article
+        - Faithful: present in the Episode
+        - Anywhere: located anywhere in the Episode
 
         Guidelines:
-        - Provide the exact text of the highlight in the article (keep it concise, ideally a few sentences).
+        - Provide the exact text of the highlight in the Episode (keep it concise, ideally a few sentences).
         - Focus on quotes or statements that convey critical concepts, valuable advice, or significant moments in the discussion.
         - Focus on 1 to 3 most important highlights.
 
@@ -75,21 +75,21 @@ def set_highlight_prompt(article):
 
 def set_keypoint_prompt(article):
     return f"""
-        Article:
+        Episode:
         {article}
         ----
 
-        You will extract a relevant Keypoint that consists of several points of the above Article.
+        You will extract a relevant Keypoint that consists of several points of the above Episode.
 
         A Point is:
 
         - Relevant: to the main story
         - Descriptive: relevant and informative
-        - Faithful: present in the Article
-        - Anywhere: located anywhere in the Article
+        - Faithful: present in the Episode
+        - Anywhere: located anywhere in the Episode
 
         Guidelines:
-        - Focus on the main ideas, important topics, and significant insights discussed throughout the Article.
+        - Focus on the main ideas, important topics, and significant insights discussed throughout the Episode.
         - Ignore small talk, filler words, or off-topic sections.
         - Each point should be a self-contained idea or concept.
         - Points can be nested within other points to create a hierarchy of information.
@@ -138,12 +138,12 @@ def set_keypoint_prompt(article):
 
 def set_backup_summary_prompt(article):
     return f"""
-        Article:
+        Episode:
         {article}
 
         ----
         You will generate a concise, relevant summary and a title of the
-        above Article.
+        above Episode.
 
 
         Answer in JSON.
@@ -156,19 +156,19 @@ def set_backup_summary_prompt(article):
 
         Below is an example of the JSON format:
         {{
-            "title": "Title of the Article",
-            "summary": "Summary of the Article"
+            "title": "Title of the Episode",
+            "summary": "Summary of the Episode"
         }}
         """
 
 def set_takeaway_prompt(article):
     return f"""
-        Article:
+        Episode:
         {article}
         ----
 
         You will extract increasingly concise, relevant Takeaways of the
-        above Article and rewrite in a simple and concise manner.
+        above Episode and rewrite in a simple and concise manner.
 
         Guidelines:
         - Focus on the most important points, insights, or lessons discussed in the episode. 
@@ -183,16 +183,16 @@ def set_takeaway_prompt(article):
 
 def set_summary_prompt(article):
     return f"""
-        Article:
+        Episode:
         {article}
         ----
 
         You will generate increasingly concise, entity-dense summaries of the
-        above Article and also a title for the Article.
+        above Episode and also a title for the Episode.
 
         Repeat the following 2 steps 5 times.
 
-        - Step 1: Identify 1-3 informative Entities from the Article
+        - Step 1: Identify 1-3 informative Entities from the Episode
         which are missing from the previously generated summary and are the most
         relevant.
 
@@ -205,25 +205,25 @@ def set_summary_prompt(article):
         - Relevant: to the main story
         - Specific: descriptive yet concise (5 words or fewer)
         - Novel: not in the previous summary
-        - Faithful: present in the Article
-        - Anywhere: located anywhere in the Article
+        - Faithful: present in the Episode
+        - Anywhere: located anywhere in the Episode
 
         Guidelines:
         - The first summary should be long (4-5 sentences, approx. 80 words) yet
         highly non-specific, containing little information beyond the entities
         marked as missing.
 
-        - Use overly verbose language and fillers (e.g. "this article discusses")
+        - Use overly verbose language and fillers (e.g. "this episode discusses")
         to reach approx. 80 words.
 
         - Make every word count: re-write the previous summary to improve flow and
         make space for additional entities.
 
         - Make space with fusion, compression, and removal of uninformative
-        phrases like "the article discusses"
+        phrases like "the episode discusses"
 
         - The summaries should become highly dense and concise yet
-        self-contained, e.g., easily understood without the Article.
+        self-contained, e.g., easily understood without the Episode.
 
         - Missing entities can appear anywhere in the new summary.
 
