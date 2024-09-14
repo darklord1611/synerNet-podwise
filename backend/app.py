@@ -15,9 +15,10 @@ import logging
 from typing import List
 
 from supabase import create_client, Client
-from config import SUPABASE_URL, SUPABASE_KEY, APP_HOST, APP_PORT
+from config import SUPABASE_URL, SUPABASE_KEY, AUDIO_SERVICE_URL, LLM_SERVICE_URL, CHUNKING_SERVICE_URL
 from utils.requests import EpisodeProcessingRequest
-
+import requests
+from utils.preprocess import preprocess_chunks
 
 
 UPLOAD_FOLDER = 'uploads'
@@ -51,26 +52,87 @@ async def index():
     return {'message': 'Hello World'}
 
 
+def insert_episodes(data, audio_url):
+    return (supabase.table("episodes").insert({
+        "title": data["title"],
+        "duration": data["length"],
+        "audio_url": audio_url,
+    }).execute())
+
+def insert_transcript(transcript, episode_id):
+    return (supabase.table("episode_summaries").insert({
+        "id": episode_id,
+        "transcript": transcript
+    }).execute())
+
+def insert_summaries(data, epsiode_id):
+    return (supabase.table("episode_summaries").insert({
+        "id": episode_id,
+        "transcript": transcript
+    }).eq("id", epsiode_id).execute())
+
 @app.post("/api/upload")
 async def process_input(request: EpisodeProcessingRequest):
     try:
         # send audio_url to audio service
-        # get transcript from audio service
-        # save transcript to supabase
+        # get metadata from audio service
+        # save metadata to supabase
 
-        # send transcript to chunking service
-        # get chunked outputs from chunking service
-        # save chunked outputs to supabase
-        
-        chunks = {
-            "chunk" : 0,
-            "text" : "This is a sample text"
+        audio_url = request['audio_url']
+        audio_json = {
+            "url": audio_url
         }
+        audio_response = requests.post(f"{AUDIO_SERVICE_URL}/transcript", json=audio_json).json()
+
+        episode_info = audio_response["results"]["metadata"]
+
+        res = insert_episodes(episode_info, audio_url)
+        if res.data:
+            print("Metadata saved successfully")
+
+            episode_id = res.data["id"]
+        else:
+            raise Exception("Insert metadata error")
+
+        # send audio output to chunking service
+        # get transcript from chunking service
+        # save transcript to supabase
+        chunking_response = requests.post(f"{CHUNKING_SERVICE_URL}/call_chunking", json=audio_response).json()
+
+        res = insert_transcript(chunking_response, episode_id)
+
+        if res.data:
+            print("Transcript saved successfully")
+
+        else:
+            raise Exception("Insert transcript error")
+
         # send chunked outputs to LLM service
         # get LLM outputs: summary, keywords, highlights, keypoints(for mindmap)
         # save LLM outputs to supabase
+        processed_chunks = preprocess_chunks(chunking_response)
 
-        print(request)
+        summary = requests.post(f"{LLM_SERVICE_URL}/summary", json=processed_chunks).json()
+        keywords = requests.post(f"{LLM_SERVICE_URL}/keywords", json=processed_chunks).json()
+        highlights = requests.post(f"{LLM_SERVICE_URL}/highlights", json=processed_chunks).json()
+        keypoints = requests.post(f"{LLM_SERVICE_URL}/keypoints", json=processed_chunks).json()
+
+        data = {
+            "summary": summary,
+            "keywords": keywords,
+            "highlights": highlights,
+            "keypoints": keypoints
+        }
+
+        res = insert_summaries(data, episode_id)
+
+        if res.data:
+            print("Summaries saved successfully")
+
+        else:
+            raise Exception("Insert summaries error")
+
+        return {"status": "success", "message": "Episode processes successfully"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error: {str(e)}")
 
