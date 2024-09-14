@@ -16,6 +16,9 @@ from typing import List
 
 from supabase import create_client, Client
 from config import SUPABASE_URL, SUPABASE_KEY, APP_HOST, APP_PORT
+from utils.requests import EpisodeProcessingRequest
+
+
 
 UPLOAD_FOLDER = 'uploads'
 STATIC_FOLDER = 'static/results'
@@ -49,7 +52,27 @@ async def index():
 
 
 @app.post("/api/upload")
-async def process_input()
+async def process_input(request: EpisodeProcessingRequest):
+    try:
+        # send audio_url to audio service
+        # get transcript from audio service
+        # save transcript to supabase
+
+        # send transcript to chunking service
+        # get chunked outputs from chunking service
+        # save chunked outputs to supabase
+        
+        chunks = {
+            "chunk" : 0,
+            "text" : "This is a sample text"
+        }
+        # send chunked outputs to LLM service
+        # get LLM outputs: summary, keywords, highlights, keypoints(for mindmap)
+        # save LLM outputs to supabase
+
+        print(request)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error: {str(e)}")
 
 @app.post("/api/transcript")
 async def get_transcript(url: str = Body(..., embed=True)):
