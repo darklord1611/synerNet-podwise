@@ -1,0 +1,34 @@
+{
+    "status": "success",
+    "keywords": [
+        {
+            "keyword": "Ultra-processed foods",
+            "definition": "Foods that have undergone significant industrial processing, often containing added sugars, refined starches, and artificial ingredients, and are being linked to various health problems."
+        },
+        {
+            "keyword": "Type 2 diabetes",
+            "definition": "A chronic condition characterized by high blood sugar levels, often resulting from insulin resistance and impaired insulin secretion, and is a major risk factor for cardiovascular disease."
+        },
+        {
+            "keyword": "Heart attacks",
+            "definition": "A medical emergency that occurs when the blood flow to the heart is blocked, causing damage to the heart muscle and potentially leading to serious complications or death."
+        },
+        {
+            "keyword": "Strokes",
+            "definition": "A medical condition that occurs when the blood supply to the brain is interrupted or reduced, either due to a blockage or a rupture of blood vessels, leading to brain damage or death."
+        },
+        {
+            "keyword": "Obesity",
+            "definition": "A medical condition characterized by an excess amount of body fat, which can increase the risk of various health problems, including diabetes, heart disease, and certain types of cancer."
+        },
+        {
+            "keyword": "Anxiety",
+            "definition": "A mental health condition characterized by feelings of worry, nervousness, and fear that are persistent and overwhelming, and can interfere with daily life."
+        },
+        "error",
+        "error",
+        "error",
+        "error",
+        "error"
+    ]
+}
