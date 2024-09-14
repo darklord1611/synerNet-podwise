@@ -39,6 +39,14 @@ class Subpoint(BaseModel):
     title: str
     points: Optional[List['Subpoint']] = []
 
+
+class CombinedChunks(BaseModel):
+    paragraph_indexes: List[int]
+    title: str
+
+class CombinedChunksCollection(BaseModel):
+    combination: List[CombinedChunks]
+
 # Define the main topic structure
 class Keypoint(BaseModel):
     title: str

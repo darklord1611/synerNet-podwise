@@ -161,6 +161,42 @@ def set_backup_summary_prompt(article):
         }}
         """
 
+
+def set_combine_chunks_prompt(summaries):
+    chunk_str = ["Paragraph " + str(i) + ": \n" + summaries[i] + "\n" for i in range(len(summaries))]
+
+    paragraphs = "\n\n".join(chunk_str)
+
+    return f"""
+{paragraphs}
+
+You will be given a series of paragraphs above, each with a number like Paragraph 0, Paragraph 1, ... Paragraph N. You will analyze these paragraphs and decide whether to merge semantically similar paragraphs together and generate a title.
+
+Guidelines:
+- Combine paragraphs that are semantically similar or related to each other.
+- Create a title that accurately represents the content of the combined paragraphs.
+- Ensure that the title is concise and informative.
+- Maintain the order of the paragraphs in the combination.
+- If the paragraphs are not related, .
+- Only use the number of paragraphs provided in the input.
+- Return the result in the following JSON format:
+
+{{
+    "combination": [
+        {{
+            "paragraph_indexes": [0, 1, ...],
+            "title": "string"
+        }},
+        ...
+    ]
+}}
+
+Note:
+- The "paragraph_indexes" should be a list of integers representing the indexes of the paragraphs that are combined.
+- If paragraphs are not combined, the "paragraph_indexes" should contain only one index.
+    """
+
+
 def set_takeaway_prompt(article):
     return f"""
         Episode:

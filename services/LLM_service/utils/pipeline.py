@@ -1,8 +1,8 @@
 from groq import Groq
 from config import GROQ_API_KEY, MODEL_NAME
-from utils.entities import HighlightCollection, Keypoint, KeywordCollection, Summary, SummaryCollection, TakeawayCollection, BackupSummary
+from utils.entities import CombinedChunksCollection, HighlightCollection, Keypoint, KeywordCollection, Summary, SummaryCollection, TakeawayCollection, BackupSummary
 
-from utils.prompts import set_backup_summary_prompt, set_highlight_prompt, set_keypoint_prompt, set_keyword_prompt, set_summary_prompt, set_takeaway_prompt
+from utils.prompts import set_backup_summary_prompt, set_combine_chunks_prompt, set_highlight_prompt, set_keypoint_prompt, set_keyword_prompt, set_summary_prompt, set_takeaway_prompt
 
 import json
 import textgrad as tg
@@ -22,6 +22,7 @@ class LLMPipeline:
       "keypoints": "You are an expert podcast analyst in extracting relevant keypoints from a podcast episode and providing the response in JSON.",
       "summary": "You are an expert podcast analyst in summarizing the content of a podcast episode and providing the summary in JSON.",
       "takeaways": "You are an expert podcast analyst in extracting takeaway messages from a podcast episode and providing them in JSON.",
+      "chunking": "You are an expert podcast analyst in combining multiple summaries of podcast episodes and providing the response in JSON."
     }
 
     return None
@@ -43,6 +44,8 @@ class LLMPipeline:
       return json.dumps(BackupSummary.model_json_schema(), indent=2)
     elif task == "takeaways":
       return json.dumps(TakeawayCollection.model_json_schema(), indent=2)
+    elif task == "combine_chunks":
+      return json.dumps(CombinedChunksCollection.model_json_schema(), indent=2)
     return None
   
   def set_prompt(self, article, task):
@@ -59,6 +62,8 @@ class LLMPipeline:
             return set_backup_summary_prompt(article)
         case "takeaways":
             return set_takeaway_prompt(article)
+        case "combine_chunks":
+            return set_combine_chunks_prompt(article)
        
 
   def _set_evaluation_instruction(self, task, article):
@@ -140,10 +145,32 @@ class LLMPipeline:
     
     return keypoint_collection
 
+  def combine_chunks(self, chunks):
+
+    summaries = []
+    try:
+      for chunk in chunks:
+        prompt = self.set_prompt(chunk, task = "backup_summary")
+        content = self.generate_content(task = "backup_summary", prompt = prompt)
+        summary_collection = BackupSummary.model_validate_json(content)
+        summaries.append(summary_collection.summary)
+      
+      prompt = set_combine_chunks_prompt(summaries)
+      content = self.generate_content(task = "combine_chunks", prompt = prompt)
+      print(content)
+      combined_chunks_collection = CombinedChunksCollection.model_validate_json(content)
+
+    except Exception as e:
+      print(e)
+      return {"error": "Invalid JSON response from the model."}
+
+    return combined_chunks_collection
+
+
   def summarize(self, article, optimize=False):
     
     prompt = self.set_prompt(article, task = "summary")
-
+    
     try:
       content = self.generate_content(task = "summary", prompt = prompt)
       summary_collection = SummaryCollection.model_validate_json(content)

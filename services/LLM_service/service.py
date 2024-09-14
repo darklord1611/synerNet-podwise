@@ -106,8 +106,12 @@ class LLMService():
     def extract_keypoint(self, **params: t.Any) -> dict:
         """Extract keypoints of an epsiode of a podcast."""
         keypoints = []
-        for i, chunk_input in enumerate(params["transcript"]):
 
+        # combine chunks before extracting keypoints
+
+
+        for i, chunk_input in enumerate(params["transcript"]):
+            
             print("Current chunk: ", i)
             keypoint = self.pipeline.extract_keypoints(chunk_input.text)
             keypoints.append({"keypoint": keypoint})
@@ -115,6 +119,17 @@ class LLMService():
 
         json_data = {"status": "success", "keypoints": keypoints}
         
-        with open("keypoints.json", "w") as f:
+        with open("temp_keypoints.json", "w") as f:
+            json.dump(json_data, f, default=lambda o: o.__dict__, indent=4, ensure_ascii=False)
+        return json_data
+    
+    @bentoml.api(input_spec=BaseRequest, route="/chunks")
+    def combine_chunks(self, **params: t.Any) -> dict:
+        """Extract keypoints of an epsiode of a podcast."""
+
+        combined_chunks = self.pipeline.combine_chunks(params["transcript"])
+        json_data = {"status": "success", "combined_chunks": combined_chunks}
+        
+        with open("temp_combination.json", "w") as f:
             json.dump(json_data, f, default=lambda o: o.__dict__, indent=4, ensure_ascii=False)
         return json_data
