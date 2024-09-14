@@ -66,31 +66,28 @@ def insert_transcript(transcript, episode_id):
     }).execute())
 
 def insert_summaries(data, epsiode_id):
-    return (supabase.table("episode_summaries").insert({
-        "id": episode_id,
-        "transcript": transcript
-    }).eq("id", epsiode_id).execute())
+    return (supabase.table("episode_summaries").update(data).eq("id", epsiode_id).execute())
 
-@app.post("/api/upload")
+@app.post("/process_input")
 async def process_input(request: EpisodeProcessingRequest):
     try:
         # send audio_url to audio service
         # get metadata from audio service
         # save metadata to supabase
 
-        audio_url = request['audio_url']
+        audio_url = request.audio_url
         audio_json = {
             "url": audio_url
         }
         audio_response = requests.post(f"{AUDIO_SERVICE_URL}/transcript", json=audio_json).json()
-
+        print(audio_response)
         episode_info = audio_response["results"]["metadata"]
 
         res = insert_episodes(episode_info, audio_url)
         if res.data:
             print("Metadata saved successfully")
 
-            episode_id = res.data["id"]
+            episode_id = res.data[0]["id"]
         else:
             raise Exception("Insert metadata error")
 
@@ -134,10 +131,13 @@ async def process_input(request: EpisodeProcessingRequest):
 
         return {"status": "success", "message": "Episode processes successfully"}
     except Exception as e:
+        print(e)
         raise HTTPException(status_code=500, detail=f"Error: {str(e)}")
+    
 
 @app.post("/api/transcript")
 async def get_transcript(url: str = Body(..., embed=True)):
+    pass
     # try:
     #     print(url)
     #     audio_path = download_audio_from_youtube(url)
