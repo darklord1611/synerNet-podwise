@@ -5,8 +5,8 @@ import Card from 'components/card/Card';
 import { IoIosMore } from "react-icons/io";
 import { VscBroadcast } from 'react-icons/vsc';
 
-export default function Default(props: {episode: Espisode}) {
-	const { id, name, description, publishedDate, duration, podcastName, podcastId, thumbnailUrl } = props.episode;
+export default function Default(props: {episode: any}) {
+	const { id, title, description, image_url, podcast_name } = props.episode;
 	const textColor = useColorModeValue('secondaryGray.900', 'white');
 	const textColorSecondary = useColorModeValue('secondaryGray.700', 'secondaryGray.600');
 	const cardColor = useColorModeValue('secondaryGray.400', 'navy.700');
@@ -20,10 +20,10 @@ export default function Default(props: {episode: Espisode}) {
                 justify={{ base: 'center', xl: 'start' }}
                 // justifyContent='space-between'
                 >
-				{thumbnailUrl ? (
+				{image_url ? (
 					<Image
-						src={thumbnailUrl}
-						alt={name}
+						src={image_url}
+						alt={title}
 						w='100px'
 						h='100px'
 						borderRadius='10px'
@@ -43,7 +43,7 @@ export default function Default(props: {episode: Espisode}) {
                         lineHeight='100%'
                         _hover={{ opacity: 0.7, textDecoration: 'underline' }}
                         >
-						{name}
+						{title}
 					</Link>
 					<HStack justifyContent='space-between' w='100%' spacing='10px'>
                         <Icon 
@@ -59,7 +59,7 @@ export default function Default(props: {episode: Espisode}) {
                             fontWeight='500' 
                             lineHeight='100%'
                             >
-                            {podcastName}
+                            {podcast_name}
 						</Text>
                         <Spacer />
                         <Icon 

@@ -5,14 +5,15 @@ import Card from 'components/card/Card';
 import { IoIosMore } from "react-icons/io";
 import { VscBroadcast } from 'react-icons/vsc';
 
-export default function Default(podcast: Podcast) {
-	const { id, name, description, author, thumbnailUrl } = podcast;
+export default function Default(props: {podcast: any}) {
+    console.log('Podcst in PodcastCard', props.podcast);
+	const { id, title, description, author_name, image_url } = props.podcast;
 	const textColor = useColorModeValue('secondaryGray.900', 'white');
 	const textColorSecondary = useColorModeValue('secondaryGray.700', 'secondaryGray.600');
 	const cardColor = useColorModeValue('secondaryGray.400', 'navy.700');
 
 	return (
-		<Card py='15px' maxW='175px' _hover={{ bg: cardColor}}>
+		<Card py='15px' maxW='200px' _hover={{ bg: cardColor}}>
 			<Flex 
                 my='auto' 
                 h='100%' 
@@ -20,10 +21,10 @@ export default function Default(podcast: Podcast) {
                 justify={{ base: 'center', xl: 'center' }}
                 >
                 <VStack align='start' spacing='10px' alignSelf='center' alignItems='center'>
-                    {thumbnailUrl ? (
+                    {image_url ? (
                         <Image
-                            src={thumbnailUrl}
-                            alt={name}
+                            src={image_url}
+                            alt={title}
                             w='100px'
                             h='100px'
                             borderRadius='10px'
@@ -40,7 +41,7 @@ export default function Default(podcast: Podcast) {
                             lineHeight='100%' 
                             _hover={{ opacity: 0.7, textDecoration: 'underline' }}
                             >
-                            {name}
+                            {title}
                         </Link>
                             <Spacer />
                             <Icon 

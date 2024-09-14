@@ -77,133 +77,36 @@ export default function Collections() {
 							title="Joe Rogan"
 							description="The 10 Best Joe Rogan Expierence Podcast Episodes"
 							thumbnailUrl="https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-							episodes={[
-								{
-									id:1,
-									name: "Joe Rogan Experience #1554 - Kanye West",
-									description: "Kanye West is a rapper, record producer, fashion designer, and current independent candidate for office in the 2020 United States Presidential Election.",
-									publishedDate: "Oct 24, 2020",
-									duration: "3h 23m",
-									podcastName: "Joe Rogan Experience",
-									podcastId: 1,
-									thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-								}
-							]}
 						/>
 						<CollectionsCard
 							id={2}
 							title="Health & Fitness"
 							description="The Top 6 Health & Fitness Podcasts Episodes"
 							thumbnailUrl="https://th.bing.com/th/id/R.7974e78087288a343b28107d54813c80?rik=5mpa%2fB8jOshQMQ&riu=http%3a%2f%2fwww.one55.com.au%2fwp-content%2fuploads%2f2020%2f09%2fshutterstock_1322949296-min.jpg&ehk=YpMsw%2bFx%2bj1w6geoCLP2WXdwsCwuYyxoM%2b6Nrkz09T4%3d&risl=&pid=ImgRaw&r=0"
-							episodes={[
-								{
-									id:1,
-									name: "Resistance training for time efficiency, body composition, and maximum hypertrophy | Brad Schoenfeld, Ph.D.",
-									publishedDate: "Oct 24, 2020",
-									duration: "3h 23m",
-									podcastName: "2",
-									podcastId: 2,
-									thumbnailUrl: "https://th.bing.com/th/id/R.7974e78087288a343b28107d54813c80?rik=5mpa%2fB8jOshQMQ&riu=http%3a%2f%2fwww.one55.com.au%2fwp-content%2fuploads%2f2020%2f09%2fshutterstock_1322949296-min.jpg&ehk=YpMsw%2bFx%2bj1w6geoCLP2WXdwsCwuYyxoM%2b6Nrkz09T4%3d&risl=&pid=ImgRaw&r=0"
-								},
-								{
-									id:1,
-									name: "Resistance training for time efficiency, body composition, and maximum hypertrophy | Brad Schoenfeld, Ph.D.",
-									publishedDate: "Oct 24, 2020",
-									duration: "3h 23m",
-									podcastName: "2",
-									podcastId: 3,
-									thumbnailUrl: "https://th.bing.com/th/id/R.7974e78087288a343b28107d54813c80?rik=5mpa%2fB8jOshQMQ&riu=http%3a%2f%2fwww.one55.com.au%2fwp-content%2fuploads%2f2020%2f09%2fshutterstock_1322949296-min.jpg&ehk=YpMsw%2bFx%2bj1w6geoCLP2WXdwsCwuYyxoM%2b6Nrkz09T4%3d&risl=&pid=ImgRaw&r=0"
-								}
-							]}
 						/>
 						<CollectionsCard
 							id={3}
 							title="Business"
 							description="The 10 Best Business Podcasts Episodes"
 							thumbnailUrl="https://th.bing.com/th/id/R.15cc2230b021c4cb6f889e28c52c9393?rik=cXZXwAYWx9Xitw&riu=http%3a%2f%2fi.huffpost.com%2fgen%2f1166323%2fimages%2fo-BUSINESS-DEAL-facebook.jpg&ehk=5LTrwAZaJng6sgj17zhiMKFusXBTW86A59GFHc9V3ls%3d&risl=&pid=ImgRaw&r=0"
-							episodes={[
-								{
-									id:1,
-									name: "Resistance training for time efficiency, body composition, and maximum hypertrophy | Brad Schoenfeld, Ph.D.",
-									publishedDate: "Oct 24, 2020",
-									duration: "3h 23m",
-									podcastName: "2",
-									podcastId: 4,
-									thumbnailUrl: "https://th.bing.com/th/id/R.15cc2230b021c4cb6f889e28c52c9393?rik=cXZXwAYWx9Xitw&riu=http%3a%2f%2fi.huffpost.com%2fgen%2f1166323%2fimages%2fo-BUSINESS-DEAL-facebook.jpg&ehk=5LTrwAZaJng6sgj17zhiMKFusXBTW86A59GFHc9V3ls%3d&risl=&pid=ImgRaw&r=0"
-								},
-								{
-									id:1,
-									name: "Resistance training for time efficiency, body composition, and maximum hypertrophy | Brad Schoenfeld, Ph.D.",
-									publishedDate: "Oct 24, 2020",
-									duration: "3h 23m",
-									podcastName: "2",
-									podcastId: 5,
-									thumbnailUrl: "https://th.bing.com/th/id/R.15cc2230b021c4cb6f889e28c52c9393?rik=cXZXwAYWx9Xitw&riu=http%3a%2f%2fi.huffpost.com%2fgen%2f1166323%2fimages%2fo-BUSINESS-DEAL-facebook.jpg&ehk=5LTrwAZaJng6sgj17zhiMKFusXBTW86A59GFHc9V3ls%3d&risl=&pid=ImgRaw&r=0"
-								},
-								{
-									id:1,
-									name: "Resistance training for time efficiency, body composition, and maximum hypertrophy | Brad Schoenfeld, Ph.D.",
-									publishedDate: "Oct 24, 2020",
-									duration: "3h 23m",
-									podcastName: "2",
-									podcastId: 6,
-									thumbnailUrl: "https://th.bing.com/th/id/R.15cc2230b021c4cb6f889e28c52c9393?rik=cXZXwAYWx9Xitw&riu=http%3a%2f%2fi.huffpost.com%2fgen%2f1166323%2fimages%2fo-BUSINESS-DEAL-facebook.jpg&ehk=5LTrwAZaJng6sgj17zhiMKFusXBTW86A59GFHc9V3ls%3d&risl=&pid=ImgRaw&r=0"
-								}
-							]}
 						/>
 						<CollectionsCard
 							id={4}
 							title="Joe Rogan"
 							description="The 10 Best Joe Rogan Expierence Podcast Episodes"
 							thumbnailUrl="https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-							episodes={[
-								{
-									id:1,
-									name: "Joe Rogan Experience #1554 - Kanye West",
-									description: "Kanye West is a rapper, record producer, fashion designer, and current independent candidate for office in the 2020 United States Presidential Election.",
-									publishedDate: "Oct 24, 2020",
-									duration: "3h 23m",
-									podcastName: "1",
-									podcastId: 7,
-									thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-								}
-							]}
 						/>
 						<CollectionsCard
 							id={5}
 							title="Joe Rogan"
 							description="The 10 Best Joe Rogan Expierence Podcast Episodes"
 							thumbnailUrl="https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-							episodes={[
-								{
-									id:1,
-									name: "Joe Rogan Experience #1554 - Kanye West",
-									description: "Kanye West is a rapper, record producer, fashion designer, and current independent candidate for office in the 2020 United States Presidential Election.",
-									publishedDate: "Oct 24, 2020",
-									duration: "3h 23m",
-									podcastName: "1",
-									podcastId: 8,
-									thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-								}
-							]}
 						/>
 						<CollectionsCard
 							id={6}
 							title="Joe Rogan"
 							description="The 10 Best Joe Rogan Expierence Podcast Episodes"
 							thumbnailUrl="https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-							episodes={[
-								{
-									id:1,
-									name: "Joe Rogan Experience #1554 - Kanye West",
-									description: "Kanye West is a rapper, record producer, fashion designer, and current independent candidate for office in the 2020 United States Presidential Election.",
-									publishedDate: "Oct 24, 2020",
-									duration: "3h 23m",
-									podcastName: "1",
-									podcastId: 9,
-									thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-								}
-							]}
 						/>
 
 						</SimpleGrid>
@@ -230,115 +133,24 @@ export default function Collections() {
 							title="Joe Rogan"
 							description="The 10 Best Joe Rogan Expierence Podcast Episodes"
 							thumbnailUrl="https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-							episodes={[
-								{
-									id:1,
-									name: "Joe Rogan Experience #1554 - Kanye West",
-									description: "Kanye West is a rapper, record producer, fashion designer, and current independent candidate for office in the 2020 United States Presidential Election.",
-									publishedDate: "Oct 24, 2020",
-									duration: "3h 23m",
-									podcastName: "Joe Rogan Experience",
-									podcastId: 1,
-									thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-								}
-							]}
 						/>
 						<CollectionsCard
 							id={2}
 							title="Health & Fitness"
 							description="The Top 6 Health & Fitness Podcasts Episodes"
 							thumbnailUrl="https://th.bing.com/th/id/R.7974e78087288a343b28107d54813c80?rik=5mpa%2fB8jOshQMQ&riu=http%3a%2f%2fwww.one55.com.au%2fwp-content%2fuploads%2f2020%2f09%2fshutterstock_1322949296-min.jpg&ehk=YpMsw%2bFx%2bj1w6geoCLP2WXdwsCwuYyxoM%2b6Nrkz09T4%3d&risl=&pid=ImgRaw&r=0"
-							episodes={[
-								{
-									id:1,
-									name: "Resistance training for time efficiency, body composition, and maximum hypertrophy | Brad Schoenfeld, Ph.D.",
-									publishedDate: "Oct 24, 2020",
-									duration: "3h 23m",
-									podcastName: "2",
-									podcastId: 1,
-									thumbnailUrl: "https://th.bing.com/th/id/R.7974e78087288a343b28107d54813c80?rik=5mpa%2fB8jOshQMQ&riu=http%3a%2f%2fwww.one55.com.au%2fwp-content%2fuploads%2f2020%2f09%2fshutterstock_1322949296-min.jpg&ehk=YpMsw%2bFx%2bj1w6geoCLP2WXdwsCwuYyxoM%2b6Nrkz09T4%3d&risl=&pid=ImgRaw&r=0"
-								},
-								{
-									id:1,
-									name: "Resistance training for time efficiency, body composition, and maximum hypertrophy | Brad Schoenfeld, Ph.D.",
-									publishedDate: "Oct 24, 2020",
-									duration: "3h 23m",
-									podcastName: "2",
-									podcastId: 1,
-									thumbnailUrl: "https://th.bing.com/th/id/R.7974e78087288a343b28107d54813c80?rik=5mpa%2fB8jOshQMQ&riu=http%3a%2f%2fwww.one55.com.au%2fwp-content%2fuploads%2f2020%2f09%2fshutterstock_1322949296-min.jpg&ehk=YpMsw%2bFx%2bj1w6geoCLP2WXdwsCwuYyxoM%2b6Nrkz09T4%3d&risl=&pid=ImgRaw&r=0"
-								}
-							]}
 						/>
 						<CollectionsCard
 							id={3}
 							title="Business"
 							description="The 10 Best Business Podcasts Episodes"
 							thumbnailUrl="https://th.bing.com/th/id/R.15cc2230b021c4cb6f889e28c52c9393?rik=cXZXwAYWx9Xitw&riu=http%3a%2f%2fi.huffpost.com%2fgen%2f1166323%2fimages%2fo-BUSINESS-DEAL-facebook.jpg&ehk=5LTrwAZaJng6sgj17zhiMKFusXBTW86A59GFHc9V3ls%3d&risl=&pid=ImgRaw&r=0"
-							episodes={[
-								{
-									id:1,
-									name: "Resistance training for time efficiency, body composition, and maximum hypertrophy | Brad Schoenfeld, Ph.D.",
-									publishedDate: "Oct 24, 2020",
-									duration: "3h 23m",
-									podcastName: "2",
-									podcastId: 1,
-									thumbnailUrl: "https://th.bing.com/th/id/R.15cc2230b021c4cb6f889e28c52c9393?rik=cXZXwAYWx9Xitw&riu=http%3a%2f%2fi.huffpost.com%2fgen%2f1166323%2fimages%2fo-BUSINESS-DEAL-facebook.jpg&ehk=5LTrwAZaJng6sgj17zhiMKFusXBTW86A59GFHc9V3ls%3d&risl=&pid=ImgRaw&r=0"
-								},
-								{
-									id:1,
-									name: "Resistance training for time efficiency, body composition, and maximum hypertrophy | Brad Schoenfeld, Ph.D.",
-									publishedDate: "Oct 24, 2020",
-									duration: "3h 23m",
-									podcastName: "2",
-									podcastId: 1,
-									thumbnailUrl: "https://th.bing.com/th/id/R.15cc2230b021c4cb6f889e28c52c9393?rik=cXZXwAYWx9Xitw&riu=http%3a%2f%2fi.huffpost.com%2fgen%2f1166323%2fimages%2fo-BUSINESS-DEAL-facebook.jpg&ehk=5LTrwAZaJng6sgj17zhiMKFusXBTW86A59GFHc9V3ls%3d&risl=&pid=ImgRaw&r=0"
-								},
-								{
-									id:1,
-									name: "Resistance training for time efficiency, body composition, and maximum hypertrophy | Brad Schoenfeld, Ph.D.",
-									publishedDate: "Oct 24, 2020",
-									duration: "3h 23m",
-									podcastName: "2",
-									podcastId: 1,
-									thumbnailUrl: "https://th.bing.com/th/id/R.15cc2230b021c4cb6f889e28c52c9393?rik=cXZXwAYWx9Xitw&riu=http%3a%2f%2fi.huffpost.com%2fgen%2f1166323%2fimages%2fo-BUSINESS-DEAL-facebook.jpg&ehk=5LTrwAZaJng6sgj17zhiMKFusXBTW86A59GFHc9V3ls%3d&risl=&pid=ImgRaw&r=0"
-								}
-							]}
-						/>
-						<CollectionsCard
-							id={4}
-							title="Joe Rogan"
-							description="The 10 Best Joe Rogan Expierence Podcast Episodes"
-							thumbnailUrl="https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-							episodes={[
-								{
-									id:1,
-									name: "Joe Rogan Experience #1554 - Kanye West",
-									description: "Kanye West is a rapper, record producer, fashion designer, and current independent candidate for office in the 2020 United States Presidential Election.",
-									publishedDate: "Oct 24, 2020",
-									duration: "3h 23m",
-									podcastName: "1",
-									podcastId: 1,
-									thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-								}
-							]}
 						/>
 						<CollectionsCard
 							id={5}
 							title="Joe Rogan"
 							description="The 10 Best Joe Rogan Expierence Podcast Episodes"
 							thumbnailUrl="https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-							episodes={[
-								{
-									id:1,
-									name: "Joe Rogan Experience #1554 - Kanye West",
-									description: "Kanye West is a rapper, record producer, fashion designer, and current independent candidate for office in the 2020 United States Presidential Election.",
-									publishedDate: "Oct 24, 2020",
-									duration: "3h 23m",
-									podcastName: "1",
-									podcastId: 1,
-									thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-								}
-							]}
 						/>
 					</Card>
 				</Flex>

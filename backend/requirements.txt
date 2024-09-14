@@ -8,3 +8,5 @@ uvicorn
 redis
 supabase
 python-dotenv
+yt-dlp
+deepgram-sdk==2.12.0

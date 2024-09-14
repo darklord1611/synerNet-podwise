@@ -716,20 +716,20 @@ const sentences=[
     }
 ]
 
-interface Episode {
-    id: number;
-    name: string;
-    description: string;
-    publishedDate: string;
-    duration: string;
-    podcastName: string;
-    podcastId: number;
-    thumbnailUrl: string;
-    audioUrl?: string;
-}
+// interface Episode {
+//     id: number;
+//     name: string;
+//     description: string;
+//     publishedDate: string;
+//     duration: string;
+//     podcastName: string;
+//     podcastId: number;
+//     thumbnailUrl: string;
+//     audioUrl?: string;
+// }
 
 interface TranscriptPanelProps {
-    episode: Episode;
+    episode: Espisode;
     onSeek: (time: number) => void;
 }
 

@@ -20,7 +20,7 @@
 
 */
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 // Chakra imports
 import { Box, Button, Flex, Grid, Link, Text, useColorModeValue, SimpleGrid, Menu, MenuButton, MenuList, MenuItem, HStack } from '@chakra-ui/react';
@@ -50,11 +50,13 @@ import { FaFilter } from 'react-icons/fa';
 import { ColumnDef, createColumnHelper, getCoreRowModel, getPaginationRowModel, PaginationState, RowModel, Table, useReactTable } from '@tanstack/react-table';
 import EpisodeCard from 'components/card/EpisodeCard';
 import { MdNavigateBefore, MdNavigateNext } from 'react-icons/md';
+import { useSupabase } from 'contexts/SupabaseContext';
+import PodcastCard from 'components/card/PodcastCard';
 
 const data = [
 	{
 		id: 1,
-		name: "#1554 - Kanye West",
+		title: "#1554 - Kanye West",
 		description: "Kanye West is a rapper, record producer, fashion designer, and current independent candidate for office in the 2020 United States Presidential Election.",
 		publishedDate: "Oct 24, 2020",
 		duration: "3h 23m",
@@ -64,7 +66,7 @@ const data = [
 	},
 	{
 		id: 2,
-		name: "#1916 - Jon Bernthal",
+		title: "#1916 - Jon Bernthal",
 		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
 		publishedDate: "Oct 21, 2020",
 		duration: "4h 12m",
@@ -74,7 +76,7 @@ const data = [
 	},
 	{
 		id: 2,
-		name: "#1916 - Jon Bernthal",
+		title: "#1916 - Jon Bernthal",
 		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
 		publishedDate: "Oct 21, 2020",
 		duration: "4h 12m",
@@ -84,7 +86,7 @@ const data = [
 	},
 	{
 		id: 2,
-		name: "#1916 - Jon Bernthal",
+		title: "#1916 - Jon Bernthal",
 		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
 		publishedDate: "Oct 21, 2020",
 		duration: "4h 12m",
@@ -94,7 +96,7 @@ const data = [
 	},
 	{
 		id: 2,
-		name: "#1916 - Jon Bernthal",
+		title: "#1916 - Jon Bernthal",
 		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
 		publishedDate: "Oct 21, 2020",
 		duration: "4h 12m",
@@ -104,7 +106,7 @@ const data = [
 	},
 	{
 		id: 2,
-		name: "#1916 - Jon Bernthal",
+		title: "#1916 - Jon Bernthal",
 		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
 		publishedDate: "Oct 21, 2020",
 		duration: "4h 12m",
@@ -114,7 +116,7 @@ const data = [
 	},
 	{
 		id: 2,
-		name: "#1916 - Jon Bernthal",
+		title: "#1916 - Jon Bernthal",
 		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
 		publishedDate: "Oct 21, 2020",
 		duration: "4h 12m",
@@ -124,7 +126,7 @@ const data = [
 	},
 	{
 		id: 2,
-		name: "#1916 - Jon Bernthal",
+		title: "#1916 - Jon Bernthal",
 		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
 		publishedDate: "Oct 21, 2020",
 		duration: "4h 12m",
@@ -134,7 +136,7 @@ const data = [
 	},
 	{
 		id: 2,
-		name: "#1916 - Jon Bernthal",
+		title: "#1916 - Jon Bernthal",
 		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
 		publishedDate: "Oct 21, 2020",
 		duration: "4h 12m",
@@ -144,7 +146,7 @@ const data = [
 	},
 	{
 		id: 2,
-		name: "#1916 - Jon Bernthal",
+		title: "#1916 - Jon Bernthal",
 		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
 		publishedDate: "Oct 21, 2020",
 		duration: "4h 12m",
@@ -154,7 +156,7 @@ const data = [
 	},
 	{
 		id: 2,
-		name: "#1916 - Jon Bernthal",
+		title: "#1916 - Jon Bernthal",
 		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
 		publishedDate: "Oct 21, 2020",
 		duration: "4h 12m",
@@ -164,7 +166,7 @@ const data = [
 	},
 	{
 		id: 2,
-		name: "#1916 - Jon Bernthal",
+		title: "#1916 - Jon Bernthal",
 		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
 		publishedDate: "Oct 21, 2020",
 		duration: "4h 12m",
@@ -174,7 +176,7 @@ const data = [
 	},
 	{
 		id: 2,
-		name: "#1916 - Jon Bernthal",
+		title: "#1916 - Jon Bernthal",
 		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
 		publishedDate: "Oct 21, 2020",
 		duration: "4h 12m",
@@ -184,7 +186,7 @@ const data = [
 	},
 	{
 		id: 2,
-		name: "#1916 - Jon Bernthal",
+		title: "#1916 - Jon Bernthal",
 		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
 		publishedDate: "Oct 21, 2020",
 		duration: "4h 12m",
@@ -194,7 +196,7 @@ const data = [
 	},
 	{
 		id: 2,
-		name: "#1916 - Jon Bernthal",
+		title: "#1916 - Jon Bernthal",
 		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
 		publishedDate: "Oct 21, 2020",
 		duration: "4h 12m",
@@ -204,7 +206,7 @@ const data = [
 	},
 	{
 		id: 2,
-		name: "#1916 - Jon Bernthal",
+		title: "#1916 - Jon Bernthal",
 		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
 		publishedDate: "Oct 21, 2020",
 		duration: "4h 12m",
@@ -214,7 +216,7 @@ const data = [
 	}
 ]
 
-const columns: ColumnDef<typeof data[0]>[] = [
+const columns: ColumnDef<Podcast>[] = [
 	{
 	  accessorKey: 'name', // Refers to the 'name' field in the data
 	  cell: info => info.getValue(),
@@ -232,13 +234,30 @@ export default function Podcast() {
 		'14px 17px 40px 4px rgba(112, 144, 176, 0.06)'
 	);
 
+	const [podcast, setPodcasts] = useState([])
+	const supabase = useSupabase()
+	
+	useEffect(() => {
+		const fetchPodcasts = async () => {
+			const { data, error } = await supabase.from('podcasts').select('*');
+			if (error) {
+				console.error('Error fetching podcasts:', error.message)
+			} else {
+				console.log(data)
+				setPodcasts(data)
+			}
+		}
+
+		fetchPodcasts()
+	}, [supabase]);
+
 	const [pagination, setPagination] = React.useState<PaginationState>({
 		pageIndex: 0,
 		pageSize: 10,
 	})
 
 	const table = useReactTable({
-		data,
+		data: podcast,
 		columns,
 		getCoreRowModel: getCoreRowModel(),
 		getPaginationRowModel: getPaginationRowModel(),
@@ -318,26 +337,21 @@ export default function Podcast() {
 			</HStack>
 			<table width='100%' cellPadding='10px' cellSpacing='10px'>
 				<tbody>
-					{table.getRowModel().rows.reduce((rows: JSX.Element[][], row, index, array) => {
-					if (index % 2 === 0) {
-						// Push a new row with two columns (or just one if it's the last item)
-						rows.push([
-							<tr key={row.id}>
-								<td>
-								<EpisodeCard
-									episode={row.original}
-								/>
-								</td>
-								{/* Render second column only if the next item exists */}
-								{array[index + 1] && (
-								<td>
-									<EpisodeCard
-										episode={array[index + 1].original}
-									/>
-								</td>
-								)}
-							</tr>,
-							]);
+					{table.getRowModel().rows.reduce((rows: JSX.Element[], row, index, array) => {
+						if (index % 6 === 0) {
+							rows.push(
+								<tr key={index}>
+									{array.slice(index, index + 6).map((row) => {
+										return (
+											<td key={row.id}>
+												<PodcastCard 
+													podcast={row.original}
+												/>
+											</td>
+										)
+									})}
+								</tr>
+							);
 						}
 					return rows;
 					}, [])}

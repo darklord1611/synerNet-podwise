@@ -13,8 +13,14 @@ import { PiTimerBold } from 'react-icons/pi';
 import { TbPlayerPauseFilled, TbPlayerPlayFilled } from "react-icons/tb";
 import { VscBroadcast } from 'react-icons/vsc';
 
+function formatDuration(duration: number): string {
+    const hours = Math.floor(duration / 3600);
+    const minutes = Math.round((duration % 3600) / 60);
+    return `${hours}h ${minutes < 10 ? '0' : ''}${minutes}m`;
+}
+
 export default function EpisodeBanner(props: { episodeData: any}) {
-    const { id, name, publishedDate, duration, podcastName, podcastId, thumbnailUrl } = props.episodeData;
+    const { id, title, published_date, duration, podcast_name, podcastId, image_url } = props.episodeData;
 	const banners = [banner1, banner2, banner3, banner4, banner5, banner6];
 	// Chakra Color Mode
     const textColor = useColorModeValue('secondaryGray.900', 'white');
@@ -30,10 +36,10 @@ export default function EpisodeBanner(props: { episodeData: any}) {
 			py={{ base: '10px', md: '30px' }}
 			px={{ base: '10px', md: '30px' }}
 			borderRadius='30px'>
-			{thumbnailUrl ? (
+			{image_url ? (
                 <Image
-                    src={thumbnailUrl}
-                    alt={name}
+                    src={image_url}
+                    alt={title}
                     w='120px'
                     h='120px'
                     borderRadius='10px'
@@ -48,21 +54,23 @@ export default function EpisodeBanner(props: { episodeData: any}) {
                         color={textColorSecondary} 
                         fontSize='14px' 
                         textAlign='start' 
-                        fontWeight='400' 
+                        fontWeight='500' 
                         lineHeight='100%'
                         >
-                        {publishedDate}
+                        {published_date}
                     </Text>
-                    <Icon as={PiTimerBold} w={4} h={4} color={textColorSecondary}/>
-                    <Text 
-                        color={textColorSecondary} 
-                        fontSize='14px' 
-                        textAlign='start' 
-                        fontWeight='400' 
-                        lineHeight='100%'
-                        >
-                        {duration}
-                    </Text>
+                    <HStack spacing='2px'>
+                        <Icon as={PiTimerBold} w={4} h={4} color={textColorSecondary}/>
+                        <Text 
+                            color={textColorSecondary} 
+                            fontSize='14px' 
+                            textAlign='start' 
+                            fontWeight='500' 
+                            lineHeight='100%'
+                            >
+                            {formatDuration(duration)}
+                        </Text>
+                    </HStack>
                 </HStack>
                 <Text 
                     color={textColor} 
@@ -71,7 +79,7 @@ export default function EpisodeBanner(props: { episodeData: any}) {
                     fontWeight='700' 
                     lineHeight='100%'
                     >
-                    {name}
+                    {title}
                 </Text>
                 <HStack w='100%' spacing='10px'>
                     <Icon 
@@ -89,7 +97,7 @@ export default function EpisodeBanner(props: { episodeData: any}) {
                         lineHeight='100%'
                         _hover={{ textDecoration: 'underline'}}
                         >
-                        {podcastName}
+                        {podcast_name}
                     </Link>
                 </HStack>
                 <Button 
