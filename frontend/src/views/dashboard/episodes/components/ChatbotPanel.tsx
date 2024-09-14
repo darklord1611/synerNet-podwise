@@ -21,7 +21,7 @@ const ChatMessage = (props: { message: Message, onSeek?: (time: number) => void 
             borderRadius="lg"
         >
             <Text>{text}</Text>
-            {sender === 'bot' && <Timestamp seconds={source} withAvatar={true} onSeek={onSeek}/>}
+            {sender === 'bot' && <>Source<Timestamp seconds={source} withAvatar={true} onSeek={onSeek}/></>}
         </Box>
         {sender === 'user' && <Avatar name="User" src="/user-avatar.png" />}
         </HStack>

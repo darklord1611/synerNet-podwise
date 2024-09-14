@@ -2,13 +2,15 @@ import sys
 from dotenv import load_dotenv
 import os
 sys.path.insert(0, os.path.realpath(os.path.pardir))
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, File, UploadFile, Body
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from celery_tasks.tasks import predict_image
 from celery.result import AsyncResult
 from api.models import Prediction, Task
+from services.audio_service.YoutubeLoader import download_audio_from_youtube
+from services.audio_service.Transcript import transcribe_audio
 import uuid
 import logging
 from typing import List
@@ -26,10 +28,7 @@ isdir = os.path.isdir(STATIC_FOLDER)
 if not isdir:
     os.makedirs(STATIC_FOLDER)
 
-origins = [
-    "http://localhost",
-    "http://localhost:8080",
-]
+origins = ["*"]
 
 load_dotenv()
 
@@ -50,6 +49,21 @@ app.add_middleware(
 @app.get('/')
 async def index():
     return {'message': 'Hello World'}
+
+@app.post("/api/transcript")
+async def get_transcript(url: str = Body(..., embed=True)):
+    try:
+        print(url)
+        audio_path = download_audio_from_youtube(url)
+        formatted_results = await transcribe_audio(audio_path)
+
+        with open("formatted_response.json", "w") as f:
+            json.dump({"results": {"utterances": formatted_results}}, f, indent=4)
+
+        return {"status": "success", "transcript": formatted_results}
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error: {str(e)}")
 
 
 # @app.post('/api/process')
@@ -97,7 +111,3 @@ async def index():
 #     return JSONResponse(status_code=200, content={'task_id': str(task_id), 'status': task_result.get('status'), 'result': result})
 
 
-# @app.get('/api/status/{task_id}', response_model=Prediction)
-# async def status(task_id: str):
-#     task = AsyncResult(task_id)
-#     return JSONResponse(status_code=200, content={'task_id': str(task_id), 'status': task.status, 'result': ''})

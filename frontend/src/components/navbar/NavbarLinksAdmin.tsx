@@ -60,7 +60,7 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 		event.preventDefault();
 		const url = (event.target as HTMLButtonElement).previousElementSibling?.querySelector('input')?.value;
 		if (url) {
-			fetch('http://localhost:8000/api/download-youtube', {
+			fetch('http://localhost:8000/api/transcript', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
