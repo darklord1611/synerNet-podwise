@@ -69,6 +69,9 @@ class LLMService():
             "takeaways": entire_transcript_takeaways,
             "outlines": outlines
         }
+
+        with open("./output/temp_summary.json", "w") as f:
+            json.dump(json_data, f, default=lambda o: o.__dict__, indent=4, ensure_ascii=False)
         return json_data
 
 
@@ -82,6 +85,8 @@ class LLMService():
             keywords.extend(self.pipeline.extract_keywords(chunk_input.text))
 
         json_data = {"status": "success", "keywords": keywords}
+        with open("./output/temp_keywords.json", "w") as f:
+            json.dump(json_data, f, default=lambda o: o.__dict__, indent=4, ensure_ascii=False)
 
         return json_data
     
@@ -99,6 +104,9 @@ class LLMService():
 
         json_data = {"status": "success", "highlights": highlights}
 
+        with open("./output/temp_highlights.json", "w") as f:
+            json.dump(json_data, f, default=lambda o: o.__dict__, indent=4, ensure_ascii=False)
+
         return json_data
     
 
@@ -108,18 +116,26 @@ class LLMService():
         keypoints = []
 
         # combine chunks before extracting keypoints
-
-
+        combine_chunks = self.pipeline.combine_chunks(params["transcript"]).combination
+        print("Finish combining chunks")
         for i, chunk_input in enumerate(params["transcript"]):
             
             print("Current chunk: ", i)
             keypoint = self.pipeline.extract_keypoints(chunk_input.text)
-            keypoints.append({"keypoint": keypoint})
+            keypoint.timestamp = chunk_input.timestamp
+            keypoints.append(keypoint)
 
+        res = []
+        for i, chunk in enumerate(combine_chunks):
+            res.append({"keypoint": {
+                "title": chunk.title,
+                "timestamp": keypoints[chunk.paragraph_indexes[0]].timestamp,
+                "points": [keypoints[j] for j in chunk.paragraph_indexes]
+            }})
 
-        json_data = {"status": "success", "keypoints": keypoints}
+        json_data = {"status": "success", "keypoints": res}
         
-        with open("temp_keypoints.json", "w") as f:
+        with open("./output/temp_keypoints.json", "w") as f:
             json.dump(json_data, f, default=lambda o: o.__dict__, indent=4, ensure_ascii=False)
         return json_data
     
@@ -129,7 +145,7 @@ class LLMService():
 
         combined_chunks = self.pipeline.combine_chunks(params["transcript"])
         json_data = {"status": "success", "combined_chunks": combined_chunks}
-        
-        with open("temp_combination.json", "w") as f:
+
+        with open("./output/temp_combination.json", "w") as f:
             json.dump(json_data, f, default=lambda o: o.__dict__, indent=4, ensure_ascii=False)
         return json_data

@@ -50,6 +50,6 @@ class CombinedChunksCollection(BaseModel):
 # Define the main topic structure
 class Keypoint(BaseModel):
     title: str
-    timestamp: int = 0
+    timestamp: float = 0.0
     points: List[Subpoint]
 
