@@ -20,7 +20,7 @@
 
 */
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 // Chakra imports
 import { Box, Button, Flex, Grid, Link, Text, useColorModeValue, SimpleGrid, Menu, MenuButton, MenuList, MenuItem, HStack } from '@chakra-ui/react';
@@ -50,171 +50,9 @@ import { FaFilter } from 'react-icons/fa';
 import { ColumnDef, createColumnHelper, getCoreRowModel, getPaginationRowModel, PaginationState, RowModel, Table, useReactTable } from '@tanstack/react-table';
 import EpisodeCard from 'components/card/EpisodeCard';
 import { MdNavigateBefore, MdNavigateNext } from 'react-icons/md';
+import { useSupabase } from 'contexts/SupabaseContext';
 
-const data = [
-	{
-		id: 1,
-		name: "#1554 - Kanye West",
-		description: "Kanye West is a rapper, record producer, fashion designer, and current independent candidate for office in the 2020 United States Presidential Election.",
-		publishedDate: "Oct 24, 2020",
-		duration: "3h 23m",
-		podcastName: "Joe Rogan Experience",
-		podcastId: 1,
-		thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg",
-	},
-	{
-		id: 2,
-		name: "#1916 - Jon Bernthal",
-		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
-		publishedDate: "Oct 21, 2020",
-		duration: "4h 12m",
-		podcastName: "Joe Rogan Experience",
-		podcastId: 2,
-		thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-	},
-	{
-		id: 2,
-		name: "#1916 - Jon Bernthal",
-		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
-		publishedDate: "Oct 21, 2020",
-		duration: "4h 12m",
-		podcastName: "Joe Rogan Experience",
-		podcastId: 2,
-		thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-	},
-	{
-		id: 2,
-		name: "#1916 - Jon Bernthal",
-		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
-		publishedDate: "Oct 21, 2020",
-		duration: "4h 12m",
-		podcastName: "Joe Rogan Experience",
-		podcastId: 2,
-		thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-	},
-	{
-		id: 2,
-		name: "#1916 - Jon Bernthal",
-		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
-		publishedDate: "Oct 21, 2020",
-		duration: "4h 12m",
-		podcastName: "Joe Rogan Experience",
-		podcastId: 2,
-		thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-	},
-	{
-		id: 2,
-		name: "#1916 - Jon Bernthal",
-		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
-		publishedDate: "Oct 21, 2020",
-		duration: "4h 12m",
-		podcastName: "Joe Rogan Experience",
-		podcastId: 2,
-		thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-	},
-	{
-		id: 2,
-		name: "#1916 - Jon Bernthal",
-		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
-		publishedDate: "Oct 21, 2020",
-		duration: "4h 12m",
-		podcastName: "Joe Rogan Experience",
-		podcastId: 2,
-		thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-	},
-	{
-		id: 2,
-		name: "#1916 - Jon Bernthal",
-		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
-		publishedDate: "Oct 21, 2020",
-		duration: "4h 12m",
-		podcastName: "Joe Rogan Experience",
-		podcastId: 2,
-		thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-	},
-	{
-		id: 2,
-		name: "#1916 - Jon Bernthal",
-		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
-		publishedDate: "Oct 21, 2020",
-		duration: "4h 12m",
-		podcastName: "Joe Rogan Experience",
-		podcastId: 2,
-		thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-	},
-	{
-		id: 2,
-		name: "#1916 - Jon Bernthal",
-		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
-		publishedDate: "Oct 21, 2020",
-		duration: "4h 12m",
-		podcastName: "Joe Rogan Experience",
-		podcastId: 2,
-		thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-	},
-	{
-		id: 2,
-		name: "#1916 - Jon Bernthal",
-		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
-		publishedDate: "Oct 21, 2020",
-		duration: "4h 12m",
-		podcastName: "Joe Rogan Experience",
-		podcastId: 2,
-		thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-	},
-	{
-		id: 2,
-		name: "#1916 - Jon Bernthal",
-		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
-		publishedDate: "Oct 21, 2020",
-		duration: "4h 12m",
-		podcastName: "Joe Rogan Experience",
-		podcastId: 2,
-		thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-	},
-	{
-		id: 2,
-		name: "#1916 - Jon Bernthal",
-		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
-		publishedDate: "Oct 21, 2020",
-		duration: "4h 12m",
-		podcastName: "Joe Rogan Experience",
-		podcastId: 2,
-		thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-	},
-	{
-		id: 2,
-		name: "#1916 - Jon Bernthal",
-		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
-		publishedDate: "Oct 21, 2020",
-		duration: "4h 12m",
-		podcastName: "Joe Rogan Experience",
-		podcastId: 2,
-		thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-	},
-	{
-		id: 2,
-		name: "#1916 - Jon Bernthal",
-		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
-		publishedDate: "Oct 21, 2020",
-		duration: "4h 12m",
-		podcastName: "Joe Rogan Experience",
-		podcastId: 2,
-		thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-	},
-	{
-		id: 2,
-		name: "#1916 - Jon Bernthal",
-		description: "Jon Bernthal is an American actor best known for his roles as Shane Walsh on the AMC series The Walking Dead and as Frank Castle / The Punisher in the Marvel Cinematic Universe.",
-		publishedDate: "Oct 21, 2020",
-		duration: "4h 12m",
-		podcastName: "Joe Rogan Experience",
-		podcastId: 2,
-		thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/a6/36/c6/a636c689-ad3a-a71c-3486-a5f51ae7a9f5/mza_13284170885507902541.jpg/600x600bb.jpg"
-	}
-]
-
-const columns: ColumnDef<typeof data[0]>[] = [
+const columns: ColumnDef<Espisode>[] = [
 	{
 	  accessorKey: 'name', // Refers to the 'name' field in the data
 	  cell: info => info.getValue(),
@@ -231,6 +69,22 @@ export default function Episode() {
 		'14px 17px 40px 4px rgba(112, 144, 176, 0.18)',
 		'14px 17px 40px 4px rgba(112, 144, 176, 0.06)'
 	);
+	const [episodes, setEpisodes] = useState([])
+	const supabase = useSupabase()
+	
+	useEffect(() => {
+		const fetchEpisodes = async () => {
+			const { data, error } = await supabase.from('episode_view').select('*');
+			if (error) {
+				console.error('Error fetching episodes:', error.message)
+			} else {
+				console.log(data)
+				setEpisodes(data)
+			}
+		}
+
+		fetchEpisodes()
+	}, [supabase]);
 
 	const [pagination, setPagination] = React.useState<PaginationState>({
 		pageIndex: 0,
@@ -238,7 +92,7 @@ export default function Episode() {
 	})
 
 	const table = useReactTable({
-		data,
+		data: episodes,
 		columns,
 		getCoreRowModel: getCoreRowModel(),
 		getPaginationRowModel: getPaginationRowModel(),

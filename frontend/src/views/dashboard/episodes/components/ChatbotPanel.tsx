@@ -1,128 +1,77 @@
-import { Box } from "@chakra-ui/react";
-import {
-    MinChatUiProvider,
-    MainContainer,
-    MessageInput,
-    MessageContainer,
-    MessageList,
-    MessageHeader
-} from "@minchat/react-chat-ui";
-import { useEffect, useState } from "react";
-const colorSet = {
-    "--input-background-color": "rgb(255, 255, 255)",
-    "--messagelist-background-color": "rgb(255, 255, 255)",
-    "--incoming-message-text-color": "#1B2559",
-    "--incoming-message-name-text-color": "#1B2559",
-    "--input-send-color": "#1B2559",
-    "--input-placeholder-color": "#1B2559",
+import { useState } from 'react';
+import { Box, Input, Button, VStack, HStack, Text, Avatar, FormControl } from '@chakra-ui/react';
+import Timestamp from './Timestamp';
+
+interface Message {
+    sender: 'user' | 'bot';
+    text: string;
+    source?: number;
 }
 
-const myColorSet = {
-    // input
-    "--input-text-color": "#fff",
-    "--input-element-color": "rgb(0, 0, 255)",
-    "--input-attach-color": "#fff",
-
-    // message header
-    "--message-header-background-color": "#FF0000",
-    "--message-header-last-active-color": "rgb(0, 0, 255)",
-    "--message-header-back-color": "rgb(255, 255, 255)",
-
-    // chat list header
-    "--chatlist-header-background-color": "#FF0000",
-    "--chatlist-header-text-color": "rgb(255, 255, 255)",
-    "--chatlist-header-divider-color": "rgb(0, 128, 0)",
-
-    //chatlist
-    "--chatlist-background-color": "rgb(255, 192, 203)",
-    "--no-conversation-text-color": "rgb(255, 255, 255)",
-
-    //chat item
-    "--chatitem-background-color": "rgb(0, 0, 255)",
-    "--chatitem-selected-background-color": "rgb(255, 255, 0)",
-    "--chatitem-title-text-color": "#FF0000",
-    "--chatitem-content-text-color": "#FF0000",
-    "--chatitem-hover-color": "#FF0000",
-
-    //main container
-    "--container-background-color": "rgb(255, 192, 203)",
-
-    //loader
-    "--loader-color": "rgb(0, 128, 0)",
-
-    //message list
-    "--no-message-text-color": "rgb(255, 255, 255)",
-
-    // incoming message
-    "--incoming-message-background-color": "rgb(0, 128, 0)",
-    "--incoming-message-timestamp-color": "rgb(255, 255, 255)",
-    "--incoming-message-link-color": "#FF0000",
-    
-    //outgoing message
-    "--outgoing-message-text-color": "#FF0000",
-    "--outgoing-message-background-color": "rgb(255, 255, 0)",
-    "--outgoing-message-timestamp-color": "#FF0000",
-    "--outgoing-message-checkmark-color": "#FF0000",
-    "--outgoing-message-loader-color": "#FF0000",
-    "--outgoing-message-link-color": "rgb(0, 128, 0)",
-}
-
-
-export function ChatbotPanel() {
-    const [messages, setMessages] = useState([])
-
-    const handleSendMessage = (message: string) => {
-        setMessages(prevMessages => [
-            ...prevMessages, // Keep previous messages
-            {
-                text: message,
-                user: {
-                    id: "me",
-                    name: "User"
-                }
-            },
-            {
-                text: "I'm sorry, I'm not sure how to respond to that.",
-                user: {
-                    id: "bot",
-                    name: "Podwise AI"
-                }
-            }
-        ]);
-    }
-
-    useEffect(() => {
-        setMessages([
-            {
-                text: "Hello! I'm Podwise AI. How can I help you today?",
-                user: {
-                    id: "bot",
-                    name: "Podwise AI"
-                }
-            }
-        ])
-    }, [])
-
+const ChatMessage = (props: { message: Message, onSeek?: (time: number) => void }) => {
+    const { sender, text, source } = props.message;
+    const { onSeek } = props;
     return (
-        <MinChatUiProvider 
-            colorSet={colorSet}
-            theme="#DDDCDC">
-            <Box pt={{ base: '10px', md: '20px', xl: '10px' }} w='75%' m='auto'>
-                <MainContainer>
-                    <MessageContainer>
-                        <MessageList
-                            currentUserId="me"
-                            messages={messages}
-                        />
-                    <MessageInput 
-                        showAttachButton={false}
-                        placeholder="Ask Podwise AI any question here" 
-                        showSendButton
-                        onSendMessage={handleSendMessage}
-                        />
-                    </MessageContainer>
-                </MainContainer>
-            </Box>
-        </MinChatUiProvider>
-    )
-}
+        <HStack alignSelf={sender === 'user' ? 'flex-end' : 'flex-start'} spacing={3}>
+        {sender !== 'user' && <Avatar name="Bot" src="/favicon.ico" />}
+        <Box 
+            bg={sender === 'user' ? 'blue.500' : 'gray.200'} 
+            color={sender === 'user' ? 'white' : 'black'} 
+            px={4} py={2} 
+            borderRadius="lg"
+        >
+            <Text>{text}</Text>
+            {sender === 'bot' && <Timestamp seconds={source} withAvatar={true} onSeek={onSeek}/>}
+        </Box>
+        {sender === 'user' && <Avatar name="User" src="/user-avatar.png" />}
+        </HStack>
+    );
+};
+
+export default function ChatbotPanel(props: { onSeek?: (time: number) => void }) {
+  const [messages, setMessages] = useState([]);
+  const [input, setInput] = useState('');
+  const { onSeek } = props;
+
+  const handleSendMessage = () => {
+    if (input.trim() === '') return;
+
+    // Add user message
+    setMessages([...messages, { sender: 'user', text: input }]);
+
+    // Clear input field
+    setInput('');
+
+    // Simulate bot response after 1 second
+    setTimeout(() => {
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        { sender: 'bot', text: 'This is a response from the bot!', source: 10 }
+      ]);
+    }, 1000);
+  };
+
+  return (
+    <Box w="100%" mx="auto" p={5} bg="gray.50" borderRadius="lg" boxShadow="md">
+      <VStack spacing={4} h="400px" overflowY="scroll" pb={5}>
+        {messages.map((msg, index) => (
+          <ChatMessage key={index} message={msg} onSeek={onSeek}/>
+        ))}
+      </VStack>
+
+      <FormControl mt={4} as="form" onSubmit={(e) => e.preventDefault()}>
+        <HStack spacing={2}>
+          <Input
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="Type a message..."
+            size="md"
+          />
+          <Button colorScheme="blue" onClick={handleSendMessage}>
+            Send
+          </Button>
+        </HStack>
+      </FormControl>
+    </Box>
+  );
+};

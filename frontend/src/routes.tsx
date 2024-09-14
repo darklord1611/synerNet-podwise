@@ -19,6 +19,7 @@ import Collections from 'views/dashboard/collections';
 import CollectionDetail from 'views/dashboard/collections/variables/[id]';
 import EpisodeDetail from 'views/dashboard/episodes/variables/[id]';
 import Podcast from 'views/dashboard/dataTables';
+import PodcastDetail from 'views/dashboard/dataTables/variables/[id]';
 
 const routes = [
   {
@@ -67,6 +68,12 @@ const routes = [
     icon: <Icon as={VscBroadcast} width="22.5px" height="22.5px" color="inherit" />,
     path: '/podcast',
     component: <Podcast />,
+  },
+  {
+    name: 'PodcastDetails',
+    layout: '/dashboard',
+    path: `/podcasts/:id`,
+    component: <PodcastDetail />,
   },
   {
     name: 'Profile',

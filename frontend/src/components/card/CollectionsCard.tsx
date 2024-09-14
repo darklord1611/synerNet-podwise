@@ -5,7 +5,7 @@ import Card from 'components/card/Card';
 import { IoIosMore } from "react-icons/io";
 
 export default function Default(collection: Collection) {
-	const { id, title, description, thumbnailUrl, episodes } = collection;
+	const { id, title, description, thumbnailUrl } = collection;
 	const textColor = useColorModeValue('secondaryGray.900', 'white');
 	const textColorSecondary = useColorModeValue('secondaryGray.700', 'secondaryGray.600');
 	const cardColor = useColorModeValue('secondaryGray.400', 'navy.700');
@@ -48,7 +48,7 @@ export default function Default(collection: Collection) {
 							fontWeight='300' 
 							lineHeight='100%'
 							>
-							{episodes.length} episodes
+							{1} episodes
 						</Text>
 						<Spacer />
 						<Icon 

@@ -16,12 +16,13 @@ import TranscriptPanel from '../components/TranscriptPanel';
 
 import 'assets/css/player.css'
 import { useAudio } from 'contexts/AudioContext';
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import HighlightPanel from '../components/HighlightPanel';
 import { AudioPlayerComponent, AudioPlayerRef } from '../components/AudioPlayerComponent';
 import SummaryPanel from '../components/SummaryPanel';
 import ShowNotesPanel from '../components/ShowNotesPanel';
-import { ChatbotPanel } from '../components/ChatbotPanel';
+import ChatbotPanel from '../components/ChatbotPanel';
+import { useSupabase } from 'contexts/SupabaseContext';
 
 const episodes=[
     {
@@ -56,8 +57,32 @@ export default function EpisodeDetail() {
 	const playerColor = useColorModeValue('secondaryGray.300', 'navy.800');
     const location = useLocation();
     const episodeId = location.pathname.split('/').pop();
-    const episode = episodes.find(episode => episode.id === parseInt(episodeId));
+    const [episode, setEpisode] = useState<Espisode | null>(null);
+    // const episode = episodes.find(episode => episode.id === parseInt(episodeId));
     const audioPlayerRef = useRef<AudioPlayerRef>(null);
+    const supabase = useSupabase();
+    const [isLoading, setIsLoading] = useState(true); // New loading state
+
+    useEffect(() => {
+        const fetchEpisodes = async () => {
+            console.log('pisode_id', episodeId)
+            if (!episodeId) return; // Ensure episodeId is defined
+
+            const { data, error } = await supabase
+                .from('episode_view')
+                .select('*')
+                .eq('id', episodeId)
+            if (error) {
+                console.log('Error fetching episodes', error);
+            } else {
+                console.log('Episodes fetched', data);
+                setEpisode(data[0]);
+            }
+            setIsLoading(false); // Set loading to false after fetching
+        }
+
+        fetchEpisodes();
+    }, [episodeId]);
 
     const handleSeek = (time: number) => {
         if (audioPlayerRef.current) {
@@ -65,9 +90,17 @@ export default function EpisodeDetail() {
         }
     };
 
+    if (isLoading) {
+        return <Text>Loading...</Text>; // Show loading state while fetching data
+    }
+
+    if (!episode) {
+        return <Text>Episode not found</Text>; // Show a message if no episode is found
+    }
+
 	return (
 		<Box pt={{ base: '130px', md: '80px', xl: '80px' }}>
-			<EpisodeBanner episodeData={episodes.find(episode => episode.id === parseInt(episodeId))} />
+			<EpisodeBanner episodeData={episode} />
             <Tabs position='relative' variant='unstyled'>
             <TabList>
                 <Tab>
@@ -211,11 +244,11 @@ export default function EpisodeDetail() {
                     <SummaryPanel onSeek={handleSeek}/>
                 </TabPanel>
                 <TabPanel>
-                    <GraphPanel data={episodes.find(episode => episode.id === parseInt(episodeId)).name}/>
+                    <GraphPanel data={episode}/>
                 </TabPanel>
                 <TabPanel>
                     <TranscriptPanel 
-                        episode={episodes.find(episode => episode.id === parseInt(episodeId))}
+                        episode={episode}
                         onSeek={handleSeek}
                         />
                 </TabPanel>
@@ -229,7 +262,7 @@ export default function EpisodeDetail() {
                     <ShowNotesPanel />
                 </TabPanel>
                 <TabPanel>
-                    <ChatbotPanel />
+                    <ChatbotPanel onSeek={handleSeek}/>
                 </TabPanel>
             </TabPanels>
             <AudioPlayerComponent ref={audioPlayerRef} episode={episode} />

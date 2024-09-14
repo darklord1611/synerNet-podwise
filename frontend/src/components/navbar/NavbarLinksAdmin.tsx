@@ -56,6 +56,20 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 	);
 	const borderButton = useColorModeValue('secondaryGray.500', 'whiteAlpha.200');
 
+	const handleSubmit = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+		event.preventDefault();
+		const url = (event.target as HTMLButtonElement).previousElementSibling?.querySelector('input')?.value;
+		if (url) {
+			fetch('http://localhost:8000/api/download-youtube', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({ url: url })
+			});
+		}
+	}
+
 	return (
 		<Flex
 			w={{ sm: '100%', md: 'auto' }}
@@ -122,6 +136,15 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 							me='10px'
 							borderRadius='30px'
 						/>
+						<Button 
+							variant='brand'
+							onClick={handleSubmit}
+							mt='10px'
+							w='100%'
+							h='44px'
+							>
+							Import
+							</Button>
 					</ModalBody>
 
 					<ModalFooter>

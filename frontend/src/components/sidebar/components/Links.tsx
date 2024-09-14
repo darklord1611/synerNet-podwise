@@ -35,7 +35,8 @@ export function SidebarLinks(props: {
 					route.layout === '/auth' || 
 					route.layout === '/rtl') && 
 					(route.name !== 'Collections' && 
-					route.name !== 'EpisodeDetails'
+					route.name !== 'EpisodeDetails'&&
+					route.name !== 'PodcastDetails'
 					)) {
 					return (
 						<NavLink key={index} to={route.layout + route.path}>

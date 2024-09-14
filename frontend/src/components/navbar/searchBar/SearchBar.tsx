@@ -1,5 +1,6 @@
 import { IconButton, Input, InputGroup, InputLeftElement, useColorModeValue } from '@chakra-ui/react';
 import { SearchIcon } from '@chakra-ui/icons';
+import { useState } from 'react';
 export function SearchBar(props: {
 	variant?: string;
 	background?: string;

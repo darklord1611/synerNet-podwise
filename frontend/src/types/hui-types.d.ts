@@ -19,26 +19,25 @@ declare global {
     title: string;
     description: string;
     thumbnailUrl: string;
-    episodes: Espisode[]
   }
 
   interface Espisode {
     id: number;
-    name: string;
+    title: string;
     description?: string;
     publishedDate: string;
     duration: string;
     podcastName: string;
     podcastId: number;
+    audio_url: string;
     thumbnailUrl: string;
   }
 
   interface Podcast {
     id: number;
-    name: string;
+    title: string;
     description: string;
-    author: string;
-    thumbnailUrl: string;
-    episodes: Espisode[]
+    author_name: string;
+    image_url: string;
   }
 }

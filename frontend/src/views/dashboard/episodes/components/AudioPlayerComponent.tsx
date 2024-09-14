@@ -3,7 +3,7 @@ import AudioPlayer from 'react-h5-audio-player';
 import 'assets/css/player.css';
 
 interface AudioPlayerComponentProps {
-    episode: Espisode
+    episode: any
 }
 
 export interface AudioPlayerRef {
@@ -35,9 +35,9 @@ export const AudioPlayerComponent = forwardRef<AudioPlayerRef, AudioPlayerCompon
                     transform: 'translateX(-40%)',
                 }}
                 layout='horizontal-reverse'
-                header={`${episode.name} - ${episode.podcastName}`}
+                header={`${episode.title} - ${episode.podcast_name}`}
                 autoPlay
-                src="https://traffic.megaphone.fm/GLT5025099642.mp3?updated=1511216902"
+                src={episode.audio_url}
                 onPlay={e => console.log("onPlay")}
                 // other props here
             />
