@@ -716,27 +716,9 @@ const sentences=[
     }
 ]
 
-// interface Episode {
-//     id: number;
-//     name: string;
-//     description: string;
-//     publishedDate: string;
-//     duration: string;
-//     podcastName: string;
-//     podcastId: number;
-//     thumbnailUrl: string;
-//     audioUrl?: string;
-// }
-
-interface TranscriptPanelProps {
-    episode: Espisode;
-    onSeek: (time: number) => void;
-}
-
-
-export default function TranscriptPanel(props: TranscriptPanelProps) {
+export default function TranscriptPanel(props: { transcripts: any; onSeek: (seconds: number) => void }) {
 	// Chakra Color Mode
-    const { episode, onSeek } = props;
+    const { transcripts, onSeek } = props;
     const textColor = useColorModeValue('secondaryGray.900', 'white');
 	const textColorSecondary = useColorModeValue('secondaryGray.900', 'white');
 	const brandColor = useColorModeValue('brand.500', 'brand.400');

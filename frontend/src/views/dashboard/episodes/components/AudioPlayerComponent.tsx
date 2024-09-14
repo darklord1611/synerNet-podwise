@@ -35,9 +35,9 @@ export const AudioPlayerComponent = forwardRef<AudioPlayerRef, AudioPlayerCompon
                     transform: 'translateX(-40%)',
                 }}
                 layout='horizontal-reverse'
-                header={`${episode.title} - ${episode.podcast_name}`}
+                header={`${episode.title} - ${episode?.podcast_name}`}
                 autoPlay
-                src={episode.audio_url}
+                src={episode?.audio_url}
                 onPlay={e => console.log("onPlay")}
                 // other props here
             />

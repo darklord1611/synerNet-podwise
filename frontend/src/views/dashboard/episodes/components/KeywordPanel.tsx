@@ -33,8 +33,9 @@ const keywords=[
 ]
 
 
-export default function KeywordPanel() {
+export default function KeywordPanel(props: { keywords: any}) {
 	// Chakra Color Mode
+    const { keywords } = props;
     const textColor = useColorModeValue('secondaryGray.900', 'white');
 	const textColorSecondary = useColorModeValue('secondaryGray.900', 'white');
 	const brandColor = useColorModeValue('brand.500', 'brand.400');
@@ -48,7 +49,7 @@ export default function KeywordPanel() {
             // px='48'
             >
 			<VStack spacing='10px' alignItems='start' w='2xl' m='auto'>
-                {keywords.map((keyword) => (
+                {keywords.map((keyword: { keyword: string; definition: string; }) => (
                     <KeywordCard keyword={keyword} />
                 ))}
             </VStack>

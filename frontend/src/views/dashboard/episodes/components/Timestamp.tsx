@@ -1,4 +1,4 @@
-import { Box, Divider, HStack, Icon, Text, useColorModeValue } from "@chakra-ui/react";
+import { border, Box, Divider, HStack, Icon, Text, useColorModeValue } from "@chakra-ui/react";
 import { LuPlay } from "react-icons/lu";
 
 function formatTime(seconds: number): string {
@@ -41,6 +41,8 @@ export default function Timestamp(props: { seconds: number, withAvatar?: boolean
                 color={textColorSecondary}
                 />
             <Text 
+                color={textColor}
+                fontWeight='bold'
                 _hover={{ textDecoration: 'underline', cursor: 'pointer'} } 
                 onClick={() => handleClick(seconds)}
                 >

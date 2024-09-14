@@ -38,3 +38,14 @@
 
 .markmap-dark .mm-toolbar {--un-border-opacity:1;border-color:rgb(255 255 255 / var(--un-border-opacity));--un-bg-opacity:1;background-color:rgb(255 255 255 / var(--un-bg-opacity));--un-text-opacity:1;color:rgb(255 255 255 / var(--un-text-opacity));
 }
+
+.custom-node {
+  display: inline-block; /* Ensures inline display */
+  margin-left: 10px; /* Adjust spacing as needed */
+}
+
+/* Adjust foreignObject styles if needed */
+foreignObject {
+  display: flex; /* Use flexbox to align children */
+  align-items: center; /* Center align items vertically */
+}

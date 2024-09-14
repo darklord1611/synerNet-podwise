@@ -3,37 +3,34 @@
     "keypoints": [
         {
             "keypoint": {
-                "title": "The Founding of Lululemon",
+                "title": "The Founding and Early Days of Lululemon",
+                "timestamp": 0.3998,
                 "points": [
                     {
                         "title": "Chip Wilson and the Founding of Lululemon",
-                        "timestamp": 0,
+                        "timestamp": 0.3998,
                         "points": [
                             {
                                 "title": "Early Life and Career",
                                 "points": [
                                     {
-                                        "title": "Growing Up in Calgary",
+                                        "title": "Growing up in Calgary, Canada",
+                                        "points": []
+                                    },
+                                    {
+                                        "title": "Working on the Alaska oil pipeline",
                                         "points": [
                                             {
-                                                "title": "Athletic Background",
-                                                "points": []
-                                            },
-                                            {
-                                                "title": "Mother's Influence on Sewing",
+                                                "title": "Earned $175,000 at the age of 19",
                                                 "points": []
                                             }
                                         ]
                                     },
                                     {
-                                        "title": "First Job at an Oil Company",
+                                        "title": "Starting his own business",
                                         "points": [
                                             {
-                                                "title": "Working on the Alaska Oil Pipeline",
-                                                "points": []
-                                            },
-                                            {
-                                                "title": "Earning a Significant Amount of Money",
+                                                "title": "Goal to be in his own business by age 30",
                                                 "points": []
                                             }
                                         ]
@@ -41,30 +38,31 @@
                                 ]
                             },
                             {
-                                "title": "Founding of West Beach",
+                                "title": "West Beach and the Early Days of Athleisure",
                                 "points": [
                                     {
-                                        "title": "Creating Baggy Shorts for Men",
+                                        "title": "Creating loud, baggy shorts for men",
                                         "points": [
                                             {
-                                                "title": "Inspiration from Skateboarding and Surfing",
-                                                "points": []
-                                            },
-                                            {
-                                                "title": "Quilting Fabric to Create Reversible Shorts",
+                                                "title": "Inspired by his mother's sewing and his own athletic background",
                                                 "points": []
                                             }
                                         ]
                                     },
                                     {
-                                        "title": "Selling Shorts at a Mall in Calgary",
+                                        "title": "Selling shorts at a mall in Calgary",
                                         "points": [
                                             {
-                                                "title": "Initial Success and Expansion",
+                                                "title": "Made $1,000 a day selling shorts",
                                                 "points": []
-                                            },
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "title": "Expanding to other markets",
+                                        "points": [
                                             {
-                                                "title": "Partnering with Others to Grow the Business",
+                                                "title": "Trade shows in Singapore and Munich",
                                                 "points": []
                                             }
                                         ]
@@ -72,30 +70,31 @@
                                 ]
                             },
                             {
-                                "title": "Transition to Snowboarding Apparel",
+                                "title": "Snowboarding and the Growth of West Beach",
                                 "points": [
                                     {
-                                        "title": "Seeing an Opportunity in Snowboarding",
+                                        "title": "Seeing the potential of snowboarding",
                                         "points": [
                                             {
-                                                "title": "Designing and Manufacturing Clothing",
-                                                "points": []
-                                            },
-                                            {
-                                                "title": "Opening Retail Stores and Wholesale Business",
+                                                "title": "Predicted it would be bigger than surfing and skateboarding",
                                                 "points": []
                                             }
                                         ]
                                     },
                                     {
-                                        "title": "Challenges and Eventual Sale of West Beach",
+                                        "title": "Designing and manufacturing snowboard apparel",
                                         "points": [
                                             {
-                                                "title": "Struggling to Make a Profit",
+                                                "title": "Making clothing in Calgary with Italian couture designers",
                                                 "points": []
-                                            },
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "title": "Challenges with wholesale business",
+                                        "points": [
                                             {
-                                                "title": "Selling the Company to a Public Company",
+                                                "title": "Losing money in wholesale, but making it up in retail",
                                                 "points": []
                                             }
                                         ]
@@ -103,17 +102,22 @@
                                 ]
                             },
                             {
-                                "title": "Post-West Beach and Founding of Lululemon",
+                                "title": "Selling West Beach and the Founding of Lululemon",
                                 "points": [
                                     {
-                                        "title": "Financial Independence and New Ventures",
+                                        "title": "Selling West Beach to a public company",
                                         "points": [
                                             {
-                                                "title": "Failing to Achieve Financial Independence",
+                                                "title": "Walked away with $800,000 after taxes",
                                                 "points": []
-                                            },
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "title": "Founding Lululemon",
+                                        "points": [
                                             {
-                                                "title": "Exploring New Opportunities",
+                                                "title": "Creating a new brand focused on yoga and athleisure",
                                                 "points": []
                                             }
                                         ]
@@ -124,7 +128,7 @@
                     },
                     {
                         "title": "The Birth of Lululemon",
-                        "timestamp": 0,
+                        "timestamp": 934.9907,
                         "points": [
                             {
                                 "title": "The Inspiration",
@@ -133,29 +137,24 @@
                                         "title": "Attending a Yoga Class",
                                         "points": [
                                             {
-                                                "title": "Noticing the Lack of Technical Clothing",
+                                                "title": "Noticing the Fashion Trend",
                                                 "points": []
                                             },
                                             {
-                                                "title": "Observing the Growth of Yoga",
-                                                "points": [
-                                                    {
-                                                        "title": "Six to Thirty People in Thirty Days",
-                                                        "points": []
-                                                    }
-                                                ]
+                                                "title": "Extrapolating the Growth of Yoga",
+                                                "points": []
                                             }
                                         ]
                                     },
                                     {
-                                        "title": "Extrapolating the Trend",
+                                        "title": "Spotting a Trend",
                                         "points": [
                                             {
                                                 "title": "Comparing to Surf, Skate, and Snowboarding",
                                                 "points": []
                                             },
                                             {
-                                                "title": "Predicting a Substantial Market",
+                                                "title": "Recognizing the Potential of Yoga",
                                                 "points": []
                                             }
                                         ]
@@ -163,13 +162,13 @@
                                 ]
                             },
                             {
-                                "title": "The Decision to Act",
+                                "title": "The Decision to Start a Business",
                                 "points": [
                                     {
-                                        "title": "Reading an Article about University Graduates",
+                                        "title": "Using Past Experience",
                                         "points": [
                                             {
-                                                "title": "Sixty Percent of Graduates were Women",
+                                                "title": "Applying Knowledge from West Beach",
                                                 "points": []
                                             }
                                         ]
@@ -178,7 +177,11 @@
                                         "title": "Identifying a New Market",
                                         "points": [
                                             {
-                                                "title": "Twenty-Two to Thirty-Five Year Old Single Professional Women",
+                                                "title": "The Rise of the Female Professional",
+                                                "points": []
+                                            },
+                                            {
+                                                "title": "The Need for Stylish Athletic Clothing",
                                                 "points": []
                                             }
                                         ]
@@ -186,24 +189,29 @@
                                 ]
                             },
                             {
-                                "title": "Taking the First Steps",
+                                "title": "Taking Action",
                                 "points": [
                                     {
-                                        "title": "Sketching Out Ideas",
-                                        "points": []
-                                    },
-                                    {
-                                        "title": "Seeking Advice from a Yoga Instructor",
+                                        "title": "Seeking Advice",
                                         "points": [
                                             {
-                                                "title": "Using Filma Stang as a Sounding Board",
+                                                "title": "Consulting with a Yoga Instructor",
                                                 "points": []
                                             }
                                         ]
                                     },
                                     {
-                                        "title": "Sourcing Materials",
-                                        "points": []
+                                        "title": "Using Available Resources",
+                                        "points": [
+                                            {
+                                                "title": "Utilizing Sourcing Material Knowledge",
+                                                "points": []
+                                            },
+                                            {
+                                                "title": "Investing Initial Capital",
+                                                "points": []
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -211,7 +219,7 @@
                     },
                     {
                         "title": "Lululemon's Founding and Early Growth",
-                        "timestamp": 0,
+                        "timestamp": 1272.4049,
                         "points": [
                             {
                                 "title": "The Problem with Athletic Wear",
@@ -233,7 +241,7 @@
                                         "title": "Inspiration from Japan",
                                         "points": [
                                             {
-                                                "title": "Flat Seaming Machines",
+                                                "title": "Flat-Seam Machines",
                                                 "points": []
                                             }
                                         ]
@@ -255,7 +263,7 @@
                                         "title": "Unconventional Business Model",
                                         "points": [
                                             {
-                                                "title": "Combining Yoga Studio and Boutique",
+                                                "title": "Yoga Studio with a Boutique",
                                                 "points": []
                                             }
                                         ]
@@ -270,13 +278,13 @@
                                         "points": []
                                     },
                                     {
-                                        "title": "Alliteration and Authenticity",
+                                        "title": "Alliterations with 'L'",
                                         "points": []
                                     }
                                 ]
                             },
                             {
-                                "title": "Early Growth and Expansion",
+                                "title": "Early Success and Growth",
                                 "points": [
                                     {
                                         "title": "First Store in Vancouver",
@@ -319,10 +327,11 @@
         {
             "keypoint": {
                 "title": "Challenges and Growth After Going Public",
+                "timestamp": 2065.7627,
                 "points": [
                     {
                         "title": "Scaling a Business and Bringing in Outside Investors",
-                        "timestamp": 0,
+                        "timestamp": 2065.7627,
                         "points": [
                             {
                                 "title": "Rapid Growth and Cash Flow Challenges",
@@ -388,68 +397,62 @@
                         ]
                     },
                     {
-                        "title": "Lululemon's Early Days and Going Public",
-                        "timestamp": 0,
+                        "title": "Going Public and Losing Control of Lululemon",
+                        "timestamp": 2257.304,
                         "points": [
                             {
-                                "title": "Vision and Going Public",
+                                "title": "Vision for Lululemon",
                                 "points": [
                                     {
-                                        "title": "Different Visions",
-                                        "points": [
-                                            {
-                                                "title": "Founder's Long-Term Vision",
-                                                "points": []
-                                            },
-                                            {
-                                                "title": "Company's Short-Term Vision",
-                                                "points": []
-                                            }
-                                        ]
+                                        "title": "Long-term vision vs. short-term vision",
+                                        "points": []
                                     },
                                     {
-                                        "title": "Going Public in 2007",
-                                        "points": [
-                                            {
-                                                "title": "Hot Stock",
-                                                "points": []
-                                            },
-                                            {
-                                                "title": "Selling Stock Early On",
-                                                "points": []
-                                            }
-                                        ]
+                                        "title": "Going public too quickly",
+                                        "points": []
                                     }
                                 ]
                             },
                             {
-                                "title": "Loss of Control and Power",
+                                "title": "Selling Stock and Losing Board Seats",
                                 "points": [
                                     {
-                                        "title": "Selling 48% of Stock",
-                                        "points": [
-                                            {
-                                                "title": "Loss of Board Seats",
-                                                "points": []
-                                            },
-                                            {
-                                                "title": "Lack of Negotiation Skills",
-                                                "points": []
-                                            }
-                                        ]
+                                        "title": "Selling 48% of stock to private equity",
+                                        "points": []
                                     },
                                     {
-                                        "title": "Advice from Advisors",
-                                        "points": [
-                                            {
-                                                "title": "Selling More Shares",
-                                                "points": []
-                                            },
-                                            {
-                                                "title": "Techniques to Dissipate Founder's Power",
-                                                "points": []
-                                            }
-                                        ]
+                                        "title": "Losing control of board seats",
+                                        "points": []
+                                    },
+                                    {
+                                        "title": "Not knowing how to negotiate for board seats",
+                                        "points": []
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Advice from Advisors",
+                                "points": [
+                                    {
+                                        "title": "Selling more shares to increase institutional investors",
+                                        "points": []
+                                    },
+                                    {
+                                        "title": "Techniques to dissipate founder's power",
+                                        "points": []
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Consequences of Losing Control",
+                                "points": [
+                                    {
+                                        "title": "Losing power to control the board",
+                                        "points": []
+                                    },
+                                    {
+                                        "title": "Founder moving into the background",
+                                        "points": []
                                     }
                                 ]
                             },
@@ -457,11 +460,11 @@
                                 "title": "Lululemon's Success",
                                 "points": [
                                     {
-                                        "title": "Company's Growth",
+                                        "title": "Company's rapid growth",
                                         "points": []
                                     },
                                     {
-                                        "title": "Lululemon's Popularity",
+                                        "title": "Lululemon becoming a popular brand",
                                         "points": []
                                     }
                                 ]
@@ -474,49 +477,51 @@
         {
             "keypoint": {
                 "title": "Addressing Controversy and Misinterpretation",
+                "timestamp": 2329.9082,
                 "points": [
                     {
-                        "title": "Chip Wilson's Journey with Lululemon",
-                        "timestamp": 0,
+                        "title": "Lululemon's Growth and Challenges",
+                        "timestamp": 2329.9082,
                         "points": [
                             {
-                                "title": "Overcoming Challenges and Achieving Success",
+                                "title": "Rapid Growth and Success",
                                 "points": [
                                     {
-                                        "title": "Long-term Vision for Family and Lululemon",
+                                        "title": "Long-term Vision",
                                         "points": []
                                     },
                                     {
-                                        "title": "Achieving Financial Security and Happiness",
-                                        "points": []
-                                    }
-                                ]
-                            },
-                            {
-                                "title": "Becoming a Billionaire",
-                                "points": [
-                                    {
-                                        "title": "Landing on Canada's Billionaires List in 2011",
-                                        "points": []
-                                    },
-                                    {
-                                        "title": "Not Focusing on Wealth, but Family and Passion",
-                                        "points": []
-                                    }
-                                ]
-                            },
-                            {
-                                "title": "The Lululemon Recall and Controversy",
-                                "points": [
-                                    {
-                                        "title": "Recalling Pants Due to Sheerness Concerns in 2013",
-                                        "points": []
-                                    },
-                                    {
-                                        "title": "Chip Wilson's Comments on the Issue",
+                                        "title": "Achieving Financial Security",
                                         "points": [
                                             {
-                                                "title": "Suggesting Some Pants Didn't Look Good on All Women's Bodies",
+                                                "title": "Becoming a Billionaire",
+                                                "points": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Personal Motivations and Priorities",
+                                "points": [
+                                    {
+                                        "title": "Family and Passion for Athletic Clothing",
+                                        "points": []
+                                    },
+                                    {
+                                        "title": "Frugal Personal Life",
+                                        "points": []
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "Challenges and Controversies",
+                                "points": [
+                                    {
+                                        "title": "Lululemon's Recall of Sheer Pants",
+                                        "points": [
+                                            {
+                                                "title": "Chip Wilson's Controversial Statement",
                                                 "points": []
                                             }
                                         ]
@@ -527,7 +532,7 @@
                     },
                     {
                         "title": "Lululemon Controversy",
-                        "timestamp": 0,
+                        "timestamp": 2435.1401,
                         "points": [
                             {
                                 "title": "Background of the Controversy",
@@ -572,7 +577,7 @@
                                         "points": []
                                     },
                                     {
-                                        "title": "Inadequate Sewing Technique and Fabric",
+                                        "title": "Fabric and Sewing Technique Not Suitable for Smaller Sizes",
                                         "points": []
                                     }
                                 ]
@@ -584,11 +589,12 @@
         },
         {
             "keypoint": {
-                "title": "Lessons Learned and Current Endeavors",
+                "title": "Lessons Learned and Life After Lululemon",
+                "timestamp": 2575.7197,
                 "points": [
                     {
                         "title": "Chip Wilson's Experience with Lululemon",
-                        "timestamp": 0,
+                        "timestamp": 2575.7197,
                         "points": [
                             {
                                 "title": "Depression and Removal as Chairman",
@@ -598,17 +604,8 @@
                                         "points": []
                                     },
                                     {
-                                        "title": "Devastating Consequences",
-                                        "points": [
-                                            {
-                                                "title": "Impact on Family",
-                                                "points": []
-                                            },
-                                            {
-                                                "title": "Damage to Reputation",
-                                                "points": []
-                                            }
-                                        ]
+                                        "title": "Devastating Impact on Personal Life",
+                                        "points": []
                                     }
                                 ]
                             },
@@ -616,11 +613,11 @@
                                 "title": "Reflection on Past Mistakes",
                                 "points": [
                                     {
-                                        "title": "Regret over Poor Choice of Words",
+                                        "title": "Poor Choice of Words",
                                         "points": []
                                     },
                                     {
-                                        "title": "Desire to Take it Back",
+                                        "title": "Willingness to Take it Back",
                                         "points": []
                                     }
                                 ]
@@ -629,7 +626,7 @@
                                 "title": "Loss of Control and Success",
                                 "points": [
                                     {
-                                        "title": "Success has Many Fathers, Failure is an Orphan",
+                                        "title": "Success Having Many Fathers",
                                         "points": []
                                     },
                                     {
@@ -642,20 +639,20 @@
                                 "title": "Future Plans and Priorities",
                                 "points": [
                                     {
-                                        "title": "No Desire to Start Another Company",
+                                        "title": "No Plans to Start Another Business",
                                         "points": []
                                     },
                                     {
-                                        "title": "Focus on Family and Coaching",
+                                        "title": "Enjoying Family Life and Coaching",
                                         "points": []
                                     }
                                 ]
                             },
                             {
-                                "title": "Success and Luck",
+                                "title": "Success Factors",
                                 "points": [
                                     {
-                                        "title": "Passion and Drive",
+                                        "title": "Passion for Athletic Technical Product",
                                         "points": []
                                     },
                                     {
