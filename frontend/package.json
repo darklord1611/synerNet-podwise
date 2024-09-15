@@ -44,6 +44,7 @@
     "react-paginate": "^8.2.0",
     "react-router-dom": "^6.25.1",
     "react-scripts": "^5.0.0",
+    "react-type-animation": "^3.2.0",
     "shikwasa": "^2.2.1",
     "stylis": "^4.1.1",
     "stylis-plugin-rtl": "2.0.2",

@@ -88,9 +88,9 @@ const hightlights=[
 ]
 
 
-export default function HighlightPanel(props: { onSeek?: (time: number) => void }) {
+export default function HighlightPanel(props: { highlights: any, onSeek?: (time: number) => void }) {
 	// Chakra Color Mode
-    const { onSeek } = props;
+    const { highlights, onSeek } = props;
     const textColor = useColorModeValue('secondaryGray.900', 'white');
 	const textColorSecondary = useColorModeValue('secondaryGray.900', 'white');
 	const brandColor = useColorModeValue('brand.500', 'brand.400');

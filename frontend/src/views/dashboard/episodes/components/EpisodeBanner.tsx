@@ -36,18 +36,16 @@ export default function EpisodeBanner(props: { episodeData: any}) {
 			py={{ base: '10px', md: '30px' }}
 			px={{ base: '10px', md: '30px' }}
 			borderRadius='30px'>
-			{image_url ? (
-                <Image
-                    src={image_url}
-                    alt={title}
-                    w='120px'
-                    h='120px'
-                    borderRadius='10px'
-                    objectFit='cover'
-                    // ms='auto'
-                    mr='10px'
-                />
-            ) : null}
+            <Image
+                src={image_url ? image_url : 'https://th.bing.com/th/id/R.851e934266b84967cffb27d0993e68aa?rik=eETnV8gBP%2b2fiQ&pid=ImgRaw&r=0'}
+                alt={title}
+                w='120px'
+                h='120px'
+                borderRadius='10px'
+                objectFit='cover'
+                // ms='auto'
+                mr='10px'
+            />
             <VStack align='start' spacing='10px' alignSelf='center' maxW='950px'>
                 <HStack spacing='10px'>
                     <Text 
@@ -97,7 +95,7 @@ export default function EpisodeBanner(props: { episodeData: any}) {
                         lineHeight='100%'
                         _hover={{ textDecoration: 'underline'}}
                         >
-                        {podcast_name}
+                        {podcast_name ? podcast_name : 'Youtube'}
                     </Link>
                 </HStack>
                 <Button 

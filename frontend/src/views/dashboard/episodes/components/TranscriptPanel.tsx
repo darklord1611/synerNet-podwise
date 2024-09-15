@@ -716,27 +716,9 @@ const sentences=[
     }
 ]
 
-// interface Episode {
-//     id: number;
-//     name: string;
-//     description: string;
-//     publishedDate: string;
-//     duration: string;
-//     podcastName: string;
-//     podcastId: number;
-//     thumbnailUrl: string;
-//     audioUrl?: string;
-// }
-
-interface TranscriptPanelProps {
-    episode: Espisode;
-    onSeek: (time: number) => void;
-}
-
-
-export default function TranscriptPanel(props: TranscriptPanelProps) {
+export default function TranscriptPanel(props: { transcripts: any; onSeek: (seconds: number) => void }) {
 	// Chakra Color Mode
-    const { episode, onSeek } = props;
+    const { transcripts, onSeek } = props;
     const textColor = useColorModeValue('secondaryGray.900', 'white');
 	const textColorSecondary = useColorModeValue('secondaryGray.900', 'white');
 	const brandColor = useColorModeValue('brand.500', 'brand.400');
@@ -749,30 +731,25 @@ export default function TranscriptPanel(props: TranscriptPanelProps) {
             // px='48'
             >
 			<VStack spacing='10px' alignItems='start' w='2xl' m='auto'>
-                {sentences.map((sentence) => {
+                {transcripts.utterances.map((sentence: { speaker: number; transcripts: string[]; start: number; }) => {
                     // Check if the speaker has changed
-                    console.log('sentence', sentence.speaker);
                     const isSpeakerChanged = sentence.speaker != previousSpeaker;
 
                     // Update previousSpeaker if it has changed
                     if (isSpeakerChanged) {
                         previousSpeaker = sentence.speaker;
                     }
-                    console.log('previousSpeaker', previousSpeaker);
-
-                    console.log('isSpeakerChanged', isSpeakerChanged);
-
                     return (
                         <>
                             {isSpeakerChanged && (
                                 <>
                                     <SpeakerAvatar sentence={sentence} onSeek={onSeek}/>
-                                    <Sentence content={sentence.transcript} start={sentence.start} onSeek={onSeek}/>
+                                    <Sentence transcript={sentence.transcripts} start={sentence.start} onSeek={onSeek}/>
                                 </>
                             ) || (
                                 <>
                                     <Timestamp seconds={sentence.start} onSeek={onSeek} />
-                                    <Sentence content={sentence.transcript} start={sentence.start} onSeek={onSeek}/>
+                                    <Sentence transcript={sentence.transcripts} start={sentence.start} onSeek={onSeek}/>
                                 </>
                             )} 
                         </>

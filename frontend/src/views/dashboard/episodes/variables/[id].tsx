@@ -23,6 +23,7 @@ import SummaryPanel from '../components/SummaryPanel';
 import ShowNotesPanel from '../components/ShowNotesPanel';
 import ChatbotPanel from '../components/ChatbotPanel';
 import { useSupabase } from 'contexts/SupabaseContext';
+import UnProcessedPanel from '../components/UnProcessedPanel';
 
 const episodes=[
     {
@@ -57,7 +58,7 @@ export default function EpisodeDetail() {
 	const playerColor = useColorModeValue('secondaryGray.300', 'navy.800');
     const location = useLocation();
     const episodeId = location.pathname.split('/').pop();
-    const [episode, setEpisode] = useState<Espisode | null>(null);
+    const [episode, setEpisode] = useState<any | null>(null);
     // const episode = episodes.find(episode => episode.id === parseInt(episodeId));
     const audioPlayerRef = useRef<AudioPlayerRef>(null);
     const supabase = useSupabase();
@@ -65,7 +66,7 @@ export default function EpisodeDetail() {
 
     useEffect(() => {
         const fetchEpisodes = async () => {
-            console.log('pisode_id', episodeId)
+            console.log('episode_id', episodeId)
             if (!episodeId) return; // Ensure episodeId is defined
 
             const { data, error } = await supabase
@@ -241,22 +242,37 @@ export default function EpisodeDetail() {
             <TabIndicator mt='-1.5px' height='4px' bg={brandColor} borderRadius='1px' />
             <TabPanels>
                 <TabPanel>
-                    <SummaryPanel onSeek={handleSeek}/>
+                    {episode.summary ? 
+                    (<SummaryPanel summary={episode.summary} onSeek={handleSeek}/>):
+                    <UnProcessedPanel url={episode.audio_url}/>
+                }
                 </TabPanel>
                 <TabPanel>
-                    <GraphPanel data={episode}/>
+                    {episode.keypoints ? 
+                    (<GraphPanel keypoints={episode.keypoints.keypoints} onSeek={handleSeek}/>):
+                    <UnProcessedPanel url={episode.audio_url}/>
+                }
                 </TabPanel>
                 <TabPanel>
-                    <TranscriptPanel 
-                        episode={episode}
+                    {episode.transcript ?
+                    (<TranscriptPanel 
+                        transcripts={episode.transcript}
                         onSeek={handleSeek}
-                        />
+                        />):
+                    <UnProcessedPanel url={episode.audio_url}/>
+                    }
                 </TabPanel>
                 <TabPanel alignItems='center'>
-                    <KeywordPanel />
+                    {episode.keywords ?
+                    (<KeywordPanel keywords={episode.keywords.keywords}/>):
+                    <UnProcessedPanel url={episode.audio_url}/>
+                    }
                 </TabPanel>
                 <TabPanel alignItems='center'>
-                    <HighlightPanel onSeek={handleSeek}/>
+                    {episode.highlights ?
+                    (<HighlightPanel highlights={episode.highlights} onSeek={handleSeek}/>):
+                    <UnProcessedPanel url={episode.audio_url}/>
+                    }
                 </TabPanel>
                 <TabPanel>
                     <ShowNotesPanel />

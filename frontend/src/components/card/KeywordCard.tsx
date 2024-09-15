@@ -1,8 +1,8 @@
 import { Box, Card, Divider, HStack, Icon, Text, useColorModeValue, VStack } from "@chakra-ui/react";
 import { FaRegLightbulb } from "react-icons/fa6";
 
-export default function KeywordCard(props: { keyword: { word: string, definition: string} }) {
-    const { word, definition } = props.keyword;
+export default function KeywordCard(props: { keyword: { keyword: string, definition: string} }) {
+    const { keyword, definition } = props.keyword;
     const textColor = useColorModeValue('secondaryGray.900', 'white');
 	const textColorSecondary = useColorModeValue('secondaryGray.900', 'yellow');
 	const brandColor = useColorModeValue('brand.500', 'brand.400');
@@ -26,7 +26,7 @@ export default function KeywordCard(props: { keyword: { word: string, definition
                         fontWeight='600' 
                         lineHeight='100%'
                         >
-                        {word}
+                        {keyword}
                     </Text>
                 </HStack>
                 <Divider w='full' borderColor='brand'/>
