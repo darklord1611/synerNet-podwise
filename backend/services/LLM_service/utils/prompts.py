@@ -170,30 +170,43 @@ def set_combine_chunks_prompt(summaries):
     return f"""
 {paragraphs}
 
-You will be given a series of paragraphs above, each with a number like Paragraph 0, Paragraph 1, ... Paragraph N. You will analyze these paragraphs and decide whether to merge semantically similar paragraphs together and generate a title.
+You will analyze a series of paragraphs above from a podcast transcript, labeled as Paragraph 0, Paragraph 1, ... Paragraph N. Your task is to combine semantically similar paragraphs in sequential order and generate appropriate titles for these combinations.
+
 
 Guidelines:
-- Combine paragraphs that are semantically similar or related to each other.
-- Create a title that accurately represents the content of the combined paragraphs.
-- Ensure that the title is concise and informative.
-- Maintain the order of the paragraphs in the combination.
-- If the paragraphs are not related, .
-- Only use the number of paragraphs provided in the input.
-- Return the result in the following JSON format:
+1. Carefully analyze the content and context of each paragraph.
+2. Combine adjacent paragraphs that share common themes, topics, or narrative threads.
+3. Create concise, informative titles for each combined section that accurately capture the main idea or theme.
+4. Paragraphs must be combined in strict sequential order. Never combine non-adjacent paragraphs.
+5. Each paragraph should be used exactly once in your combinations.
+
+Output Format:
+Provide your analysis in the following JSON format:
 
 {{
     "combination": [
         {{
             "paragraph_indexes": [0, 1, ...],
-            "title": "string"
+            "title": "string",
         }},
         ...
     ]
 }}
 
-Note:
-- The "paragraph_indexes" should be a list of integers representing the indexes of the paragraphs that are combined.
-- If paragraphs are not combined, the "paragraph_indexes" should contain only one index.
+Notes:
+- "paragraph_indexes" must be a list of consecutive integers.
+- The first "paragraph_indexes" in a combination must directly follow the last "paragraph_indexes" of the previous combination.
+- For standalone paragraphs, "paragraph_indexes" will contain only one index.
+- Ensure that your combinations account for all paragraphs from 0 to N, without skipping any.
+
+Example of correct ordering:
+[0, 1], [2], [3, 4, 5], [6], ...
+
+Examples of incorrect ordering:
+[0, 2], [1, 3], ...  // Non-adjacent paragraphs combined
+[0, 1], [3, 4], ...  // Paragraph 2 skipped
+
+Remember, the goal is to create meaningful, coherent sections that accurately represent the content and structure of the podcast transcript while strictly maintaining the original paragraph order.
     """
 
 

@@ -14,3 +14,15 @@ def preprocess_chunks(data):
     transcripts = {"transcript": [{"chunk": i, "timestamp": timestamps[i], "text": chunk} for i, chunk in enumerate(chunks)]}
 
     return transcripts
+
+
+def process_keypoints(summary, keypoints):
+    titles = [outline["title"] for outline in summary["outlines"]]
+    index = 0
+
+    for i in range(len(keypoints["keypoints"])):
+        for j in range(len(keypoints["keypoints"][i]["keypoint"]["points"])):
+            keypoints["keypoints"][i]["keypoint"]["points"][j]["title"] = titles[index]
+            index += 1
+    
+    return keypoints

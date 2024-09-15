@@ -18,7 +18,20 @@ from supabase import create_client, Client
 from config import SUPABASE_URL, SUPABASE_KEY, AUDIO_SERVICE_URL, LLM_SERVICE_URL, CHUNKING_SERVICE_URL
 from utils.requests import EpisodeProcessingRequest
 import requests
-from utils.preprocess import preprocess_chunks
+from utils.preprocess import preprocess_chunks, process_keypoints
+
+
+UPLOAD_FOLDER = 'uploads'
+STATIC_FOLDER = 'static/results'
+
+isdir = os.path.isdir(UPLOAD_FOLDER)
+if not isdir:
+    os.makedirs(UPLOAD_FOLDER)
+
+isdir = os.path.isdir(STATIC_FOLDER)
+if not isdir:
+    os.makedirs(STATIC_FOLDER)
+
 
 origins = ["*"]
 
@@ -121,6 +134,8 @@ async def process_input(request: EpisodeProcessingRequest):
         highlights = requests.post(f"{LLM_SERVICE_URL}/highlights", json=processed_chunks).json()
         keypoints = requests.post(f"{LLM_SERVICE_URL}/keypoints", json=processed_chunks).json()
 
+        keypoints = process_keypoints(summary, keypoints)
+
         data = {
             "summary": summary,
             "keywords": keywords,
@@ -141,6 +156,7 @@ async def process_input(request: EpisodeProcessingRequest):
         print(e)
         raise HTTPException(status_code=500, detail=f"Error: {str(e)}")
     
+
 
 @app.post("/api/transcript")
 async def get_transcript(url: str = Body(..., embed=True)):
