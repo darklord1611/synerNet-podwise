@@ -13,5 +13,8 @@ APP_PORT = os.environ.get("APP_PORT")
 
 PODCAST_API_URL = os.environ.get("PODCAST_API_URL")
 PODCAST_API_KEY = os.environ.get("PODCAST_API_KEY")
-
 PODCAST_USER_ID = os.environ.get("PODCAST_USER_ID")
+
+AUDIO_SERVICE_URL = os.environ.get("AUDIO_SERVICE_URL")
+CHUNKING_SERVICE_URL = os.environ.get("CHUNKING_SERVICE_URL")
+LLM_SERVICE_URL = os.environ.get("LLM_SERVICE_URL")
