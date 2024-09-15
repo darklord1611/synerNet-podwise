@@ -21,8 +21,12 @@ app.add_middleware(
 class QuestionRequest(BaseModel):
     question: str
 
+@app.get('/')
+async def index():
+    return {'message': 'Hello World'}
+
 # Định nghĩa endpoint chính để xử lý câu hỏi
-@app.post("/ask-question/")
+@app.post("/ask-question")
 async def ask_question(request: QuestionRequest):
     user_question = request.question
 
@@ -31,6 +35,7 @@ async def ask_question(request: QuestionRequest):
         answer, contextChatbot = handle_question(user_question)
         return {"answer": answer, "context": contextChatbot}
     except Exception as e:
+        print(e)
         raise HTTPException(status_code=500, detail=f"Error: {str(e)}")
 
 @app.post("/load-context")
@@ -59,4 +64,4 @@ async def load_context(id: str = Body(..., embed=True)):
 # Khởi chạy server
 if __name__ == "__main__":
     # Thay đổi port nếu cần, ví dụ từ 8080 thành 8000 hoặc một cổng khác
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    uvicorn.run(app, host="127.0.0.1", port=8003)

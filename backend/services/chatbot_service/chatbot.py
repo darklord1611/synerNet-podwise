@@ -45,10 +45,12 @@ def llm_blog(final_prompt, global_system_prompt, model, temperature):
         temperature=temperature,
     )
     return chat_completion
+
 def retrieval(fileName):
     with open(fileName, 'r') as f:
         data = json.load(f)
     return data
+
 # Hàm tính embedding cho câu hỏi
 def get_embedding(question):
     # Xử lý đầu vào nếu là chuỗi văn bản duy nhất
@@ -112,7 +114,7 @@ def ann_search(question_embedding, document_embeddings, k=5):
     D, I = index.search(question_embedding_np, k)
     return D, I  # Trả về index của các chunk phù hợp và khoảng cách (score)
 
-def retrieve_relevant_chunks(question_embedding, document_embeddings, document_chunks, k=3):
+def retrieve_relevant_chunks(question_embedding, document_embeddings, document_chunks, document_timestamp, k=3):
     # Tìm k chunk có khoảng cách gần nhất
     D, top_k_indices  = ann_search(question_embedding, document_embeddings, k)
     # Lấy các chunk tương ứng với index tìm được
@@ -121,12 +123,14 @@ def retrieve_relevant_chunks(question_embedding, document_embeddings, document_c
     ContextChatbot = []
     for x, i in enumerate(top_k_indices[0]):  # x là index trong D[0], i là index của chunk
         chunk = {
-            "context": str(document_chunks[i]),  # Đảm bảo context là string
+            "start": int(document_timestamp[i]),
+            "context": document_chunks[i],  # Đảm bảo context là string
             "score": float(D[0][x])  # Đảm bảo score là float
         }
         ContextChatbot.append(chunk)
+    json_data = {"context_chatbot": ContextChatbot}
     with open("contextChatbot.json", "w") as f:
-        json.dump(ContextChatbot, f, indent=4)
+        json.dump(json_data, f, indent=4, ensure_ascii=False)
 
     return relevant_chunks  # Trả về chuỗi JSON
 
@@ -144,15 +148,17 @@ def append_chunks_to_prompt(user_question, relevant_chunks):
 def process_question_with_rag(user_question):
     document_chunks = []
     document_embeddings = []
+    document_timestamp = []
     document = retrieval(fileName="chunks.json")
     for chunk in document:
         document_chunks.append(chunk['text'])
+        document_timestamp.append(chunk['start'])
         document_embeddings.append(get_embedding(chunk['text']))
 
     # Bước 1: Lấy embedding cho câu hỏi người dùng
     user_question_emb = get_embedding(user_question)
 
-    relevant_chunks = retrieve_relevant_chunks(user_question_emb, document_embeddings, document_chunks, k=3)
+    relevant_chunks = retrieve_relevant_chunks(user_question_emb, document_embeddings, document_chunks, document_timestamp, k=3)
     final_prompt = append_chunks_to_prompt(user_question=user_question, relevant_chunks=relevant_chunks)
     chat_completion=llm_blog(final_prompt, global_system_prompt, "llama-3.1-70b-Versatile", 0)
     # Add thêm vào history memory
@@ -202,10 +208,10 @@ def handle_question(user_question):
     # Bước 5: Forward tới hệ thống phù hợp
     if decision == "RAG System":
         answer = process_question_with_rag(user_question)
+        with open("contextChatbot.json", "r") as file:
+            contextChatbot = json.load(file)
+
+        return answer, contextChatbot["context_chatbot"]
     else:
         answer = process_question_with_llm(user_question)
-
-    with open("contextChatbot.json", "r") as file:
-        contextChatbot = json.load(file)
-
-    return answer, contextChatbot
+        return answer, []
