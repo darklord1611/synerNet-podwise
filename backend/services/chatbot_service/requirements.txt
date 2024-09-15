@@ -1,0 +1,12 @@
+torch
+numpy
+transformers
+scikit-learn
+requests
+faiss-cpu
+fastapi
+pydantic
+uvicorn
+groq
+supabase
+sentence_transformers
