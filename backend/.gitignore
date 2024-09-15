@@ -1,8 +1,7 @@
+*.pt
 __pycache__
-app.egg-info
-*.pyc
-.mypy_cache
-.coverage
-htmlcov
-.cache
-.venv
+.DS_Store
+.env
+
+example
+venv

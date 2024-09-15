@@ -1,0 +1,649 @@
+{
+    "status": "success",
+    "keywords": [
+        {
+            "keyword": "Limbic System",
+            "definition": "A complex system of nerves and networks in the brain that controls emotions, instincts, and basic drives, such as aggression and violence."
+        },
+        {
+            "keyword": "Just War",
+            "definition": "A philosophical concept that refers to a war that is morally justifiable, with criteria such as a just cause, right intention, and proportionality."
+        },
+        {
+            "keyword": "Martial Arts",
+            "definition": "Disciplines that combine physical and mental training to develop skills for combat, self-defense, and personal growth."
+        },
+        {
+            "keyword": "Bonobos",
+            "definition": "A species of primates known for their peaceful and empathetic nature, often studied in contrast to chimpanzees, which are more aggressive."
+        },
+        {
+            "keyword": "Gene Pool",
+            "definition": "The total genetic diversity of a population or species, which determines the characteristics and traits of its members."
+        },
+        {
+            "keyword": "Dynasties",
+            "definition": "A series of rulers from the same family or group, often associated with empires and monarchies."
+        },
+        {
+            "keyword": "Austro-Hungarian Empire",
+            "definition": "A historical empire that existed from 1867 to 1918, comprising modern-day Austria, Hungary, and parts of other European countries."
+        },
+        {
+            "keyword": "Geopolitics",
+            "definition": "The study of how geography and economics influence the relations between nations and the conduct of international relations."
+        },
+        {
+            "keyword": "Conspicuous acts of kindness",
+            "definition": "Visible and intentional acts of kindness, generosity, or compassion, often used as a strategy to build trust, improve relationships, or counter negative actions."
+        },
+        {
+            "keyword": "Military industrial complex",
+            "definition": "A network of individuals, organizations, and institutions involved in the production and sale of military equipment and services, often influencing government policies and decisions."
+        },
+        {
+            "keyword": "Galactic war",
+            "definition": "A hypothetical or fictional war that spans an entire galaxy, often used as a metaphor for large-scale conflict or as a plot device in science fiction."
+        },
+        {
+            "keyword": "Pockets of flourishing",
+            "definition": "Small, isolated areas or communities that experience growth, prosperity, or success, often despite being surrounded by conflict, poverty, or other challenges."
+        },
+        {
+            "keyword": "Counterintuitive",
+            "definition": "Contrary to what one would normally expect or assume, often requiring a reevaluation of one's initial thoughts or reactions."
+        },
+        {
+            "keyword": "Genocide",
+            "definition": "The deliberate and systematic destruction of a racial, ethnic, or national group, often through violence, forced relocation, or other forms of persecution."
+        },
+        {
+            "keyword": "Terrorists",
+            "definition": "Individuals or groups that use violence, intimidation, or other forms of coercion to achieve their goals, often targeting civilians or non-combatants."
+        },
+        {
+            "keyword": "Civilizational Threat",
+            "definition": "A threat that has the potential to cause significant harm or destruction to an entire civilization, such as nuclear war."
+        },
+        {
+            "keyword": "Defense in Depth",
+            "definition": "A military strategy that involves layering multiple defensive positions to protect against an enemy's advance, making it difficult for them to break through."
+        },
+        {
+            "keyword": "Combined Arms",
+            "definition": "A military tactic that involves coordinating different types of military units, such as infantry, tanks, and aircraft, to achieve a common objective."
+        },
+        {
+            "keyword": "Anti-Tank Defenses",
+            "definition": "Military defenses designed to counter and destroy enemy tanks, such as anti-tank missiles and mines."
+        },
+        {
+            "keyword": "Air Superiority",
+            "definition": "A situation in which one side has control of the air, allowing them to conduct air operations without significant opposition from the enemy."
+        },
+        {
+            "keyword": "Global Thermonuclear Warfare",
+            "definition": "A type of warfare that involves the use of nuclear weapons on a global scale, potentially causing widespread destruction and loss of life."
+        },
+        {
+            "keyword": "PTSD",
+            "definition": "Post-Traumatic Stress Disorder, a mental health condition that can develop in individuals who have experienced traumatic events, such as war."
+        },
+        {
+            "keyword": "Cannon Fodder",
+            "definition": "A term used to describe soldiers who are considered expendable and are sent into battle with little chance of survival."
+        },
+        {
+            "keyword": "AGI",
+            "definition": "Artificial General Intelligence, a type of artificial intelligence that is capable of performing any intellectual task that a human can."
+        },
+        {
+            "keyword": "Peloponnesian War",
+            "definition": "A devastating conflict in ancient Greece between Athens and Sparta that lasted from 431 to 404 BCE, resulting in the decline of Athens and the rise of Sparta."
+        },
+        {
+            "keyword": "Ossetia's trap",
+            "definition": "A historical reference to the Ossetia conflict, which is often cited as an example of how a small, seemingly insignificant conflict can escalate into a larger, more complex war."
+        },
+        {
+            "keyword": "1 China policy",
+            "definition": "A diplomatic policy that recognizes only one Chinese government, which is the government of the People's Republic of China, and does not recognize the government of Taiwan as a separate entity."
+        },
+        {
+            "keyword": "Economic engine",
+            "definition": "A country or region that drives economic growth and development, often through innovation, trade, and investment, and has a significant impact on the global economy."
+        },
+        {
+            "keyword": "High-speed rail",
+            "definition": "A type of rail transportation that operates at speeds of 200 km/h or higher, often used for passenger transportation and freight transportation, and is considered a symbol of modern infrastructure development."
+        },
+        {
+            "keyword": "Terracotta warriors",
+            "definition": "A collection of life-sized clay soldiers that were buried with the first emperor of China, Qin Shi Huang, to protect him in the afterlife, and are considered one of the greatest archaeological discoveries of the 20th century."
+        },
+        {
+            "keyword": "Acquisitive",
+            "definition": "Having or showing a strong desire to acquire or possess something, especially wealth or power."
+        },
+        {
+            "keyword": "Monolithic",
+            "definition": "Consisting of or resembling a single, unified whole, without divisions or variations."
+        },
+        {
+            "keyword": "Benevolent",
+            "definition": "Having or showing a kind, generous, and charitable attitude towards others."
+        },
+        {
+            "keyword": "Conspicuous",
+            "definition": "Clearly visible or noticeable, especially because of being unusual or striking."
+        },
+        {
+            "keyword": "Reparations",
+            "definition": "Payments or other forms of compensation made by a country or organization to make amends for a past wrong or injury."
+        },
+        {
+            "keyword": "Marshall Plan",
+            "definition": "A US program to help rebuild European economies after World War II, through economic aid and investment."
+        },
+        {
+            "keyword": "Treaty of Versailles",
+            "definition": "A peace treaty signed in 1919 that imposed penalties and reparations on Germany after World War I, and is often seen as a contributing factor to the outbreak of World War II."
+        },
+        {
+            "keyword": "POW",
+            "definition": "Prisoner of War, a person who is captured and held by an enemy during a war or conflict."
+        },
+        {
+            "keyword": "SSR",
+            "definition": "Schutzstaffel, a paramilitary organization in Nazi Germany, responsible for internal security and law enforcement."
+        },
+        {
+            "keyword": "Grok",
+            "definition": "A state-of-the-art AI assistant developed by XAI, designed to provide accurate and reliable information, with a unique 'fun mode' that makes interactions more engaging and vibrant."
+        },
+        {
+            "keyword": "Large Language Model",
+            "definition": "A type of artificial intelligence designed to process and generate human-like language, often used for tasks such as language translation, text summarization, and conversation."
+        },
+        {
+            "keyword": "Hitchhiker's Guide to the Galaxy",
+            "definition": "A science fiction series by Douglas Adams, which serves as the inspiration for the philosophy behind XAI's AI system, emphasizing curiosity and the pursuit of understanding the universe."
+        },
+        {
+            "keyword": "Theory of Everything",
+            "definition": "A hypothetical framework that aims to unify all fundamental forces and principles in the universe, providing a comprehensive explanation for all phenomena, often considered the ultimate goal of theoretical physics."
+        },
+        {
+            "keyword": "General Relativity",
+            "definition": "A fundamental theory in physics developed by Albert Einstein, describing the nature of gravity and its effects on spacetime, which is a key component of the pursuit of a unified theory of everything."
+        },
+        {
+            "keyword": "Quantum Mechanics",
+            "definition": "A branch of physics that studies the behavior of matter and energy at the smallest scales, providing a framework for understanding the probabilistic nature of physical phenomena and the behavior of particles at the atomic and subatomic level."
+        },
+        {
+            "keyword": "Hallucination",
+            "definition": "In the context of AI, a phenomenon where a large language model generates information that is not based on actual data or evidence, but rather on patterns and associations learned from training data, often leading to confidently incorrect answers."
+        },
+        {
+            "keyword": "Physics First Principles",
+            "definition": "A set of fundamental laws and principles that govern the behavior of the physical universe, serving as the foundation for scientific inquiry and the development of new technologies."
+        },
+        {
+            "keyword": "Mathematical Logic",
+            "definition": "A branch of mathematics that studies the principles of logical reasoning and inference, providing a framework for formalizing and analyzing mathematical statements and arguments."
+        },
+        {
+            "keyword": "XAI",
+            "definition": "Explainable Artificial Intelligence, a subfield of artificial intelligence that focuses on developing techniques to explain the decisions made by AI systems."
+        },
+        {
+            "keyword": "AGI",
+            "definition": "Artificial General Intelligence, a type of artificial intelligence that possesses the ability to understand, learn, and apply knowledge across a wide range of tasks, similar to human intelligence."
+        },
+        {
+            "keyword": "Theory of Everything",
+            "definition": "A hypothetical framework that aims to provide a unified explanation for all fundamental aspects of the universe, including the laws of physics, the nature of consciousness, and the origin of the universe."
+        },
+        {
+            "keyword": "Consciousness",
+            "definition": "The state of being aware of one's surroundings, thoughts, and emotions, which is a complex and not fully understood phenomenon that is still being studied by scientists and philosophers."
+        },
+        {
+            "keyword": "Simulation Hypothesis",
+            "definition": "A philosophical idea that suggests that reality might be a simulation created by a more advanced civilization, which raises questions about the nature of reality and our existence."
+        },
+        {
+            "keyword": "Mitochondria",
+            "definition": "Organelles found in cells that are responsible for generating energy through cellular respiration, which is essential for the survival of complex life forms."
+        },
+        {
+            "keyword": "Multicellular Life",
+            "definition": "A type of life form that consists of multiple cells that work together to form a single organism, which is a characteristic of complex life forms such as plants and animals."
+        },
+        {
+            "keyword": "Galactic Time Scale",
+            "definition": "A unit of time that is used to measure the age of the universe and the formation of galaxies, which is typically measured in billions of years."
+        },
+        {
+            "keyword": "Quarks and Leptons",
+            "definition": "Fundamental particles that make up matter and are the building blocks of atoms, which are the smallest units of matter that still retain the properties of an element."
+        },
+        {
+            "keyword": "Fermi Paradox",
+            "definition": "A philosophical and scientific puzzle that asks, 'Where is everybody?' or, more specifically, 'Why haven't we encountered any signs of intelligent extraterrestrial life?'"
+        },
+        {
+            "keyword": "Determinism",
+            "definition": "The philosophical idea that every event, including human decisions and actions, is the inevitable result of prior causes and is therefore predetermined."
+        },
+        {
+            "keyword": "Free Will",
+            "definition": "The ability of individuals to make choices that are not determined by external factors, such as genetics, environment, or past experiences."
+        },
+        {
+            "keyword": "Simulation Hypothesis",
+            "definition": "The idea that reality might be a simulation created by a more advanced civilization, often referred to as the 'Simulation Theory' or 'Simulationism'."
+        },
+        {
+            "keyword": "Spinoza's God",
+            "definition": "A philosophical concept that refers to a God or a higher power that is identical with the universe and its laws, rather than a personal deity that intervenes in human affairs."
+        },
+        {
+            "keyword": "Eternal Realm",
+            "definition": "A term used in the context of the video game Diablo, referring to a specific game mode or level of difficulty, but also used metaphorically to describe a realm or dimension that exists beyond the physical world."
+        },
+        {
+            "keyword": "Hypersonic",
+            "definition": "A term used to describe speeds that are greater than Mach 5, or five times the speed of sound, often used in the context of aerospace engineering and rocket propulsion."
+        },
+        {
+            "keyword": "Supersonic",
+            "definition": "A term used to describe speeds that are greater than the speed of sound, but less than Mach 5, often used in the context of aerospace engineering and rocket propulsion."
+        },
+        {
+            "keyword": "Orbital Dynamics",
+            "definition": "The study of the motion of objects in orbit around a celestial body, such as a planet or moon, including the effects of gravity, velocity, and other factors on their trajectories."
+        },
+        {
+            "keyword": "Paragon Board",
+            "definition": "A game mechanic in Diablo 3 that allows players to customize their character's abilities and playstyle."
+        },
+        {
+            "keyword": "Druid",
+            "definition": "A type of character class in Diablo 3 that can shape-shift into various animal forms and summon nature-based abilities."
+        },
+        {
+            "keyword": "Eternal Realm",
+            "definition": "A game mode in Diablo 3 that offers a more challenging experience with unique rewards and penalties."
+        },
+        {
+            "keyword": "Seasonal Realm",
+            "definition": "A game mode in Diablo 3 that offers a fresh start with new characters and a unique set of challenges and rewards."
+        },
+        {
+            "keyword": "Uber Loth",
+            "definition": "A challenging boss fight in Diablo 3 that requires players to have a well-coordinated team and strategy."
+        },
+        {
+            "keyword": "Sorcerer",
+            "definition": "A type of character class in Diablo 3 that specializes in casting magical spells to damage enemies."
+        },
+        {
+            "keyword": "Vampiric Powers",
+            "definition": "A set of abilities in Diablo 3 that allow players to drain the life force of enemies and use it to heal themselves."
+        },
+        {
+            "keyword": "Flow State",
+            "definition": "A mental state of complete focus and immersion in an activity, often accompanied by heightened productivity and enjoyment."
+        },
+        {
+            "keyword": "Goldilocks Zone",
+            "definition": "A state of balance and optimal challenge in a game or activity, where the difficulty is neither too easy nor too hard."
+        },
+        {
+            "keyword": "Elden Ring",
+            "definition": "A highly-acclaimed action role-playing game known for its challenging gameplay and dark fantasy setting."
+        },
+        {
+            "keyword": "AGI",
+            "definition": "Artificial General Intelligence, a type of AI that possesses the ability to understand, learn, and apply knowledge across a wide range of tasks."
+        },
+        {
+            "keyword": "Soma",
+            "definition": "A fictional drug in the novel Brave New World that is used to control people's emotions and behavior, as well as a real-life muscle relaxant medication."
+        },
+        {
+            "keyword": "Kardashev Scale",
+            "definition": "A method of measuring a civilization's level of technological advancement based on its energy consumption and ability to harness energy from its environment."
+        },
+        {
+            "keyword": "Silicon Shortage",
+            "definition": "A shortage of silicon, a key material used in the production of computer chips and other electronic devices."
+        },
+        {
+            "keyword": "Voltage Transformer Shortage",
+            "definition": "A shortage of voltage transformers, which are critical components in the production of electronic devices and systems."
+        },
+        {
+            "keyword": "Voltage Step Down Transformer",
+            "definition": "A device that reduces high voltage electrical power to a lower voltage, suitable for use in electrical systems, such as those used in data centers and other high-power applications."
+        },
+        {
+            "keyword": "Peak to Trough Ratio",
+            "definition": "A measure of the difference between the highest and lowest points of electrical power demand, used to determine the required capacity of power plants and energy storage systems."
+        },
+        {
+            "keyword": "Buffering of Energy",
+            "definition": "The process of storing excess energy generated during periods of low demand, for use during periods of high demand, to stabilize the electrical grid and prevent power outages."
+        },
+        {
+            "keyword": "Tripling of Electricity Demand",
+            "definition": "A predicted increase in global electricity demand, driven by the electrification of transportation and heating, and the growing use of artificial intelligence and other high-power technologies."
+        },
+        {
+            "keyword": "Regulatory Oversight",
+            "definition": "The process of monitoring and controlling the development and deployment of artificial intelligence and other technologies, to ensure they are safe and beneficial to society."
+        },
+        {
+            "keyword": "AGI (Artificial General Intelligence)",
+            "definition": "A type of artificial intelligence that possesses the ability to understand, learn, and apply knowledge across a wide range of tasks, similar to human intelligence."
+        },
+        {
+            "keyword": "XAI (eXplainable AI)",
+            "definition": "A type of artificial intelligence that provides transparent and interpretable explanations for its decisions and actions, to build trust and understanding in AI systems."
+        },
+        {
+            "keyword": "Silicon Chips",
+            "definition": "A type of semiconductor device used to process and store information in electronic systems, such as computers and artificial intelligence systems."
+        },
+        {
+            "keyword": "FAA",
+            "definition": "Federal Aviation Administration, a US government agency responsible for regulating and overseeing all aspects of civil aviation in the United States."
+        },
+        {
+            "keyword": "Fish and Wildlife",
+            "definition": "A US government agency responsible for conserving and managing fish, wildlife, and plants, and their habitats, including enforcing laws and regulations related to these areas."
+        },
+        {
+            "keyword": "NDA",
+            "definition": "Non-Disclosure Agreement, a contract that requires parties to keep confidential information secret and not disclose it to others."
+        },
+        {
+            "keyword": "Vandenberg",
+            "definition": "Vandenberg Space Force Base, a US military base in California that is used as a launch site for rockets and other spacecraft."
+        },
+        {
+            "keyword": "Sonic Booms",
+            "definition": "Loud, sharp noises produced by an object breaking the sound barrier, which can cause disturbance to animals and humans."
+        },
+        {
+            "keyword": "Seal Procreation",
+            "definition": "The process of seals reproducing, which was a concern for the launch of rockets from Vandenberg due to potential disturbance from sonic booms."
+        },
+        {
+            "keyword": "Anal-Prope",
+            "definition": "A medical examination procedure that involves inserting a probe into the anus, used as a humorous analogy to describe the absurdity of the seal experiment."
+        },
+        {
+            "keyword": "International Waters",
+            "definition": "Areas of the ocean that are not under the jurisdiction of any country, and are subject to international law and regulations."
+        },
+        {
+            "keyword": "AGI",
+            "definition": "Artificial General Intelligence, a type of AI that possesses the ability to understand, learn, and apply knowledge across a wide range of tasks, similar to human intelligence."
+        },
+        {
+            "keyword": "Open Sourcing",
+            "definition": "The practice of making software, models, or data publicly available for anyone to use, modify, and distribute, often with the goal of promoting collaboration, transparency, and innovation."
+        },
+        {
+            "keyword": "GPT-35",
+            "definition": "A type of large language model developed by OpenAI, capable of generating human-like text based on the input it receives, with the number 35 indicating the specific version or iteration of the model."
+        },
+        {
+            "keyword": "Vector Space",
+            "definition": "A mathematical concept used in machine learning and natural language processing, representing a high-dimensional space where words, documents, or other objects are mapped as vectors, allowing for calculations of similarity and relationships between them."
+        },
+        {
+            "keyword": "Neural Net",
+            "definition": "A type of machine learning model inspired by the structure and function of the human brain, composed of layers of interconnected nodes (neurons) that process and transmit information, used for tasks such as classification, regression, and recommendation."
+        },
+        {
+            "keyword": "End-to-End Neural Net",
+            "definition": "A type of neural network that takes raw input data and produces output without requiring manual feature engineering or intermediate processing steps, allowing the model to learn and optimize the entire process from start to finish."
+        },
+        {
+            "keyword": "Signal-to-Noise Ratio",
+            "definition": "A measure of the ratio of useful information (signal) to irrelevant or misleading information (noise) in a dataset or system, with a higher ratio indicating better quality and more accurate results."
+        },
+        {
+            "keyword": "Speciest",
+            "definition": "A term used to describe someone who prioritizes the interests and well-being of their own species (in this case, humans) over others, often in the context of AI development and the potential risks and benefits for humanity."
+        },
+        {
+            "keyword": "DeepMind",
+            "definition": "A leading AI research organization acquired by Alphabet (Google's parent company) in 2014, known for its work on deep learning and reinforcement learning, and the development of AI systems such as AlphaGo and AlphaFold."
+        },
+        {
+            "keyword": "A100s",
+            "definition": "A type of high-performance computing hardware developed by NVIDIA, designed for applications such as AI, machine learning, and data analytics, with the A100 indicating the specific model or generation of the hardware."
+        },
+        {
+            "keyword": "Unregretted Minutes",
+            "definition": "A metric used to measure the quality of time spent on a platform, where users do not regret the time they spent on it."
+        },
+        {
+            "keyword": "Regretamine",
+            "definition": "A hypothetical concept used to describe a substance that could eliminate regrets, used to illustrate the complexity of regret and its relationship to personal growth."
+        },
+        {
+            "keyword": "Aesthetically Pleasing",
+            "definition": "Describing advertisements that are visually appealing and entertaining, making them enjoyable to watch even if they are not directly relevant to the user's needs."
+        },
+        {
+            "keyword": "Long Form Content",
+            "definition": "Content that is longer in duration or more in-depth, which can provide more value to users and increase engagement on a platform."
+        },
+        {
+            "keyword": "User Seconds",
+            "definition": "A metric used to measure the amount of time users spend engaging with content on a platform, used to evaluate the effectiveness of advertisements and content."
+        },
+        {
+            "keyword": "Machine Learning Model",
+            "definition": "A type of artificial intelligence that uses algorithms to learn from data and improve its performance over time, used to describe the capabilities of a conversational AI."
+        },
+        {
+            "keyword": "Ethical Principles",
+            "definition": "Guidelines that govern the behavior of a machine learning model, ensuring that it provides accurate and helpful information while avoiding harm to users."
+        },
+        {
+            "keyword": "Axe Algorithm",
+            "definition": "A machine learning algorithm used in Transformers, a type of neural network architecture, to optimize and improve the performance of the model."
+        },
+        {
+            "keyword": "Vector Space",
+            "definition": "A mathematical concept used to represent and analyze complex data, such as text or images, by mapping them to a high-dimensional space where similar objects are closer together."
+        },
+        {
+            "keyword": "Community Notes",
+            "definition": "A feature on the X platform that allows users to add context and notes to posts, with the goal of providing more accurate and reliable information, using a collaborative and AI-driven approach."
+        },
+        {
+            "keyword": "Deamplification",
+            "definition": "The act of reducing the visibility or reach of a post or user on a social media platform, often used to mitigate the spread of misinformation or hate speech."
+        },
+        {
+            "keyword": "Free Speech",
+            "definition": "The right to express one's opinions and ideas without fear of censorship or retribution, a fundamental principle of democratic societies."
+        },
+        {
+            "keyword": "Emergent Property",
+            "definition": "A characteristic or behavior that arises from the interactions and organization of individual components, rather than being inherent in those components themselves, often observed in complex systems."
+        },
+        {
+            "keyword": "Open-Source",
+            "definition": "A software development model in which the source code is made freely available, allowing anyone to use, modify, and distribute it, promoting transparency, collaboration, and community involvement."
+        },
+        {
+            "keyword": "Regulatory Capture",
+            "definition": "A phenomenon where regulatory agencies, such as the SEC, are influenced or controlled by the industries they are supposed to regulate, leading to favorable treatment of those industries and neglect of their responsibilities to protect the public interest."
+        },
+        {
+            "keyword": "Shorting",
+            "definition": "A financial strategy where an investor sells a security they do not own, with the expectation of buying it back at a lower price to realize a profit, often used by hedge funds to bet against the success of a company."
+        },
+        {
+            "keyword": "Hedge Funds",
+            "definition": "Investment vehicles that pool money from high-net-worth individuals and institutions to invest in a variety of assets, often using complex strategies and leveraging debt to amplify returns."
+        },
+        {
+            "keyword": "SEC",
+            "definition": "The United States Securities and Exchange Commission, a regulatory agency responsible for protecting investors, maintaining fair and efficient markets, and facilitating capital formation."
+        },
+        {
+            "keyword": "Incentive Structure",
+            "definition": "The system of rewards and penalties that motivates individuals or organizations to behave in certain ways, often influencing their decision-making and actions."
+        },
+        {
+            "keyword": "Trophy",
+            "definition": "A high-profile case or achievement that can be used to advance one's career, often sought after by lawyers and regulators as a way to demonstrate their skills and build their reputation."
+        },
+        {
+            "keyword": "Not Admit Nor Deny",
+            "definition": "A settlement agreement where a party neither admits nor denies wrongdoing, often used in regulatory cases to resolve disputes without admitting liability."
+        },
+        {
+            "keyword": "Regulatory Agency",
+            "definition": "A government agency responsible for enforcing laws and regulations in a specific industry or sector, such as the SEC in the financial industry."
+        },
+        {
+            "keyword": "SEC Investigation",
+            "definition": "A formal inquiry conducted by the United States Securities and Exchange Commission (SEC) to investigate potential violations of securities laws and regulations."
+        },
+        {
+            "keyword": "Civil Case",
+            "definition": "A lawsuit brought by an individual or organization against another party, typically seeking monetary damages or other forms of relief, as opposed to a criminal case."
+        },
+        {
+            "keyword": "Unanimous Verdict",
+            "definition": "A decision made by a jury in which all members agree on the outcome, resulting in a single, unified verdict."
+        },
+        {
+            "keyword": "Misaligned Incentives",
+            "definition": "A situation in which the motivations or rewards for a particular action or behavior are not aligned with the desired outcome, leading to unintended consequences."
+        },
+        {
+            "keyword": "Ground Truth",
+            "definition": "The actual, objective reality or facts of a situation, as opposed to interpretations or biases."
+        },
+        {
+            "keyword": "Autopilot",
+            "definition": "A system or technology that enables a vehicle to operate without human intervention, using sensors and software to control the vehicle's movements."
+        },
+        {
+            "keyword": "Woke Mind Virus",
+            "definition": "A term used to describe a perceived cultural or ideological phenomenon in which certain values or beliefs are seen as being overly sensitive or restrictive, often associated with progressive or liberal ideologies."
+        },
+        {
+            "keyword": "Meritocratic",
+            "definition": "A system or society in which rewards and opportunities are based on individual merit, talent, or achievement, rather than on factors such as wealth, privilege, or social status."
+        },
+        {
+            "keyword": "Anti-Meritocratic",
+            "definition": "A system or ideology that opposes or undermines the principles of meritocracy, often by promoting equality or fairness over individual achievement or talent."
+        },
+        {
+            "keyword": "Neural Net",
+            "definition": "A neural net is a computer system inspired by the structure and function of the human brain, used for processing and analyzing data."
+        },
+        {
+            "keyword": "Cynic",
+            "definition": "A person who believes that people are motivated by self-interest and that they are often dishonest or immoral, often using this belief to excuse their own bad behavior."
+        },
+        {
+            "keyword": "Evolutionary Bias",
+            "definition": "A tendency or inclination that has developed over time through the process of evolution, in this case, a bias towards negative news due to its potential impact on survival."
+        },
+        {
+            "keyword": "Petrify",
+            "definition": "A spell in the game Diablo that turns monsters into stone for a short period of time, also used figuratively to describe being shocked or amazed."
+        },
+        {
+            "keyword": "Karma",
+            "definition": "The idea that the universe seeks balance and that good deeds will be rewarded, while bad deeds will be punished, often used to describe the consequences of one's actions."
+        },
+        {
+            "keyword": "Projection",
+            "definition": "A psychological phenomenon where a person attributes their own thoughts, feelings, or behaviors to someone else, often used to describe hypocrisy or self-deception."
+        },
+        {
+            "keyword": "Legacy Media",
+            "definition": "Traditional forms of media, such as newspapers and television, that have been around for a long time and are often contrasted with newer forms of media, such as social media."
+        },
+        {
+            "keyword": "Autopilot",
+            "definition": "A semi-autonomous driving system developed by Tesla, capable of perceiving the world and making decisions in real-time."
+        },
+        {
+            "keyword": "LLMs",
+            "definition": "Large Language Models, a type of artificial intelligence designed to process and understand human language."
+        },
+        {
+            "keyword": "Self-Supervised Learning",
+            "definition": "A type of machine learning where the model learns from data without explicit human labeling or supervision."
+        },
+        {
+            "keyword": "Neural Nets",
+            "definition": "A type of machine learning model inspired by the structure and function of the human brain, composed of layers of interconnected nodes or 'neurons'."
+        },
+        {
+            "keyword": "AGI",
+            "definition": "Artificial General Intelligence, a type of artificial intelligence that possesses the ability to understand, learn, and apply knowledge across a wide range of tasks, similar to human intelligence."
+        },
+        {
+            "keyword": "End-to-End Training",
+            "definition": "A type of machine learning where the model is trained on raw data, without the need for manual feature engineering or intermediate processing steps."
+        },
+        {
+            "keyword": "World Model",
+            "definition": "A mental or computational representation of the world, used to make predictions and decisions based on past experiences and observations."
+        },
+        {
+            "keyword": "Correlative Clusters",
+            "definition": "Groups of data points or features that are highly correlated with each other, often indicating underlying patterns or relationships in the data."
+        },
+        {
+            "keyword": "Optimus",
+            "definition": "A humanoid robot developed by Tesla, designed to perform tasks that require human-like dexterity and manipulation."
+        },
+        {
+            "keyword": "Soft Touch Robotics",
+            "definition": "A type of robotics that focuses on developing robots that can interact with and manipulate objects in a gentle and precise manner, often using sensors and machine learning algorithms."
+        },
+        {
+            "keyword": "Humanoid Robot",
+            "definition": "A type of robot that is designed to resemble and mimic the appearance and movement of a human being, often with the goal of interacting with humans in a more natural and intuitive way."
+        },
+        {
+            "keyword": "Neural Net",
+            "definition": "A neural network, also known as a neural net, is a series of algorithms that seek to recognize underlying relationships in a set of data through a process that mimics the way the human brain operates."
+        },
+        {
+            "keyword": "Biological Organisms",
+            "definition": "A living thing that has an organized structure, can grow, respond to stimuli, and reproduce, such as animals, plants, and microorganisms."
+        },
+        {
+            "keyword": "Digital Neural Net",
+            "definition": "A computer system inspired by the structure and function of the human brain, composed of layers of interconnected nodes or 'neurons' that process and transmit information."
+        },
+        {
+            "keyword": "Laws of Physics",
+            "definition": "The fundamental principles that govern the behavior of the physical universe, including the laws of motion, energy, and gravity, which dictate the rules that govern the behavior of matter and energy."
+        },
+        {
+            "keyword": "Artificial Intelligence",
+            "definition": "The development of computer systems that can perform tasks that typically require human intelligence, such as learning, problem-solving, and decision-making."
+        }
+    ]
+}

@@ -1,0 +1,5888 @@
+[
+    [
+        {
+            "start_time": 0.0,
+            "title": "Intro",
+            "end_time": 73.0
+        },
+        {
+            "start_time": 73.0,
+            "title": "Why You're Failing To Achieve Your Goals",
+            "end_time": 382.0
+        },
+        {
+            "start_time": 382.0,
+            "title": "Dealing with Intellectual Fear",
+            "end_time": 728.0
+        },
+        {
+            "start_time": 728.0,
+            "title": "What\u2019s Your Most Repeated Thought?",
+            "end_time": 961.0
+        },
+        {
+            "start_time": 961.0,
+            "title": "What is Your WHY?",
+            "end_time": 1328.0
+        },
+        {
+            "start_time": 1328.0,
+            "title": "Overcoming the Fear of the Unknown",
+            "end_time": 1650.0
+        },
+        {
+            "start_time": 1650.0,
+            "title": "Going for the Things You Aspire",
+            "end_time": 1908.0
+        },
+        {
+            "start_time": 1908.0,
+            "title": "There Are Different Forms of Addiction",
+            "end_time": 2340.0
+        },
+        {
+            "start_time": 2340.0,
+            "title": "Our Truth is Always Within Us",
+            "end_time": 2575.0
+        },
+        {
+            "start_time": 2575.0,
+            "title": "Take a Pause to Reconnect with Yourself",
+            "end_time": 2833.0
+        },
+        {
+            "start_time": 2833.0,
+            "title": "The Duality of What We Value",
+            "end_time": 3105.0
+        },
+        {
+            "start_time": 3105.0,
+            "title": "How Do You Pick Yourself Up?",
+            "end_time": 3406.0
+        },
+        {
+            "start_time": 3406.0,
+            "title": "What Life Lesson That Changed You?",
+            "end_time": 3706.0
+        },
+        {
+            "start_time": 3706.0,
+            "title": "Lesson Learned the Hard Way",
+            "end_time": 3894.0
+        },
+        {
+            "start_time": 3894.0,
+            "title": "Rob on Final Five",
+            "end_time": 4265
+        }
+    ],
+    {
+        "id": "1cf03822-a6b8-4c18-818b-575f91260cb7",
+        "start": 7.1164403,
+        "end": 12.53398,
+        "transcript": "As your morning alarm blares, you monitor yourself. Why did I sit in so early?",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "as",
+                "start": 7.1164403,
+                "end": 7.3163404,
+                "speaker": 0,
+                "punctuated_word": "As"
+            },
+            {
+                "word": "your",
+                "start": 7.3163404,
+                "end": 7.5562205,
+                "speaker": 0,
+                "punctuated_word": "your"
+            },
+            {
+                "word": "morning",
+                "start": 7.5562205,
+                "end": 7.8760605,
+                "speaker": 0,
+                "punctuated_word": "morning"
+            },
+            {
+                "word": "alarm",
+                "start": 7.8760605,
+                "end": 8.315841,
+                "speaker": 0,
+                "punctuated_word": "alarm"
+            },
+            {
+                "word": "blares",
+                "start": 8.315841,
+                "end": 8.7956,
+                "speaker": 0,
+                "punctuated_word": "blares,"
+            },
+            {
+                "word": "you",
+                "start": 8.7956,
+                "end": 9.07546,
+                "speaker": 0,
+                "punctuated_word": "you"
+            },
+            {
+                "word": "monitor",
+                "start": 9.07546,
+                "end": 9.57546,
+                "speaker": 0,
+                "punctuated_word": "monitor"
+            },
+            {
+                "word": "yourself",
+                "start": 9.67516,
+                "end": 10.17516,
+                "speaker": 0,
+                "punctuated_word": "yourself."
+            },
+            {
+                "word": "why",
+                "start": 10.43478,
+                "end": 10.674661,
+                "speaker": 0,
+                "punctuated_word": "Why"
+            },
+            {
+                "word": "did",
+                "start": 10.674661,
+                "end": 10.87456,
+                "speaker": 0,
+                "punctuated_word": "did"
+            },
+            {
+                "word": "i",
+                "start": 10.87456,
+                "end": 11.114441,
+                "speaker": 0,
+                "punctuated_word": "I"
+            },
+            {
+                "word": "sit",
+                "start": 11.114441,
+                "end": 11.314341,
+                "speaker": 0,
+                "punctuated_word": "sit"
+            },
+            {
+                "word": "in",
+                "start": 11.314341,
+                "end": 11.55422,
+                "speaker": 0,
+                "punctuated_word": "in"
+            },
+            {
+                "word": "so",
+                "start": 11.55422,
+                "end": 12.03398,
+                "speaker": 0,
+                "punctuated_word": "so"
+            },
+            {
+                "word": "early",
+                "start": 12.03398,
+                "end": 12.53398,
+                "speaker": 0,
+                "punctuated_word": "early?"
+            }
+        ]
+    },
+    {
+        "id": "9b877480-43bb-4457-9c19-7191246bc75f",
+        "start": 13.473261,
+        "end": 16.37466,
+        "transcript": "Bob brushing your teeth, you think? I need a haircut.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "bob",
+                "start": 13.473261,
+                "end": 13.7131405,
+                "speaker": 0,
+                "punctuated_word": "Bob"
+            },
+            {
+                "word": "brushing",
+                "start": 13.7131405,
+                "end": 14.072961,
+                "speaker": 0,
+                "punctuated_word": "brushing"
+            },
+            {
+                "word": "your",
+                "start": 14.072961,
+                "end": 14.272861,
+                "speaker": 0,
+                "punctuated_word": "your"
+            },
+            {
+                "word": "teeth",
+                "start": 14.272861,
+                "end": 14.632681,
+                "speaker": 0,
+                "punctuated_word": "teeth,"
+            },
+            {
+                "word": "you",
+                "start": 14.632681,
+                "end": 14.792601,
+                "speaker": 0,
+                "punctuated_word": "you"
+            },
+            {
+                "word": "think",
+                "start": 14.792601,
+                "end": 15.195,
+                "speaker": 0,
+                "punctuated_word": "think?"
+            },
+            {
+                "word": "i",
+                "start": 15.3149395,
+                "end": 15.474859,
+                "speaker": 0,
+                "punctuated_word": "I"
+            },
+            {
+                "word": "need",
+                "start": 15.474859,
+                "end": 15.67476,
+                "speaker": 0,
+                "punctuated_word": "need"
+            },
+            {
+                "word": "a",
+                "start": 15.67476,
+                "end": 15.87466,
+                "speaker": 0,
+                "punctuated_word": "a"
+            },
+            {
+                "word": "haircut",
+                "start": 15.87466,
+                "end": 16.37466,
+                "speaker": 0,
+                "punctuated_word": "haircut."
+            }
+        ]
+    },
+    {
+        "id": "d5162abd-6552-4e06-9c3d-fd3bec8094c4",
+        "start": 16.914139,
+        "end": 17.414139,
+        "transcript": "Unless",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "unless",
+                "start": 16.914139,
+                "end": 17.414139,
+                "speaker": 0,
+                "punctuated_word": "Unless"
+            }
+        ]
+    },
+    {
+        "id": "c12de15d-6e24-4981-8e72-3571ab55d15f",
+        "start": 18.55332,
+        "end": 23.41114,
+        "transcript": "rushing out the front door, you reach for your keys and realize they're not there.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "rushing",
+                "start": 18.55332,
+                "end": 18.9931,
+                "speaker": 0,
+                "punctuated_word": "rushing"
+            },
+            {
+                "word": "out",
+                "start": 18.9931,
+                "end": 19.153019,
+                "speaker": 0,
+                "punctuated_word": "out"
+            },
+            {
+                "word": "the",
+                "start": 19.153019,
+                "end": 19.312939,
+                "speaker": 0,
+                "punctuated_word": "the"
+            },
+            {
+                "word": "front",
+                "start": 19.312939,
+                "end": 19.5928,
+                "speaker": 0,
+                "punctuated_word": "front"
+            },
+            {
+                "word": "door",
+                "start": 19.5928,
+                "end": 19.95262,
+                "speaker": 0,
+                "punctuated_word": "door,"
+            },
+            {
+                "word": "you",
+                "start": 19.95262,
+                "end": 20.192501,
+                "speaker": 0,
+                "punctuated_word": "you"
+            },
+            {
+                "word": "reach",
+                "start": 20.192501,
+                "end": 20.51234,
+                "speaker": 0,
+                "punctuated_word": "reach"
+            },
+            {
+                "word": "for",
+                "start": 20.51234,
+                "end": 20.71224,
+                "speaker": 0,
+                "punctuated_word": "for"
+            },
+            {
+                "word": "your",
+                "start": 20.71224,
+                "end": 21.03208,
+                "speaker": 0,
+                "punctuated_word": "your"
+            },
+            {
+                "word": "keys",
+                "start": 21.03208,
+                "end": 21.53208,
+                "speaker": 0,
+                "punctuated_word": "keys"
+            },
+            {
+                "word": "and",
+                "start": 21.83168,
+                "end": 22.11154,
+                "speaker": 0,
+                "punctuated_word": "and"
+            },
+            {
+                "word": "realize",
+                "start": 22.11154,
+                "end": 22.511341,
+                "speaker": 0,
+                "punctuated_word": "realize"
+            },
+            {
+                "word": "they're",
+                "start": 22.511341,
+                "end": 22.711239,
+                "speaker": 0,
+                "punctuated_word": "they're"
+            },
+            {
+                "word": "not",
+                "start": 22.711239,
+                "end": 22.91114,
+                "speaker": 0,
+                "punctuated_word": "not"
+            },
+            {
+                "word": "there",
+                "start": 22.91114,
+                "end": 23.41114,
+                "speaker": 0,
+                "punctuated_word": "there."
+            }
+        ]
+    },
+    {
+        "id": "95211b70-66c3-4855-8c5e-71c822bcd6ea",
+        "start": 24.07056,
+        "end": 24.57056,
+        "transcript": "Frustrated,",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "frustrated",
+                "start": 24.07056,
+                "end": 24.57056,
+                "speaker": 0,
+                "punctuated_word": "Frustrated,"
+            }
+        ]
+    },
+    {
+        "id": "f42b1c0c-10ee-40ea-8d4e-389dffdfff9c",
+        "start": 24.950119,
+        "end": 26.80944,
+        "transcript": "you shout. I can't do anything",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "you",
+                "start": 24.950119,
+                "end": 25.15002,
+                "speaker": 0,
+                "punctuated_word": "you"
+            },
+            {
+                "word": "shout",
+                "start": 25.15002,
+                "end": 25.54982,
+                "speaker": 0,
+                "punctuated_word": "shout."
+            },
+            {
+                "word": "i",
+                "start": 25.54982,
+                "end": 25.70974,
+                "speaker": 0,
+                "punctuated_word": "I"
+            },
+            {
+                "word": "can't",
+                "start": 25.70974,
+                "end": 26.069561,
+                "speaker": 0,
+                "punctuated_word": "can't"
+            },
+            {
+                "word": "do",
+                "start": 26.069561,
+                "end": 26.30944,
+                "speaker": 0,
+                "punctuated_word": "do"
+            },
+            {
+                "word": "anything",
+                "start": 26.30944,
+                "end": 26.80944,
+                "speaker": 0,
+                "punctuated_word": "anything"
+            }
+        ]
+    },
+    {
+        "id": "14a65da9-e672-439f-991f-13beb59547b1",
+        "start": 27.189,
+        "end": 27.689,
+        "transcript": "crying",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "crying",
+                "start": 27.189,
+                "end": 27.689,
+                "speaker": 0,
+                "punctuated_word": "crying"
+            }
+        ]
+    },
+    {
+        "id": "d8a98f5e-94ff-406d-a08e-5ce38347b4aa",
+        "start": 28.26846,
+        "end": 30.32768,
+        "transcript": "just in time to notice your neighbor.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "just",
+                "start": 28.26846,
+                "end": 28.54832,
+                "speaker": 0,
+                "punctuated_word": "just"
+            },
+            {
+                "word": "in",
+                "start": 28.54832,
+                "end": 28.74822,
+                "speaker": 0,
+                "punctuated_word": "in"
+            },
+            {
+                "word": "time",
+                "start": 28.74822,
+                "end": 29.10804,
+                "speaker": 0,
+                "punctuated_word": "time"
+            },
+            {
+                "word": "to",
+                "start": 29.10804,
+                "end": 29.227982,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "notice",
+                "start": 29.227982,
+                "end": 29.5878,
+                "speaker": 0,
+                "punctuated_word": "notice"
+            },
+            {
+                "word": "your",
+                "start": 29.5878,
+                "end": 29.82768,
+                "speaker": 0,
+                "punctuated_word": "your"
+            },
+            {
+                "word": "neighbor",
+                "start": 29.82768,
+                "end": 30.32768,
+                "speaker": 0,
+                "punctuated_word": "neighbor."
+            }
+        ]
+    },
+    {
+        "id": "ad682614-fec6-4c3d-819d-d05e48f8730f",
+        "start": 31.01994,
+        "end": 33.91874,
+        "transcript": "Being caught talking to yourself can feel embarrassing.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "being",
+                "start": 31.01994,
+                "end": 31.379759,
+                "speaker": 0,
+                "punctuated_word": "Being"
+            },
+            {
+                "word": "caught",
+                "start": 31.379759,
+                "end": 31.73958,
+                "speaker": 0,
+                "punctuated_word": "caught"
+            },
+            {
+                "word": "talking",
+                "start": 31.73958,
+                "end": 32.0994,
+                "speaker": 0,
+                "punctuated_word": "talking"
+            },
+            {
+                "word": "to",
+                "start": 32.0994,
+                "end": 32.21934,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "yourself",
+                "start": 32.21934,
+                "end": 32.6991,
+                "speaker": 0,
+                "punctuated_word": "yourself"
+            },
+            {
+                "word": "can",
+                "start": 32.6991,
+                "end": 32.93898,
+                "speaker": 0,
+                "punctuated_word": "can"
+            },
+            {
+                "word": "feel",
+                "start": 32.93898,
+                "end": 33.41874,
+                "speaker": 0,
+                "punctuated_word": "feel"
+            },
+            {
+                "word": "embarrassing",
+                "start": 33.41874,
+                "end": 33.91874,
+                "speaker": 0,
+                "punctuated_word": "embarrassing."
+            }
+        ]
+    },
+    {
+        "id": "60baf3bf-64e9-436d-a1bc-b437de6a75a9",
+        "start": 34.25832,
+        "end": 38.63638,
+        "transcript": "And some people even stigmatize this behavior as a sign of mental instability.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "and",
+                "start": 34.25832,
+                "end": 34.4982,
+                "speaker": 0,
+                "punctuated_word": "And"
+            },
+            {
+                "word": "some",
+                "start": 34.4982,
+                "end": 34.6981,
+                "speaker": 0,
+                "punctuated_word": "some"
+            },
+            {
+                "word": "people",
+                "start": 34.6981,
+                "end": 35.05792,
+                "speaker": 0,
+                "punctuated_word": "people"
+            },
+            {
+                "word": "even",
+                "start": 35.05792,
+                "end": 35.37776,
+                "speaker": 0,
+                "punctuated_word": "even"
+            },
+            {
+                "word": "stigmatize",
+                "start": 35.37776,
+                "end": 35.87776,
+                "speaker": 0,
+                "punctuated_word": "stigmatize"
+            },
+            {
+                "word": "this",
+                "start": 36.05742,
+                "end": 36.25732,
+                "speaker": 0,
+                "punctuated_word": "this"
+            },
+            {
+                "word": "behavior",
+                "start": 36.25732,
+                "end": 36.697098,
+                "speaker": 0,
+                "punctuated_word": "behavior"
+            },
+            {
+                "word": "as",
+                "start": 36.697098,
+                "end": 36.897,
+                "speaker": 0,
+                "punctuated_word": "as"
+            },
+            {
+                "word": "a",
+                "start": 36.897,
+                "end": 37.01694,
+                "speaker": 0,
+                "punctuated_word": "a"
+            },
+            {
+                "word": "sign",
+                "start": 37.01694,
+                "end": 37.33678,
+                "speaker": 0,
+                "punctuated_word": "sign"
+            },
+            {
+                "word": "of",
+                "start": 37.33678,
+                "end": 37.57666,
+                "speaker": 0,
+                "punctuated_word": "of"
+            },
+            {
+                "word": "mental",
+                "start": 37.57666,
+                "end": 38.07666,
+                "speaker": 0,
+                "punctuated_word": "mental"
+            },
+            {
+                "word": "instability",
+                "start": 38.13638,
+                "end": 38.63638,
+                "speaker": 0,
+                "punctuated_word": "instability."
+            }
+        ]
+    },
+    {
+        "id": "43152d70-adbd-40bf-8323-6491e6ce9483",
+        "start": 39.53568,
+        "end": 40.95522,
+        "transcript": "But decades of psychology",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "but",
+                "start": 39.53568,
+                "end": 39.77556,
+                "speaker": 0,
+                "punctuated_word": "But"
+            },
+            {
+                "word": "decades",
+                "start": 39.77556,
+                "end": 40.27556,
+                "speaker": 0,
+                "punctuated_word": "decades"
+            },
+            {
+                "word": "of",
+                "start": 40.2953,
+                "end": 40.45522,
+                "speaker": 0,
+                "punctuated_word": "of"
+            },
+            {
+                "word": "psychology",
+                "start": 40.45522,
+                "end": 40.95522,
+                "speaker": 0,
+                "punctuated_word": "psychology"
+            }
+        ]
+    },
+    {
+        "id": "264c2164-154a-4a63-ac89-a9938aac497a",
+        "start": 41.37476,
+        "end": 44.03368,
+        "transcript": "research show that talking to yourself is completely",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "research",
+                "start": 41.37476,
+                "end": 41.81454,
+                "speaker": 0,
+                "punctuated_word": "research"
+            },
+            {
+                "word": "show",
+                "start": 41.81454,
+                "end": 42.05442,
+                "speaker": 0,
+                "punctuated_word": "show"
+            },
+            {
+                "word": "that",
+                "start": 42.05442,
+                "end": 42.2943,
+                "speaker": 0,
+                "punctuated_word": "that"
+            },
+            {
+                "word": "talking",
+                "start": 42.2943,
+                "end": 42.6941,
+                "speaker": 0,
+                "punctuated_word": "talking"
+            },
+            {
+                "word": "to",
+                "start": 42.6941,
+                "end": 42.81404,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "yourself",
+                "start": 42.81404,
+                "end": 43.253822,
+                "speaker": 0,
+                "punctuated_word": "yourself"
+            },
+            {
+                "word": "is",
+                "start": 43.253822,
+                "end": 43.53368,
+                "speaker": 0,
+                "punctuated_word": "is"
+            },
+            {
+                "word": "completely",
+                "start": 43.53368,
+                "end": 44.03368,
+                "speaker": 0,
+                "punctuated_word": "completely"
+            }
+        ]
+    },
+    {
+        "id": "b834caca-0334-4034-8076-81907e2c43e1",
+        "start": 45.01294,
+        "end": 45.51294,
+        "transcript": "normal.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "normal",
+                "start": 45.01294,
+                "end": 45.51294,
+                "speaker": 0,
+                "punctuated_word": "normal."
+            }
+        ]
+    },
+    {
+        "id": "55abd74a-a0e8-4c2e-9d4a-eb16ac3aec7b",
+        "start": 46.05242,
+        "end": 52.21252,
+        "transcript": "In fact, Most if not all of us engage in some form of self talk every single day.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "in",
+                "start": 46.05242,
+                "end": 46.21234,
+                "speaker": 0,
+                "punctuated_word": "In"
+            },
+            {
+                "word": "fact",
+                "start": 46.21234,
+                "end": 46.71234,
+                "speaker": 0,
+                "punctuated_word": "fact,"
+            },
+            {
+                "word": "most",
+                "start": 46.91492,
+                "end": 47.31472,
+                "speaker": 0,
+                "punctuated_word": "Most"
+            },
+            {
+                "word": "if",
+                "start": 47.31472,
+                "end": 47.47464,
+                "speaker": 0,
+                "punctuated_word": "if"
+            },
+            {
+                "word": "not",
+                "start": 47.47464,
+                "end": 47.79448,
+                "speaker": 0,
+                "punctuated_word": "not"
+            },
+            {
+                "word": "all",
+                "start": 47.79448,
+                "end": 48.034363,
+                "speaker": 0,
+                "punctuated_word": "all"
+            },
+            {
+                "word": "of",
+                "start": 48.034363,
+                "end": 48.194283,
+                "speaker": 0,
+                "punctuated_word": "of"
+            },
+            {
+                "word": "us",
+                "start": 48.194283,
+                "end": 48.514122,
+                "speaker": 0,
+                "punctuated_word": "us"
+            },
+            {
+                "word": "engage",
+                "start": 48.514122,
+                "end": 48.91392,
+                "speaker": 0,
+                "punctuated_word": "engage"
+            },
+            {
+                "word": "in",
+                "start": 48.91392,
+                "end": 49.1538,
+                "speaker": 0,
+                "punctuated_word": "in"
+            },
+            {
+                "word": "some",
+                "start": 49.1538,
+                "end": 49.433662,
+                "speaker": 0,
+                "punctuated_word": "some"
+            },
+            {
+                "word": "form",
+                "start": 49.433662,
+                "end": 49.83346,
+                "speaker": 0,
+                "punctuated_word": "form"
+            },
+            {
+                "word": "of",
+                "start": 49.83346,
+                "end": 49.99338,
+                "speaker": 0,
+                "punctuated_word": "of"
+            },
+            {
+                "word": "self",
+                "start": 49.99338,
+                "end": 50.353203,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "talk",
+                "start": 50.353203,
+                "end": 50.79298,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "every",
+                "start": 50.79298,
+                "end": 51.19278,
+                "speaker": 0,
+                "punctuated_word": "every"
+            },
+            {
+                "word": "single",
+                "start": 51.19278,
+                "end": 51.69278,
+                "speaker": 0,
+                "punctuated_word": "single"
+            },
+            {
+                "word": "day",
+                "start": 51.71252,
+                "end": 52.21252,
+                "speaker": 0,
+                "punctuated_word": "day."
+            }
+        ]
+    },
+    {
+        "id": "34ce35a0-3377-4641-b179-3d39e4a52499",
+        "start": 52.752003,
+        "end": 54.77124,
+        "transcript": "So why do we talk to ourselves",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "so",
+                "start": 52.752003,
+                "end": 53.252003,
+                "speaker": 0,
+                "punctuated_word": "So"
+            },
+            {
+                "word": "why",
+                "start": 53.31172,
+                "end": 53.591583,
+                "speaker": 0,
+                "punctuated_word": "why"
+            },
+            {
+                "word": "do",
+                "start": 53.591583,
+                "end": 53.751503,
+                "speaker": 0,
+                "punctuated_word": "do"
+            },
+            {
+                "word": "we",
+                "start": 53.751503,
+                "end": 53.911423,
+                "speaker": 0,
+                "punctuated_word": "we"
+            },
+            {
+                "word": "talk",
+                "start": 53.911423,
+                "end": 54.151302,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "to",
+                "start": 54.151302,
+                "end": 54.27124,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "ourselves",
+                "start": 54.27124,
+                "end": 54.77124,
+                "speaker": 0,
+                "punctuated_word": "ourselves"
+            }
+        ]
+    },
+    {
+        "id": "b759a32d-5a72-4bc7-a597-b732710f789d",
+        "start": 55.11082,
+        "end": 57.56984,
+        "transcript": "and does what we say matter?",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "and",
+                "start": 55.11082,
+                "end": 55.310722,
+                "speaker": 0,
+                "punctuated_word": "and"
+            },
+            {
+                "word": "does",
+                "start": 55.310722,
+                "end": 55.750504,
+                "speaker": 0,
+                "punctuated_word": "does"
+            },
+            {
+                "word": "what",
+                "start": 55.750504,
+                "end": 56.03036,
+                "speaker": 0,
+                "punctuated_word": "what"
+            },
+            {
+                "word": "we",
+                "start": 56.03036,
+                "end": 56.3502,
+                "speaker": 0,
+                "punctuated_word": "we"
+            },
+            {
+                "word": "say",
+                "start": 56.3502,
+                "end": 56.8502,
+                "speaker": 0,
+                "punctuated_word": "say"
+            },
+            {
+                "word": "matter",
+                "start": 57.06984,
+                "end": 57.56984,
+                "speaker": 0,
+                "punctuated_word": "matter?"
+            }
+        ]
+    },
+    {
+        "id": "cf37d0bc-0afa-4355-a52e-db087ceee8b0",
+        "start": 58.389183,
+        "end": 63.9488,
+        "transcript": "Self talk refers to the narration inside hide your head, sometimes called inner speech.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "self",
+                "start": 58.389183,
+                "end": 58.788982,
+                "speaker": 0,
+                "punctuated_word": "Self"
+            },
+            {
+                "word": "talk",
+                "start": 58.788982,
+                "end": 59.10882,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "refers",
+                "start": 59.10882,
+                "end": 59.5486,
+                "speaker": 0,
+                "punctuated_word": "refers"
+            },
+            {
+                "word": "to",
+                "start": 59.5486,
+                "end": 59.708523,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "the",
+                "start": 59.708523,
+                "end": 59.90842,
+                "speaker": 0,
+                "punctuated_word": "the"
+            },
+            {
+                "word": "narration",
+                "start": 59.90842,
+                "end": 60.40842,
+                "speaker": 0,
+                "punctuated_word": "narration"
+            },
+            {
+                "word": "inside",
+                "start": 60.50812,
+                "end": 61.00812,
+                "speaker": 0,
+                "punctuated_word": "inside"
+            },
+            {
+                "word": "hide",
+                "start": 61.08998,
+                "end": 61.32986,
+                "speaker": 0,
+                "punctuated_word": "hide"
+            },
+            {
+                "word": "your",
+                "start": 61.32986,
+                "end": 61.52976,
+                "speaker": 0,
+                "punctuated_word": "your"
+            },
+            {
+                "word": "head",
+                "start": 61.52976,
+                "end": 62.009518,
+                "speaker": 0,
+                "punctuated_word": "head,"
+            },
+            {
+                "word": "sometimes",
+                "start": 62.009518,
+                "end": 62.509518,
+                "speaker": 0,
+                "punctuated_word": "sometimes"
+            },
+            {
+                "word": "called",
+                "start": 62.52926,
+                "end": 63.009018,
+                "speaker": 0,
+                "punctuated_word": "called"
+            },
+            {
+                "word": "inner",
+                "start": 63.009018,
+                "end": 63.4488,
+                "speaker": 0,
+                "punctuated_word": "inner"
+            },
+            {
+                "word": "speech",
+                "start": 63.4488,
+                "end": 63.9488,
+                "speaker": 0,
+                "punctuated_word": "speech."
+            }
+        ]
+    },
+    {
+        "id": "b495f8b8-ff31-4766-b929-1db46cd9465e",
+        "start": 64.288376,
+        "end": 67.7469,
+        "transcript": "It differs from mental imagery or calling facts and figures.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "it",
+                "start": 64.288376,
+                "end": 64.4483,
+                "speaker": 0,
+                "punctuated_word": "It"
+            },
+            {
+                "word": "differs",
+                "start": 64.4483,
+                "end": 64.80812,
+                "speaker": 0,
+                "punctuated_word": "differs"
+            },
+            {
+                "word": "from",
+                "start": 64.80812,
+                "end": 65.12796,
+                "speaker": 0,
+                "punctuated_word": "from"
+            },
+            {
+                "word": "mental",
+                "start": 65.12796,
+                "end": 65.527756,
+                "speaker": 0,
+                "punctuated_word": "mental"
+            },
+            {
+                "word": "imagery",
+                "start": 65.527756,
+                "end": 66.027756,
+                "speaker": 0,
+                "punctuated_word": "imagery"
+            },
+            {
+                "word": "or",
+                "start": 66.08748,
+                "end": 66.32736,
+                "speaker": 0,
+                "punctuated_word": "or"
+            },
+            {
+                "word": "calling",
+                "start": 66.32736,
+                "end": 66.68718,
+                "speaker": 0,
+                "punctuated_word": "calling"
+            },
+            {
+                "word": "facts",
+                "start": 66.68718,
+                "end": 67.047,
+                "speaker": 0,
+                "punctuated_word": "facts"
+            },
+            {
+                "word": "and",
+                "start": 67.047,
+                "end": 67.2469,
+                "speaker": 0,
+                "punctuated_word": "and"
+            },
+            {
+                "word": "figures",
+                "start": 67.2469,
+                "end": 67.7469,
+                "speaker": 0,
+                "punctuated_word": "figures."
+            }
+        ]
+    },
+    {
+        "id": "a6a6869f-bc09-4bc9-b0c8-36804f502225",
+        "start": 68.2464,
+        "end": 68.7464,
+        "transcript": "Specifically,",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "specifically",
+                "start": 68.2464,
+                "end": 68.7464,
+                "speaker": 0,
+                "punctuated_word": "Specifically,"
+            }
+        ]
+    },
+    {
+        "id": "fba0a109-3f25-4c6c-9dad-66b18de4cadf",
+        "start": 69.245895,
+        "end": 69.745895,
+        "transcript": "psychologists",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "psychologists",
+                "start": 69.245895,
+                "end": 69.745895,
+                "speaker": 0,
+                "punctuated_word": "psychologists"
+            }
+        ]
+    },
+    {
+        "id": "7fbd2a45-ab1e-45c1-b36a-e2c252641baf",
+        "start": 70.08548,
+        "end": 72.10472,
+        "transcript": "define self talk as verbalized",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "define",
+                "start": 70.08548,
+                "end": 70.58548,
+                "speaker": 0,
+                "punctuated_word": "define"
+            },
+            {
+                "word": "self",
+                "start": 70.76514,
+                "end": 71.08498,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "talk",
+                "start": 71.08498,
+                "end": 71.4448,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "as",
+                "start": 71.4448,
+                "end": 71.60472,
+                "speaker": 0,
+                "punctuated_word": "as"
+            },
+            {
+                "word": "verbalized",
+                "start": 71.60472,
+                "end": 72.10472,
+                "speaker": 0,
+                "punctuated_word": "verbalized"
+            }
+        ]
+    },
+    {
+        "id": "8b9278fb-3ded-4f9b-9d2b-7c40590c0ae7",
+        "start": 72.52426,
+        "end": 76.3426,
+        "transcript": "thoughts directed towards yourself or some facet of your life.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "thoughts",
+                "start": 72.52426,
+                "end": 72.92406,
+                "speaker": 0,
+                "punctuated_word": "thoughts"
+            },
+            {
+                "word": "directed",
+                "start": 72.92406,
+                "end": 73.42406,
+                "speaker": 0,
+                "punctuated_word": "directed"
+            },
+            {
+                "word": "towards",
+                "start": 73.4438,
+                "end": 73.8436,
+                "speaker": 0,
+                "punctuated_word": "towards"
+            },
+            {
+                "word": "yourself",
+                "start": 73.8436,
+                "end": 74.3436,
+                "speaker": 0,
+                "punctuated_word": "yourself"
+            },
+            {
+                "word": "or",
+                "start": 74.36334,
+                "end": 74.72316,
+                "speaker": 0,
+                "punctuated_word": "or"
+            },
+            {
+                "word": "some",
+                "start": 74.72316,
+                "end": 75.12296,
+                "speaker": 0,
+                "punctuated_word": "some"
+            },
+            {
+                "word": "facet",
+                "start": 75.12296,
+                "end": 75.52276,
+                "speaker": 0,
+                "punctuated_word": "facet"
+            },
+            {
+                "word": "of",
+                "start": 75.52276,
+                "end": 75.6427,
+                "speaker": 0,
+                "punctuated_word": "of"
+            },
+            {
+                "word": "your",
+                "start": 75.6427,
+                "end": 75.8426,
+                "speaker": 0,
+                "punctuated_word": "your"
+            },
+            {
+                "word": "life",
+                "start": 75.8426,
+                "end": 76.3426,
+                "speaker": 0,
+                "punctuated_word": "life."
+            }
+        ]
+    },
+    {
+        "id": "9e07be40-b720-45c5-8983-4730ac2a2410",
+        "start": 77.18492,
+        "end": 79.04424,
+        "transcript": "This includes personal conversations,",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "this",
+                "start": 77.18492,
+                "end": 77.46478,
+                "speaker": 0,
+                "punctuated_word": "This"
+            },
+            {
+                "word": "includes",
+                "start": 77.46478,
+                "end": 77.96478,
+                "speaker": 0,
+                "punctuated_word": "includes"
+            },
+            {
+                "word": "personal",
+                "start": 78.06448,
+                "end": 78.54424,
+                "speaker": 0,
+                "punctuated_word": "personal"
+            },
+            {
+                "word": "conversations",
+                "start": 78.54424,
+                "end": 79.04424,
+                "speaker": 0,
+                "punctuated_word": "conversations,"
+            }
+        ]
+    },
+    {
+        "id": "51edc1be-ee39-4df0-a2d3-8db11421eb2e",
+        "start": 79.38382,
+        "end": 86.76038,
+        "transcript": "like, I need to work on my brief throw, but it also includes reflections you have throughout the day, like, the gym's crowded tonight.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "like",
+                "start": 79.38382,
+                "end": 79.70366,
+                "speaker": 0,
+                "punctuated_word": "like,"
+            },
+            {
+                "word": "i",
+                "start": 79.70366,
+                "end": 79.86358,
+                "speaker": 0,
+                "punctuated_word": "I"
+            },
+            {
+                "word": "need",
+                "start": 79.86358,
+                "end": 80.0235,
+                "speaker": 0,
+                "punctuated_word": "need"
+            },
+            {
+                "word": "to",
+                "start": 80.0235,
+                "end": 80.14344,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "work",
+                "start": 80.14344,
+                "end": 80.34334,
+                "speaker": 0,
+                "punctuated_word": "work"
+            },
+            {
+                "word": "on",
+                "start": 80.34334,
+                "end": 80.503265,
+                "speaker": 0,
+                "punctuated_word": "on"
+            },
+            {
+                "word": "my",
+                "start": 80.503265,
+                "end": 80.70316,
+                "speaker": 0,
+                "punctuated_word": "my"
+            },
+            {
+                "word": "brief",
+                "start": 80.70316,
+                "end": 80.94304,
+                "speaker": 0,
+                "punctuated_word": "brief"
+            },
+            {
+                "word": "throw",
+                "start": 80.94304,
+                "end": 81.44304,
+                "speaker": 0,
+                "punctuated_word": "throw,"
+            },
+            {
+                "word": "but",
+                "start": 81.54274,
+                "end": 81.742645,
+                "speaker": 0,
+                "punctuated_word": "but"
+            },
+            {
+                "word": "it",
+                "start": 81.742645,
+                "end": 81.902565,
+                "speaker": 0,
+                "punctuated_word": "it"
+            },
+            {
+                "word": "also",
+                "start": 81.902565,
+                "end": 82.222404,
+                "speaker": 0,
+                "punctuated_word": "also"
+            },
+            {
+                "word": "includes",
+                "start": 82.222404,
+                "end": 82.70216,
+                "speaker": 0,
+                "punctuated_word": "includes"
+            },
+            {
+                "word": "reflections",
+                "start": 82.70216,
+                "end": 83.20216,
+                "speaker": 0,
+                "punctuated_word": "reflections"
+            },
+            {
+                "word": "you",
+                "start": 83.38182,
+                "end": 83.50176,
+                "speaker": 0,
+                "punctuated_word": "you"
+            },
+            {
+                "word": "have",
+                "start": 83.50176,
+                "end": 83.70166,
+                "speaker": 0,
+                "punctuated_word": "have"
+            },
+            {
+                "word": "throughout",
+                "start": 83.70166,
+                "end": 84.061485,
+                "speaker": 0,
+                "punctuated_word": "throughout"
+            },
+            {
+                "word": "the",
+                "start": 84.061485,
+                "end": 84.18142,
+                "speaker": 0,
+                "punctuated_word": "the"
+            },
+            {
+                "word": "day",
+                "start": 84.18142,
+                "end": 84.50126,
+                "speaker": 0,
+                "punctuated_word": "day,"
+            },
+            {
+                "word": "like",
+                "start": 84.50126,
+                "end": 84.98102,
+                "speaker": 0,
+                "punctuated_word": "like,"
+            },
+            {
+                "word": "the",
+                "start": 84.98102,
+                "end": 85.140945,
+                "speaker": 0,
+                "punctuated_word": "the"
+            },
+            {
+                "word": "gym's",
+                "start": 85.140945,
+                "end": 85.640945,
+                "speaker": 0,
+                "punctuated_word": "gym's"
+            },
+            {
+                "word": "crowded",
+                "start": 85.66068,
+                "end": 86.16068,
+                "speaker": 0,
+                "punctuated_word": "crowded"
+            },
+            {
+                "word": "tonight",
+                "start": 86.26038,
+                "end": 86.76038,
+                "speaker": 0,
+                "punctuated_word": "tonight."
+            }
+        ]
+    },
+    {
+        "id": "df8d4460-acdd-4680-a157-5289e83afa40",
+        "start": 87.33984,
+        "end": 95.01726,
+        "transcript": "Come back tomorrow. And while most self talk in adults tends to be silent, speaking to yourself out loud also falls into this category.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "come",
+                "start": 87.33984,
+                "end": 87.49976,
+                "speaker": 0,
+                "punctuated_word": "Come"
+            },
+            {
+                "word": "back",
+                "start": 87.49976,
+                "end": 87.69966,
+                "speaker": 0,
+                "punctuated_word": "back"
+            },
+            {
+                "word": "tomorrow",
+                "start": 87.69966,
+                "end": 88.19966,
+                "speaker": 0,
+                "punctuated_word": "tomorrow."
+            },
+            {
+                "word": "and",
+                "start": 88.419304,
+                "end": 88.6192,
+                "speaker": 0,
+                "punctuated_word": "And"
+            },
+            {
+                "word": "while",
+                "start": 88.6192,
+                "end": 88.8191,
+                "speaker": 0,
+                "punctuated_word": "while"
+            },
+            {
+                "word": "most",
+                "start": 88.8191,
+                "end": 89.04,
+                "speaker": 0,
+                "punctuated_word": "most"
+            },
+            {
+                "word": "self",
+                "start": 89.15994,
+                "end": 89.439804,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "talk",
+                "start": 89.439804,
+                "end": 89.71966,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "in",
+                "start": 89.71966,
+                "end": 89.91956,
+                "speaker": 0,
+                "punctuated_word": "in"
+            },
+            {
+                "word": "adults",
+                "start": 89.91956,
+                "end": 90.39932,
+                "speaker": 0,
+                "punctuated_word": "adults"
+            },
+            {
+                "word": "tends",
+                "start": 90.39932,
+                "end": 90.679184,
+                "speaker": 0,
+                "punctuated_word": "tends"
+            },
+            {
+                "word": "to",
+                "start": 90.679184,
+                "end": 90.8391,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "be",
+                "start": 90.8391,
+                "end": 90.99902,
+                "speaker": 0,
+                "punctuated_word": "be"
+            },
+            {
+                "word": "silent",
+                "start": 90.99902,
+                "end": 91.49902,
+                "speaker": 0,
+                "punctuated_word": "silent,"
+            },
+            {
+                "word": "speaking",
+                "start": 91.51876,
+                "end": 91.918564,
+                "speaker": 0,
+                "punctuated_word": "speaking"
+            },
+            {
+                "word": "to",
+                "start": 91.918564,
+                "end": 92.07848,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "yourself",
+                "start": 92.07848,
+                "end": 92.518265,
+                "speaker": 0,
+                "punctuated_word": "yourself"
+            },
+            {
+                "word": "out",
+                "start": 92.518265,
+                "end": 92.75814,
+                "speaker": 0,
+                "punctuated_word": "out"
+            },
+            {
+                "word": "loud",
+                "start": 92.75814,
+                "end": 93.25814,
+                "speaker": 0,
+                "punctuated_word": "loud"
+            },
+            {
+                "word": "also",
+                "start": 93.27788,
+                "end": 93.6377,
+                "speaker": 0,
+                "punctuated_word": "also"
+            },
+            {
+                "word": "falls",
+                "start": 93.6377,
+                "end": 93.99752,
+                "speaker": 0,
+                "punctuated_word": "falls"
+            },
+            {
+                "word": "into",
+                "start": 93.99752,
+                "end": 94.27738,
+                "speaker": 0,
+                "punctuated_word": "into"
+            },
+            {
+                "word": "this",
+                "start": 94.27738,
+                "end": 94.51726,
+                "speaker": 0,
+                "punctuated_word": "this"
+            },
+            {
+                "word": "category",
+                "start": 94.51726,
+                "end": 95.01726,
+                "speaker": 0,
+                "punctuated_word": "category."
+            }
+        ]
+    },
+    {
+        "id": "77e97fcf-e4ed-403d-bf88-04d360dcca7f",
+        "start": 96.0365,
+        "end": 99.25514,
+        "transcript": "In fact, psychologists believe our first experiences",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "in",
+                "start": 96.0365,
+                "end": 96.27638,
+                "speaker": 0,
+                "punctuated_word": "In"
+            },
+            {
+                "word": "fact",
+                "start": 96.27638,
+                "end": 96.71616,
+                "speaker": 0,
+                "punctuated_word": "fact,"
+            },
+            {
+                "word": "psychologists",
+                "start": 96.71616,
+                "end": 97.21616,
+                "speaker": 0,
+                "punctuated_word": "psychologists"
+            },
+            {
+                "word": "believe",
+                "start": 97.51576,
+                "end": 97.99552,
+                "speaker": 0,
+                "punctuated_word": "believe"
+            },
+            {
+                "word": "our",
+                "start": 97.99552,
+                "end": 98.2354,
+                "speaker": 0,
+                "punctuated_word": "our"
+            },
+            {
+                "word": "first",
+                "start": 98.2354,
+                "end": 98.7354,
+                "speaker": 0,
+                "punctuated_word": "first"
+            },
+            {
+                "word": "experiences",
+                "start": 98.75514,
+                "end": 99.25514,
+                "speaker": 0,
+                "punctuated_word": "experiences"
+            }
+        ]
+    },
+    {
+        "id": "6951434d-9021-4148-8a79-9b18151d5977",
+        "start": 99.59472,
+        "end": 105.11322,
+        "transcript": "with self talk are mostly when as children often speak to themselves out loud as they play.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "with",
+                "start": 99.59472,
+                "end": 99.794624,
+                "speaker": 0,
+                "punctuated_word": "with"
+            },
+            {
+                "word": "self",
+                "start": 99.794624,
+                "end": 100.07448,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "talk",
+                "start": 100.07448,
+                "end": 100.31436,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "are",
+                "start": 100.31436,
+                "end": 100.51426,
+                "speaker": 0,
+                "punctuated_word": "are"
+            },
+            {
+                "word": "mostly",
+                "start": 100.51426,
+                "end": 100.95404,
+                "speaker": 0,
+                "punctuated_word": "mostly"
+            },
+            {
+                "word": "when",
+                "start": 100.95404,
+                "end": 101.055,
+                "speaker": 0,
+                "punctuated_word": "when"
+            },
+            {
+                "word": "as",
+                "start": 101.49478,
+                "end": 101.69468,
+                "speaker": 0,
+                "punctuated_word": "as"
+            },
+            {
+                "word": "children",
+                "start": 101.69468,
+                "end": 102.19468,
+                "speaker": 0,
+                "punctuated_word": "children"
+            },
+            {
+                "word": "often",
+                "start": 102.21442,
+                "end": 102.57424,
+                "speaker": 0,
+                "punctuated_word": "often"
+            },
+            {
+                "word": "speak",
+                "start": 102.57424,
+                "end": 102.77414,
+                "speaker": 0,
+                "punctuated_word": "speak"
+            },
+            {
+                "word": "to",
+                "start": 102.77414,
+                "end": 102.93406,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "themselves",
+                "start": 102.93406,
+                "end": 103.43406,
+                "speaker": 0,
+                "punctuated_word": "themselves"
+            },
+            {
+                "word": "out",
+                "start": 103.453804,
+                "end": 103.6537,
+                "speaker": 0,
+                "punctuated_word": "out"
+            },
+            {
+                "word": "loud",
+                "start": 103.6537,
+                "end": 104.13346,
+                "speaker": 0,
+                "punctuated_word": "loud"
+            },
+            {
+                "word": "as",
+                "start": 104.13346,
+                "end": 104.37334,
+                "speaker": 0,
+                "punctuated_word": "as"
+            },
+            {
+                "word": "they",
+                "start": 104.37334,
+                "end": 104.61322,
+                "speaker": 0,
+                "punctuated_word": "they"
+            },
+            {
+                "word": "play",
+                "start": 104.61322,
+                "end": 105.11322,
+                "speaker": 0,
+                "punctuated_word": "play."
+            }
+        ]
+    },
+    {
+        "id": "1ddf920d-0704-4b25-b437-d3b5e1e0c517",
+        "start": 105.53276,
+        "end": 107.59198,
+        "transcript": "In the nineteen thirties, Russian psychologist,",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "in",
+                "start": 105.53276,
+                "end": 105.6527,
+                "speaker": 0,
+                "punctuated_word": "In"
+            },
+            {
+                "word": "the",
+                "start": 105.6527,
+                "end": 105.81262,
+                "speaker": 0,
+                "punctuated_word": "the"
+            },
+            {
+                "word": "nineteen",
+                "start": 105.81262,
+                "end": 106.21242,
+                "speaker": 0,
+                "punctuated_word": "nineteen"
+            },
+            {
+                "word": "thirties",
+                "start": 106.21242,
+                "end": 106.692184,
+                "speaker": 0,
+                "punctuated_word": "thirties,"
+            },
+            {
+                "word": "russian",
+                "start": 106.692184,
+                "end": 107.09198,
+                "speaker": 0,
+                "punctuated_word": "Russian"
+            },
+            {
+                "word": "psychologist",
+                "start": 107.09198,
+                "end": 107.59198,
+                "speaker": 0,
+                "punctuated_word": "psychologist,"
+            }
+        ]
+    },
+    {
+        "id": "61391950-b2e7-4eb0-bc32-1f9d1bcf352c",
+        "start": 107.931564,
+        "end": 108.7514,
+        "transcript": "Lev Biegotsky,",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "lev",
+                "start": 107.931564,
+                "end": 108.2514,
+                "speaker": 0,
+                "punctuated_word": "Lev"
+            },
+            {
+                "word": "biegotsky",
+                "start": 108.2514,
+                "end": 108.7514,
+                "speaker": 0,
+                "punctuated_word": "Biegotsky,"
+            }
+        ]
+    },
+    {
+        "id": "3d0efdf7-dac1-4050-8eed-910a4a94ed7e",
+        "start": 109.09098,
+        "end": 112.42956,
+        "transcript": "hypothesized that this kind of speech was actually key to development.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "hypothesized",
+                "start": 109.09098,
+                "end": 109.59098,
+                "speaker": 0,
+                "punctuated_word": "hypothesized"
+            },
+            {
+                "word": "that",
+                "start": 109.77064,
+                "end": 109.97054,
+                "speaker": 0,
+                "punctuated_word": "that"
+            },
+            {
+                "word": "this",
+                "start": 109.97054,
+                "end": 110.17044,
+                "speaker": 0,
+                "punctuated_word": "this"
+            },
+            {
+                "word": "kind",
+                "start": 110.17044,
+                "end": 110.37034,
+                "speaker": 0,
+                "punctuated_word": "kind"
+            },
+            {
+                "word": "of",
+                "start": 110.37034,
+                "end": 110.53026,
+                "speaker": 0,
+                "punctuated_word": "of"
+            },
+            {
+                "word": "speech",
+                "start": 110.53026,
+                "end": 110.81012,
+                "speaker": 0,
+                "punctuated_word": "speech"
+            },
+            {
+                "word": "was",
+                "start": 110.81012,
+                "end": 111.010025,
+                "speaker": 0,
+                "punctuated_word": "was"
+            },
+            {
+                "word": "actually",
+                "start": 111.010025,
+                "end": 111.48978,
+                "speaker": 0,
+                "punctuated_word": "actually"
+            },
+            {
+                "word": "key",
+                "start": 111.48978,
+                "end": 111.76964,
+                "speaker": 0,
+                "punctuated_word": "key"
+            },
+            {
+                "word": "to",
+                "start": 111.76964,
+                "end": 111.92956,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "development",
+                "start": 111.92956,
+                "end": 112.42956,
+                "speaker": 0,
+                "punctuated_word": "development."
+            }
+        ]
+    },
+    {
+        "id": "2e4ce570-bce8-4950-9eb3-3534ab71a03f",
+        "start": 113.37986,
+        "end": 120.27666,
+        "transcript": "By repeating conversations they've had with adults, children practice managing their behaviors and emotions on their own.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "by",
+                "start": 113.37986,
+                "end": 113.57976,
+                "speaker": 0,
+                "punctuated_word": "By"
+            },
+            {
+                "word": "repeating",
+                "start": 113.57976,
+                "end": 114.07976,
+                "speaker": 0,
+                "punctuated_word": "repeating"
+            },
+            {
+                "word": "conversations",
+                "start": 114.13948,
+                "end": 114.63948,
+                "speaker": 0,
+                "punctuated_word": "conversations"
+            },
+            {
+                "word": "they've",
+                "start": 114.81914,
+                "end": 114.97906,
+                "speaker": 0,
+                "punctuated_word": "they've"
+            },
+            {
+                "word": "had",
+                "start": 114.97906,
+                "end": 115.178955,
+                "speaker": 0,
+                "punctuated_word": "had"
+            },
+            {
+                "word": "with",
+                "start": 115.178955,
+                "end": 115.33888,
+                "speaker": 0,
+                "punctuated_word": "with"
+            },
+            {
+                "word": "adults",
+                "start": 115.33888,
+                "end": 115.83888,
+                "speaker": 0,
+                "punctuated_word": "adults,"
+            },
+            {
+                "word": "children",
+                "start": 116.01854,
+                "end": 116.51854,
+                "speaker": 0,
+                "punctuated_word": "children"
+            },
+            {
+                "word": "practice",
+                "start": 116.53828,
+                "end": 117.018036,
+                "speaker": 0,
+                "punctuated_word": "practice"
+            },
+            {
+                "word": "managing",
+                "start": 117.018036,
+                "end": 117.497795,
+                "speaker": 0,
+                "punctuated_word": "managing"
+            },
+            {
+                "word": "their",
+                "start": 117.497795,
+                "end": 117.73768,
+                "speaker": 0,
+                "punctuated_word": "their"
+            },
+            {
+                "word": "behaviors",
+                "start": 117.73768,
+                "end": 118.23768,
+                "speaker": 0,
+                "punctuated_word": "behaviors"
+            },
+            {
+                "word": "and",
+                "start": 118.37736,
+                "end": 118.61724,
+                "speaker": 0,
+                "punctuated_word": "and"
+            },
+            {
+                "word": "emotions",
+                "start": 118.61724,
+                "end": 119.11724,
+                "speaker": 0,
+                "punctuated_word": "emotions"
+            },
+            {
+                "word": "on",
+                "start": 119.336876,
+                "end": 119.53678,
+                "speaker": 0,
+                "punctuated_word": "on"
+            },
+            {
+                "word": "their",
+                "start": 119.53678,
+                "end": 119.77666,
+                "speaker": 0,
+                "punctuated_word": "their"
+            },
+            {
+                "word": "own",
+                "start": 119.77666,
+                "end": 120.27666,
+                "speaker": 0,
+                "punctuated_word": "own."
+            }
+        ]
+    },
+    {
+        "id": "43cc20e1-fd2e-4e7c-9534-b9cdec2f639b",
+        "start": 121.2959,
+        "end": 125.63398,
+        "transcript": "Then as they grow older, this outward self talk tends to become internalized.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "then",
+                "start": 121.2959,
+                "end": 121.53578,
+                "speaker": 0,
+                "punctuated_word": "Then"
+            },
+            {
+                "word": "as",
+                "start": 121.53578,
+                "end": 121.6957,
+                "speaker": 0,
+                "punctuated_word": "as"
+            },
+            {
+                "word": "they",
+                "start": 121.6957,
+                "end": 121.85562,
+                "speaker": 0,
+                "punctuated_word": "they"
+            },
+            {
+                "word": "grow",
+                "start": 121.85562,
+                "end": 122.13548,
+                "speaker": 0,
+                "punctuated_word": "grow"
+            },
+            {
+                "word": "older",
+                "start": 122.13548,
+                "end": 122.57526,
+                "speaker": 0,
+                "punctuated_word": "older,"
+            },
+            {
+                "word": "this",
+                "start": 122.57526,
+                "end": 122.93508,
+                "speaker": 0,
+                "punctuated_word": "this"
+            },
+            {
+                "word": "outward",
+                "start": 122.93508,
+                "end": 123.43508,
+                "speaker": 0,
+                "punctuated_word": "outward"
+            },
+            {
+                "word": "self",
+                "start": 123.4948,
+                "end": 123.85462,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "talk",
+                "start": 123.85462,
+                "end": 124.21444,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "tends",
+                "start": 124.21444,
+                "end": 124.53428,
+                "speaker": 0,
+                "punctuated_word": "tends"
+            },
+            {
+                "word": "to",
+                "start": 124.53428,
+                "end": 124.6942,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "become",
+                "start": 124.6942,
+                "end": 125.13398,
+                "speaker": 0,
+                "punctuated_word": "become"
+            },
+            {
+                "word": "internalized",
+                "start": 125.13398,
+                "end": 125.63398,
+                "speaker": 0,
+                "punctuated_word": "internalized."
+            }
+        ]
+    },
+    {
+        "id": "ee4c2148-34d0-4b17-a1fc-2719b152b2b2",
+        "start": 126.47492,
+        "end": 128.77402,
+        "transcript": "Morping into a private inner dialogue.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "morping",
+                "start": 126.47492,
+                "end": 126.874725,
+                "speaker": 0,
+                "punctuated_word": "Morping"
+            },
+            {
+                "word": "into",
+                "start": 126.874725,
+                "end": 127.23454,
+                "speaker": 0,
+                "punctuated_word": "into"
+            },
+            {
+                "word": "a",
+                "start": 127.23454,
+                "end": 127.39446,
+                "speaker": 0,
+                "punctuated_word": "a"
+            },
+            {
+                "word": "private",
+                "start": 127.39446,
+                "end": 127.89446,
+                "speaker": 0,
+                "punctuated_word": "private"
+            },
+            {
+                "word": "inner",
+                "start": 127.9142,
+                "end": 128.27402,
+                "speaker": 0,
+                "punctuated_word": "inner"
+            },
+            {
+                "word": "dialogue",
+                "start": 128.27402,
+                "end": 128.77402,
+                "speaker": 0,
+                "punctuated_word": "dialogue."
+            }
+        ]
+    },
+    {
+        "id": "5e625432-fda2-4899-ac0d-46a5aa244220",
+        "start": 129.5134,
+        "end": 137.04988,
+        "transcript": "We know this internal self talk is important and can help you plan, work through difficult situations, and even motivate you throughout the day.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "we",
+                "start": 129.5134,
+                "end": 129.7133,
+                "speaker": 0,
+                "punctuated_word": "We"
+            },
+            {
+                "word": "know",
+                "start": 129.7133,
+                "end": 129.99316,
+                "speaker": 0,
+                "punctuated_word": "know"
+            },
+            {
+                "word": "this",
+                "start": 129.99316,
+                "end": 130.23305,
+                "speaker": 0,
+                "punctuated_word": "this"
+            },
+            {
+                "word": "internal",
+                "start": 130.23305,
+                "end": 130.7128,
+                "speaker": 0,
+                "punctuated_word": "internal"
+            },
+            {
+                "word": "self",
+                "start": 130.7128,
+                "end": 130.99266,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "talk",
+                "start": 130.99266,
+                "end": 131.27252,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "is",
+                "start": 131.27252,
+                "end": 131.43245,
+                "speaker": 0,
+                "punctuated_word": "is"
+            },
+            {
+                "word": "important",
+                "start": 131.43245,
+                "end": 131.93245,
+                "speaker": 0,
+                "punctuated_word": "important"
+            },
+            {
+                "word": "and",
+                "start": 132.15208,
+                "end": 132.312,
+                "speaker": 0,
+                "punctuated_word": "and"
+            },
+            {
+                "word": "can",
+                "start": 132.312,
+                "end": 132.5119,
+                "speaker": 0,
+                "punctuated_word": "can"
+            },
+            {
+                "word": "help",
+                "start": 132.5119,
+                "end": 132.7118,
+                "speaker": 0,
+                "punctuated_word": "help"
+            },
+            {
+                "word": "you",
+                "start": 132.7118,
+                "end": 132.95168,
+                "speaker": 0,
+                "punctuated_word": "you"
+            },
+            {
+                "word": "plan",
+                "start": 132.95168,
+                "end": 133.43144,
+                "speaker": 0,
+                "punctuated_word": "plan,"
+            },
+            {
+                "word": "work",
+                "start": 133.43144,
+                "end": 133.67133,
+                "speaker": 0,
+                "punctuated_word": "work"
+            },
+            {
+                "word": "through",
+                "start": 133.67133,
+                "end": 133.87122,
+                "speaker": 0,
+                "punctuated_word": "through"
+            },
+            {
+                "word": "difficult",
+                "start": 133.87122,
+                "end": 134.35098,
+                "speaker": 0,
+                "punctuated_word": "difficult"
+            },
+            {
+                "word": "situations",
+                "start": 134.35098,
+                "end": 134.85098,
+                "speaker": 0,
+                "punctuated_word": "situations,"
+            },
+            {
+                "word": "and",
+                "start": 134.9107,
+                "end": 135.1106,
+                "speaker": 0,
+                "punctuated_word": "and"
+            },
+            {
+                "word": "even",
+                "start": 135.1106,
+                "end": 135.43045,
+                "speaker": 0,
+                "punctuated_word": "even"
+            },
+            {
+                "word": "motivate",
+                "start": 135.43045,
+                "end": 135.9102,
+                "speaker": 0,
+                "punctuated_word": "motivate"
+            },
+            {
+                "word": "you",
+                "start": 135.9102,
+                "end": 136.03014,
+                "speaker": 0,
+                "punctuated_word": "you"
+            },
+            {
+                "word": "throughout",
+                "start": 136.03014,
+                "end": 136.42995,
+                "speaker": 0,
+                "punctuated_word": "throughout"
+            },
+            {
+                "word": "the",
+                "start": 136.42995,
+                "end": 136.54988,
+                "speaker": 0,
+                "punctuated_word": "the"
+            },
+            {
+                "word": "day",
+                "start": 136.54988,
+                "end": 137.04988,
+                "speaker": 0,
+                "punctuated_word": "day."
+            }
+        ]
+    },
+    {
+        "id": "ad22c2cd-0e65-4b1d-a862-1fb6d33ee029",
+        "start": 137.7093,
+        "end": 140.08963,
+        "transcript": "But studying self talk can be difficult.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "but",
+                "start": 137.7093,
+                "end": 137.90921,
+                "speaker": 0,
+                "punctuated_word": "But"
+            },
+            {
+                "word": "studying",
+                "start": 137.90921,
+                "end": 138.40921,
+                "speaker": 0,
+                "punctuated_word": "studying"
+            },
+            {
+                "word": "self",
+                "start": 138.54889,
+                "end": 138.87,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "talk",
+                "start": 138.90997,
+                "end": 139.26979,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "can",
+                "start": 139.26979,
+                "end": 139.4697,
+                "speaker": 0,
+                "punctuated_word": "can"
+            },
+            {
+                "word": "be",
+                "start": 139.4697,
+                "end": 139.58963,
+                "speaker": 0,
+                "punctuated_word": "be"
+            },
+            {
+                "word": "difficult",
+                "start": 139.58963,
+                "end": 140.08963,
+                "speaker": 0,
+                "punctuated_word": "difficult."
+            }
+        ]
+    },
+    {
+        "id": "4e87b969-fe93-40a2-96ff-990f02cb7f46",
+        "start": 140.90898,
+        "end": 161.90118,
+        "transcript": "It relies on study subjects clearly tracking a behavior that's spontaneous and often done without conscious control. For this reason, scientists are still working to answer basic questions like, why do some people self talk more than others. What areas of the brain are activated during self talk? And how does this activation differ from normal conversation?",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "it",
+                "start": 140.90898,
+                "end": 141.0689,
+                "speaker": 0,
+                "punctuated_word": "It"
+            },
+            {
+                "word": "relies",
+                "start": 141.0689,
+                "end": 141.5689,
+                "speaker": 0,
+                "punctuated_word": "relies"
+            },
+            {
+                "word": "on",
+                "start": 141.6686,
+                "end": 141.98843,
+                "speaker": 0,
+                "punctuated_word": "on"
+            },
+            {
+                "word": "study",
+                "start": 141.98843,
+                "end": 142.42822,
+                "speaker": 0,
+                "punctuated_word": "study"
+            },
+            {
+                "word": "subjects",
+                "start": 142.42822,
+                "end": 142.92822,
+                "speaker": 0,
+                "punctuated_word": "subjects"
+            },
+            {
+                "word": "clearly",
+                "start": 143.02791,
+                "end": 143.52791,
+                "speaker": 0,
+                "punctuated_word": "clearly"
+            },
+            {
+                "word": "tracking",
+                "start": 143.54765,
+                "end": 144.02742,
+                "speaker": 0,
+                "punctuated_word": "tracking"
+            },
+            {
+                "word": "a",
+                "start": 144.02742,
+                "end": 144.14735,
+                "speaker": 0,
+                "punctuated_word": "a"
+            },
+            {
+                "word": "behavior",
+                "start": 144.14735,
+                "end": 144.64735,
+                "speaker": 0,
+                "punctuated_word": "behavior"
+            },
+            {
+                "word": "that's",
+                "start": 144.74706,
+                "end": 145.02692,
+                "speaker": 0,
+                "punctuated_word": "that's"
+            },
+            {
+                "word": "spontaneous",
+                "start": 145.02692,
+                "end": 145.52692,
+                "speaker": 0,
+                "punctuated_word": "spontaneous"
+            },
+            {
+                "word": "and",
+                "start": 145.70657,
+                "end": 145.8665,
+                "speaker": 0,
+                "punctuated_word": "and"
+            },
+            {
+                "word": "often",
+                "start": 145.8665,
+                "end": 146.14636,
+                "speaker": 0,
+                "punctuated_word": "often"
+            },
+            {
+                "word": "done",
+                "start": 146.14636,
+                "end": 146.34625,
+                "speaker": 0,
+                "punctuated_word": "done"
+            },
+            {
+                "word": "without",
+                "start": 146.34625,
+                "end": 146.66609,
+                "speaker": 0,
+                "punctuated_word": "without"
+            },
+            {
+                "word": "conscious",
+                "start": 146.66609,
+                "end": 147.14586,
+                "speaker": 0,
+                "punctuated_word": "conscious"
+            },
+            {
+                "word": "control",
+                "start": 147.14586,
+                "end": 147.64586,
+                "speaker": 0,
+                "punctuated_word": "control."
+            },
+            {
+                "word": "for",
+                "start": 147.94545,
+                "end": 148.14536,
+                "speaker": 0,
+                "punctuated_word": "For"
+            },
+            {
+                "word": "this",
+                "start": 148.14536,
+                "end": 148.42522,
+                "speaker": 0,
+                "punctuated_word": "this"
+            },
+            {
+                "word": "reason",
+                "start": 148.42522,
+                "end": 148.92522,
+                "speaker": 0,
+                "punctuated_word": "reason,"
+            },
+            {
+                "word": "scientists",
+                "start": 148.98494,
+                "end": 149.48494,
+                "speaker": 0,
+                "punctuated_word": "scientists"
+            },
+            {
+                "word": "are",
+                "start": 149.54466,
+                "end": 149.74455,
+                "speaker": 0,
+                "punctuated_word": "are"
+            },
+            {
+                "word": "still",
+                "start": 149.74455,
+                "end": 149.98444,
+                "speaker": 0,
+                "punctuated_word": "still"
+            },
+            {
+                "word": "working",
+                "start": 149.98444,
+                "end": 150.34425,
+                "speaker": 0,
+                "punctuated_word": "working"
+            },
+            {
+                "word": "to",
+                "start": 150.34425,
+                "end": 150.4642,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "answer",
+                "start": 150.4642,
+                "end": 150.90398,
+                "speaker": 0,
+                "punctuated_word": "answer"
+            },
+            {
+                "word": "basic",
+                "start": 150.90398,
+                "end": 151.34375,
+                "speaker": 0,
+                "punctuated_word": "basic"
+            },
+            {
+                "word": "questions",
+                "start": 151.34375,
+                "end": 151.84375,
+                "speaker": 0,
+                "punctuated_word": "questions"
+            },
+            {
+                "word": "like",
+                "start": 151.98343,
+                "end": 152.48343,
+                "speaker": 0,
+                "punctuated_word": "like,"
+            },
+            {
+                "word": "why",
+                "start": 152.50317,
+                "end": 152.6631,
+                "speaker": 0,
+                "punctuated_word": "why"
+            },
+            {
+                "word": "do",
+                "start": 152.6631,
+                "end": 152.86299,
+                "speaker": 0,
+                "punctuated_word": "do"
+            },
+            {
+                "word": "some",
+                "start": 152.86299,
+                "end": 153.0629,
+                "speaker": 0,
+                "punctuated_word": "some"
+            },
+            {
+                "word": "people",
+                "start": 153.0629,
+                "end": 153.46269,
+                "speaker": 0,
+                "punctuated_word": "people"
+            },
+            {
+                "word": "self",
+                "start": 153.46269,
+                "end": 153.6626,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "talk",
+                "start": 153.6626,
+                "end": 153.765,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "more",
+                "start": 153.92493,
+                "end": 154.12482,
+                "speaker": 0,
+                "punctuated_word": "more"
+            },
+            {
+                "word": "than",
+                "start": 154.12482,
+                "end": 154.28474,
+                "speaker": 0,
+                "punctuated_word": "than"
+            },
+            {
+                "word": "others",
+                "start": 154.28474,
+                "end": 154.78474,
+                "speaker": 0,
+                "punctuated_word": "others."
+            },
+            {
+                "word": "what",
+                "start": 154.92442,
+                "end": 155.24426,
+                "speaker": 0,
+                "punctuated_word": "What"
+            },
+            {
+                "word": "areas",
+                "start": 155.24426,
+                "end": 155.72401,
+                "speaker": 0,
+                "punctuated_word": "areas"
+            },
+            {
+                "word": "of",
+                "start": 155.72401,
+                "end": 155.88394,
+                "speaker": 0,
+                "punctuated_word": "of"
+            },
+            {
+                "word": "the",
+                "start": 155.88394,
+                "end": 156.04385,
+                "speaker": 0,
+                "punctuated_word": "the"
+            },
+            {
+                "word": "brain",
+                "start": 156.04385,
+                "end": 156.54385,
+                "speaker": 0,
+                "punctuated_word": "brain"
+            },
+            {
+                "word": "are",
+                "start": 156.5636,
+                "end": 156.7635,
+                "speaker": 0,
+                "punctuated_word": "are"
+            },
+            {
+                "word": "activated",
+                "start": 156.7635,
+                "end": 157.2635,
+                "speaker": 0,
+                "punctuated_word": "activated"
+            },
+            {
+                "word": "during",
+                "start": 157.48314,
+                "end": 157.80298,
+                "speaker": 0,
+                "punctuated_word": "during"
+            },
+            {
+                "word": "self",
+                "start": 157.80298,
+                "end": 158.08284,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "talk",
+                "start": 158.08284,
+                "end": 158.58284,
+                "speaker": 0,
+                "punctuated_word": "talk?"
+            },
+            {
+                "word": "and",
+                "start": 158.72252,
+                "end": 158.92242,
+                "speaker": 0,
+                "punctuated_word": "And"
+            },
+            {
+                "word": "how",
+                "start": 158.92242,
+                "end": 159.12231,
+                "speaker": 0,
+                "punctuated_word": "how"
+            },
+            {
+                "word": "does",
+                "start": 159.12231,
+                "end": 159.32222,
+                "speaker": 0,
+                "punctuated_word": "does"
+            },
+            {
+                "word": "this",
+                "start": 159.32222,
+                "end": 159.52213,
+                "speaker": 0,
+                "punctuated_word": "this"
+            },
+            {
+                "word": "activation",
+                "start": 159.52213,
+                "end": 160.02213,
+                "speaker": 0,
+                "punctuated_word": "activation"
+            },
+            {
+                "word": "differ",
+                "start": 160.28174,
+                "end": 160.72153,
+                "speaker": 0,
+                "punctuated_word": "differ"
+            },
+            {
+                "word": "from",
+                "start": 160.72153,
+                "end": 161.00137,
+                "speaker": 0,
+                "punctuated_word": "from"
+            },
+            {
+                "word": "normal",
+                "start": 161.00137,
+                "end": 161.40118,
+                "speaker": 0,
+                "punctuated_word": "normal"
+            },
+            {
+                "word": "conversation",
+                "start": 161.40118,
+                "end": 161.90118,
+                "speaker": 0,
+                "punctuated_word": "conversation?"
+            }
+        ]
+    },
+    {
+        "id": "fed6b9a1-eca9-4680-8760-26537f0293af",
+        "start": 162.80048,
+        "end": 164.97964,
+        "transcript": "One thing we know for certain, however,",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "one",
+                "start": 162.80048,
+                "end": 163.04036,
+                "speaker": 0,
+                "punctuated_word": "One"
+            },
+            {
+                "word": "thing",
+                "start": 163.04036,
+                "end": 163.28024,
+                "speaker": 0,
+                "punctuated_word": "thing"
+            },
+            {
+                "word": "we",
+                "start": 163.28024,
+                "end": 163.44016,
+                "speaker": 0,
+                "punctuated_word": "we"
+            },
+            {
+                "word": "know",
+                "start": 163.44016,
+                "end": 163.68004,
+                "speaker": 0,
+                "punctuated_word": "know"
+            },
+            {
+                "word": "for",
+                "start": 163.68004,
+                "end": 163.9599,
+                "speaker": 0,
+                "punctuated_word": "for"
+            },
+            {
+                "word": "certain",
+                "start": 163.9599,
+                "end": 164.4599,
+                "speaker": 0,
+                "punctuated_word": "certain,"
+            },
+            {
+                "word": "however",
+                "start": 164.47964,
+                "end": 164.97964,
+                "speaker": 0,
+                "punctuated_word": "however,"
+            }
+        ]
+    },
+    {
+        "id": "15346b88-2fcc-44f9-894e-f4a6d28848ea",
+        "start": 165.31921,
+        "end": 168.05945,
+        "transcript": "is that what you say in these conversations",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "is",
+                "start": 165.31921,
+                "end": 165.51912,
+                "speaker": 0,
+                "punctuated_word": "is"
+            },
+            {
+                "word": "that",
+                "start": 165.51912,
+                "end": 165.83896,
+                "speaker": 0,
+                "punctuated_word": "that"
+            },
+            {
+                "word": "what",
+                "start": 165.83896,
+                "end": 166.07884,
+                "speaker": 0,
+                "punctuated_word": "what"
+            },
+            {
+                "word": "you",
+                "start": 166.07884,
+                "end": 166.44,
+                "speaker": 0,
+                "punctuated_word": "you"
+            },
+            {
+                "word": "say",
+                "start": 166.59993,
+                "end": 167.0397,
+                "speaker": 0,
+                "punctuated_word": "say"
+            },
+            {
+                "word": "in",
+                "start": 167.0397,
+                "end": 167.23961,
+                "speaker": 0,
+                "punctuated_word": "in"
+            },
+            {
+                "word": "these",
+                "start": 167.23961,
+                "end": 167.55945,
+                "speaker": 0,
+                "punctuated_word": "these"
+            },
+            {
+                "word": "conversations",
+                "start": 167.55945,
+                "end": 168.05945,
+                "speaker": 0,
+                "punctuated_word": "conversations"
+            }
+        ]
+    },
+    {
+        "id": "00597dcf-9299-4650-9aeb-09b67043b1cd",
+        "start": 168.51897,
+        "end": 171.97748,
+        "transcript": "can have real impact on your attitude and performance.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "can",
+                "start": 168.51897,
+                "end": 168.71886,
+                "speaker": 0,
+                "punctuated_word": "can"
+            },
+            {
+                "word": "have",
+                "start": 168.71886,
+                "end": 168.99872,
+                "speaker": 0,
+                "punctuated_word": "have"
+            },
+            {
+                "word": "real",
+                "start": 168.99872,
+                "end": 169.49872,
+                "speaker": 0,
+                "punctuated_word": "real"
+            },
+            {
+                "word": "impact",
+                "start": 169.51846,
+                "end": 170.01846,
+                "speaker": 0,
+                "punctuated_word": "impact"
+            },
+            {
+                "word": "on",
+                "start": 170.11816,
+                "end": 170.31807,
+                "speaker": 0,
+                "punctuated_word": "on"
+            },
+            {
+                "word": "your",
+                "start": 170.31807,
+                "end": 170.51796,
+                "speaker": 0,
+                "punctuated_word": "your"
+            },
+            {
+                "word": "attitude",
+                "start": 170.51796,
+                "end": 171.01796,
+                "speaker": 0,
+                "punctuated_word": "attitude"
+            },
+            {
+                "word": "and",
+                "start": 171.23761,
+                "end": 171.47748,
+                "speaker": 0,
+                "punctuated_word": "and"
+            },
+            {
+                "word": "performance",
+                "start": 171.47748,
+                "end": 171.97748,
+                "speaker": 0,
+                "punctuated_word": "performance."
+            }
+        ]
+    },
+    {
+        "id": "71bd7b7a-9210-4f93-b3e3-c8438296ca8c",
+        "start": 173.55644,
+        "end": 176.45525,
+        "transcript": "Engaging in self talk that's instructional or motivational",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "engaging",
+                "start": 173.55644,
+                "end": 173.99622,
+                "speaker": 0,
+                "punctuated_word": "Engaging"
+            },
+            {
+                "word": "in",
+                "start": 173.99622,
+                "end": 174.19612,
+                "speaker": 0,
+                "punctuated_word": "in"
+            },
+            {
+                "word": "self",
+                "start": 174.19612,
+                "end": 174.51596,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "talk",
+                "start": 174.51596,
+                "end": 174.79582,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "that's",
+                "start": 174.79582,
+                "end": 175.0357,
+                "speaker": 0,
+                "punctuated_word": "that's"
+            },
+            {
+                "word": "instructional",
+                "start": 175.0357,
+                "end": 175.5357,
+                "speaker": 0,
+                "punctuated_word": "instructional"
+            },
+            {
+                "word": "or",
+                "start": 175.8353,
+                "end": 175.95525,
+                "speaker": 0,
+                "punctuated_word": "or"
+            },
+            {
+                "word": "motivational",
+                "start": 175.95525,
+                "end": 176.45525,
+                "speaker": 0,
+                "punctuated_word": "motivational"
+            }
+        ]
+    },
+    {
+        "id": "0dd6c124-d1b9-4bde-9ac2-ad0424638c30",
+        "start": 176.91476,
+        "end": 180.3333,
+        "transcript": "has been shown to increase focus, boost self esteem,",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "has",
+                "start": 176.91476,
+                "end": 177.11467,
+                "speaker": 0,
+                "punctuated_word": "has"
+            },
+            {
+                "word": "been",
+                "start": 177.11467,
+                "end": 177.35454,
+                "speaker": 0,
+                "punctuated_word": "been"
+            },
+            {
+                "word": "shown",
+                "start": 177.35454,
+                "end": 177.67438,
+                "speaker": 0,
+                "punctuated_word": "shown"
+            },
+            {
+                "word": "to",
+                "start": 177.67438,
+                "end": 177.87428,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "increase",
+                "start": 177.87428,
+                "end": 178.37428,
+                "speaker": 0,
+                "punctuated_word": "increase"
+            },
+            {
+                "word": "focus",
+                "start": 178.39403,
+                "end": 178.89403,
+                "speaker": 0,
+                "punctuated_word": "focus,"
+            },
+            {
+                "word": "boost",
+                "start": 179.19362,
+                "end": 179.59343,
+                "speaker": 0,
+                "punctuated_word": "boost"
+            },
+            {
+                "word": "self",
+                "start": 179.59343,
+                "end": 179.8333,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "esteem",
+                "start": 179.8333,
+                "end": 180.3333,
+                "speaker": 0,
+                "punctuated_word": "esteem,"
+            }
+        ]
+    },
+    {
+        "id": "0182540f-d156-473b-a9a7-b77b5f206429",
+        "start": 180.75284,
+        "end": 183.11465,
+        "transcript": "and help tackle everyday tasks.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "and",
+                "start": 180.75284,
+                "end": 181.07268,
+                "speaker": 0,
+                "punctuated_word": "and"
+            },
+            {
+                "word": "help",
+                "start": 181.07268,
+                "end": 181.35254,
+                "speaker": 0,
+                "punctuated_word": "help"
+            },
+            {
+                "word": "tackle",
+                "start": 181.35254,
+                "end": 181.85254,
+                "speaker": 0,
+                "punctuated_word": "tackle"
+            },
+            {
+                "word": "everyday",
+                "start": 181.97498,
+                "end": 182.47498,
+                "speaker": 0,
+                "punctuated_word": "everyday"
+            },
+            {
+                "word": "tasks",
+                "start": 182.61465,
+                "end": 183.11465,
+                "speaker": 0,
+                "punctuated_word": "tasks."
+            }
+        ]
+    },
+    {
+        "id": "8db1b582-688c-4efb-a4c0-30d237e9b5e8",
+        "start": 183.7341,
+        "end": 188.95174,
+        "transcript": "For example, one study of collegiate tennis players found that incorporating instructional",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "for",
+                "start": 183.7341,
+                "end": 183.93399,
+                "speaker": 0,
+                "punctuated_word": "For"
+            },
+            {
+                "word": "example",
+                "start": 183.93399,
+                "end": 184.43399,
+                "speaker": 0,
+                "punctuated_word": "example,"
+            },
+            {
+                "word": "one",
+                "start": 184.7336,
+                "end": 185.01346,
+                "speaker": 0,
+                "punctuated_word": "one"
+            },
+            {
+                "word": "study",
+                "start": 185.01346,
+                "end": 185.45323,
+                "speaker": 0,
+                "punctuated_word": "study"
+            },
+            {
+                "word": "of",
+                "start": 185.45323,
+                "end": 185.65314,
+                "speaker": 0,
+                "punctuated_word": "of"
+            },
+            {
+                "word": "collegiate",
+                "start": 185.65314,
+                "end": 186.15314,
+                "speaker": 0,
+                "punctuated_word": "collegiate"
+            },
+            {
+                "word": "tennis",
+                "start": 186.25284,
+                "end": 186.69261,
+                "speaker": 0,
+                "punctuated_word": "tennis"
+            },
+            {
+                "word": "players",
+                "start": 186.69261,
+                "end": 187.19261,
+                "speaker": 0,
+                "punctuated_word": "players"
+            },
+            {
+                "word": "found",
+                "start": 187.25233,
+                "end": 187.5322,
+                "speaker": 0,
+                "punctuated_word": "found"
+            },
+            {
+                "word": "that",
+                "start": 187.5322,
+                "end": 187.7321,
+                "speaker": 0,
+                "punctuated_word": "that"
+            },
+            {
+                "word": "incorporating",
+                "start": 187.7321,
+                "end": 188.2321,
+                "speaker": 0,
+                "punctuated_word": "incorporating"
+            },
+            {
+                "word": "instructional",
+                "start": 188.45174,
+                "end": 188.95174,
+                "speaker": 0,
+                "punctuated_word": "instructional"
+            }
+        ]
+    },
+    {
+        "id": "c4677ad6-82ae-4ed2-bdf9-a60eb14a95ee",
+        "start": 189.29132,
+        "end": 190.87077,
+        "transcript": "self talk into practice",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "self",
+                "start": 189.29132,
+                "end": 189.69112,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "talk",
+                "start": 189.69112,
+                "end": 190.01096,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "into",
+                "start": 190.01096,
+                "end": 190.37077,
+                "speaker": 0,
+                "punctuated_word": "into"
+            },
+            {
+                "word": "practice",
+                "start": 190.37077,
+                "end": 190.87077,
+                "speaker": 0,
+                "punctuated_word": "practice"
+            }
+        ]
+    },
+    {
+        "id": "fb3b0fca-c6d3-43eb-8260-520e17227be8",
+        "start": 191.33029,
+        "end": 192.6299,
+        "transcript": "increased their concentration",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "increased",
+                "start": 191.33029,
+                "end": 191.83029,
+                "speaker": 0,
+                "punctuated_word": "increased"
+            },
+            {
+                "word": "their",
+                "start": 191.89001,
+                "end": 192.1299,
+                "speaker": 0,
+                "punctuated_word": "their"
+            },
+            {
+                "word": "concentration",
+                "start": 192.1299,
+                "end": 192.6299,
+                "speaker": 0,
+                "punctuated_word": "concentration"
+            }
+        ]
+    },
+    {
+        "id": "b8464a03-ce96-4ed8-ae2e-5b1fcc6dbb75",
+        "start": 193.1294,
+        "end": 194.18912,
+        "transcript": "and accuracy.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "and",
+                "start": 193.1294,
+                "end": 193.6294,
+                "speaker": 0,
+                "punctuated_word": "and"
+            },
+            {
+                "word": "accuracy",
+                "start": 193.68912,
+                "end": 194.18912,
+                "speaker": 0,
+                "punctuated_word": "accuracy."
+            }
+        ]
+    },
+    {
+        "id": "8b4892f7-e32b-4e5f-80fc-565ce14033d1",
+        "start": 195.10995,
+        "end": 198.60846,
+        "transcript": "And just as chatting to a friend can help decrease stress,",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "and",
+                "start": 195.10995,
+                "end": 195.34984,
+                "speaker": 0,
+                "punctuated_word": "And"
+            },
+            {
+                "word": "just",
+                "start": 195.34984,
+                "end": 195.6297,
+                "speaker": 0,
+                "punctuated_word": "just"
+            },
+            {
+                "word": "as",
+                "start": 195.6297,
+                "end": 195.8296,
+                "speaker": 0,
+                "punctuated_word": "as"
+            },
+            {
+                "word": "chatting",
+                "start": 195.8296,
+                "end": 196.2294,
+                "speaker": 0,
+                "punctuated_word": "chatting"
+            },
+            {
+                "word": "to",
+                "start": 196.2294,
+                "end": 196.38931,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "a",
+                "start": 196.38931,
+                "end": 196.54924,
+                "speaker": 0,
+                "punctuated_word": "a"
+            },
+            {
+                "word": "friend",
+                "start": 196.54924,
+                "end": 197.04924,
+                "speaker": 0,
+                "punctuated_word": "friend"
+            },
+            {
+                "word": "can",
+                "start": 197.06898,
+                "end": 197.26888,
+                "speaker": 0,
+                "punctuated_word": "can"
+            },
+            {
+                "word": "help",
+                "start": 197.26888,
+                "end": 197.58871,
+                "speaker": 0,
+                "punctuated_word": "help"
+            },
+            {
+                "word": "decrease",
+                "start": 197.58871,
+                "end": 198.08871,
+                "speaker": 0,
+                "punctuated_word": "decrease"
+            },
+            {
+                "word": "stress",
+                "start": 198.10846,
+                "end": 198.60846,
+                "speaker": 0,
+                "punctuated_word": "stress,"
+            }
+        ]
+    },
+    {
+        "id": "766d1c44-bc4e-40fd-9ffa-d154010681af",
+        "start": 198.94804,
+        "end": 200.88731,
+        "transcript": "speaking directly to yourself",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "speaking",
+                "start": 198.94804,
+                "end": 199.44804,
+                "speaker": 0,
+                "punctuated_word": "speaking"
+            },
+            {
+                "word": "directly",
+                "start": 199.54774,
+                "end": 200.04774,
+                "speaker": 0,
+                "punctuated_word": "directly"
+            },
+            {
+                "word": "to",
+                "start": 200.26738,
+                "end": 200.38731,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "yourself",
+                "start": 200.38731,
+                "end": 200.88731,
+                "speaker": 0,
+                "punctuated_word": "yourself"
+            }
+        ]
+    },
+    {
+        "id": "cc45b4d0-1702-4d2d-94c2-9ce6da0877cc",
+        "start": 201.58672,
+        "end": 203.88582,
+        "transcript": "may also help you regulate your emotions.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "may",
+                "start": 201.58672,
+                "end": 201.8266,
+                "speaker": 0,
+                "punctuated_word": "may"
+            },
+            {
+                "word": "also",
+                "start": 201.8266,
+                "end": 202.26637,
+                "speaker": 0,
+                "punctuated_word": "also"
+            },
+            {
+                "word": "help",
+                "start": 202.26637,
+                "end": 202.50626,
+                "speaker": 0,
+                "punctuated_word": "help"
+            },
+            {
+                "word": "you",
+                "start": 202.50626,
+                "end": 202.70616,
+                "speaker": 0,
+                "punctuated_word": "you"
+            },
+            {
+                "word": "regulate",
+                "start": 202.70616,
+                "end": 203.20616,
+                "speaker": 0,
+                "punctuated_word": "regulate"
+            },
+            {
+                "word": "your",
+                "start": 203.22589,
+                "end": 203.38582,
+                "speaker": 0,
+                "punctuated_word": "your"
+            },
+            {
+                "word": "emotions",
+                "start": 203.38582,
+                "end": 203.88582,
+                "speaker": 0,
+                "punctuated_word": "emotions."
+            }
+        ]
+    },
+    {
+        "id": "9cb5c93b-23e0-4056-afc5-277d40ca8ec5",
+        "start": 204.86508,
+        "end": 205.36508,
+        "transcript": "Distanced",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "distanced",
+                "start": 204.86508,
+                "end": 205.36508,
+                "speaker": 0,
+                "punctuated_word": "Distanced"
+            }
+        ]
+    },
+    {
+        "id": "e69a6035-c7ed-4f64-b62e-896ae1ef1b8c",
+        "start": 205.86458,
+        "end": 213.82341,
+        "transcript": "self talk is when you talk to yourself as if in conversation with another person. So rather than I'm gonna crush this exam.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "self",
+                "start": 205.86458,
+                "end": 206.18442,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "talk",
+                "start": 206.18442,
+                "end": 206.50426,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "is",
+                "start": 206.50426,
+                "end": 206.66418,
+                "speaker": 0,
+                "punctuated_word": "is"
+            },
+            {
+                "word": "when",
+                "start": 206.66418,
+                "end": 206.86407,
+                "speaker": 0,
+                "punctuated_word": "when"
+            },
+            {
+                "word": "you",
+                "start": 206.86407,
+                "end": 207.14394,
+                "speaker": 0,
+                "punctuated_word": "you"
+            },
+            {
+                "word": "talk",
+                "start": 207.14394,
+                "end": 207.54373,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "to",
+                "start": 207.54373,
+                "end": 207.8236,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "yourself",
+                "start": 207.8236,
+                "end": 208.3236,
+                "speaker": 0,
+                "punctuated_word": "yourself"
+            },
+            {
+                "word": "as",
+                "start": 208.34334,
+                "end": 208.54324,
+                "speaker": 0,
+                "punctuated_word": "as"
+            },
+            {
+                "word": "if",
+                "start": 208.54324,
+                "end": 208.74313,
+                "speaker": 0,
+                "punctuated_word": "if"
+            },
+            {
+                "word": "in",
+                "start": 208.74313,
+                "end": 208.94304,
+                "speaker": 0,
+                "punctuated_word": "in"
+            },
+            {
+                "word": "conversation",
+                "start": 208.94304,
+                "end": 209.44304,
+                "speaker": 0,
+                "punctuated_word": "conversation"
+            },
+            {
+                "word": "with",
+                "start": 209.54274,
+                "end": 209.70267,
+                "speaker": 0,
+                "punctuated_word": "with"
+            },
+            {
+                "word": "another",
+                "start": 209.70267,
+                "end": 210.165,
+                "speaker": 0,
+                "punctuated_word": "another"
+            },
+            {
+                "word": "person",
+                "start": 210.20497,
+                "end": 210.70497,
+                "speaker": 0,
+                "punctuated_word": "person."
+            },
+            {
+                "word": "so",
+                "start": 210.80467,
+                "end": 211.04456,
+                "speaker": 0,
+                "punctuated_word": "So"
+            },
+            {
+                "word": "rather",
+                "start": 211.04456,
+                "end": 211.3644,
+                "speaker": 0,
+                "punctuated_word": "rather"
+            },
+            {
+                "word": "than",
+                "start": 211.3644,
+                "end": 211.8644,
+                "speaker": 0,
+                "punctuated_word": "than"
+            },
+            {
+                "word": "i'm",
+                "start": 211.92412,
+                "end": 212.16399,
+                "speaker": 0,
+                "punctuated_word": "I'm"
+            },
+            {
+                "word": "gonna",
+                "start": 212.16399,
+                "end": 212.64375,
+                "speaker": 0,
+                "punctuated_word": "gonna"
+            },
+            {
+                "word": "crush",
+                "start": 212.64375,
+                "end": 213.08353,
+                "speaker": 0,
+                "punctuated_word": "crush"
+            },
+            {
+                "word": "this",
+                "start": 213.08353,
+                "end": 213.32341,
+                "speaker": 0,
+                "punctuated_word": "this"
+            },
+            {
+                "word": "exam",
+                "start": 213.32341,
+                "end": 213.82341,
+                "speaker": 0,
+                "punctuated_word": "exam."
+            }
+        ]
+    },
+    {
+        "id": "247d0821-3dc7-4fef-9cec-1ca91f539821",
+        "start": 214.24295,
+        "end": 215.74245,
+        "transcript": "You might think Caleb,",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "you",
+                "start": 214.24295,
+                "end": 214.44286,
+                "speaker": 0,
+                "punctuated_word": "You"
+            },
+            {
+                "word": "might",
+                "start": 214.44286,
+                "end": 214.68274,
+                "speaker": 0,
+                "punctuated_word": "might"
+            },
+            {
+                "word": "think",
+                "start": 214.68274,
+                "end": 215.18274,
+                "speaker": 0,
+                "punctuated_word": "think"
+            },
+            {
+                "word": "caleb",
+                "start": 215.24245,
+                "end": 215.74245,
+                "speaker": 0,
+                "punctuated_word": "Caleb,"
+            }
+        ]
+    },
+    {
+        "id": "24845326-4f5d-4911-83f5-b09e6e0d4135",
+        "start": 216.12201,
+        "end": 218.58104,
+        "transcript": "you are prepared for this test.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "you",
+                "start": 216.12201,
+                "end": 216.48183,
+                "speaker": 0,
+                "punctuated_word": "you"
+            },
+            {
+                "word": "are",
+                "start": 216.48183,
+                "end": 216.72171,
+                "speaker": 0,
+                "punctuated_word": "are"
+            },
+            {
+                "word": "prepared",
+                "start": 216.72171,
+                "end": 217.22171,
+                "speaker": 0,
+                "punctuated_word": "prepared"
+            },
+            {
+                "word": "for",
+                "start": 217.44136,
+                "end": 217.68123,
+                "speaker": 0,
+                "punctuated_word": "for"
+            },
+            {
+                "word": "this",
+                "start": 217.68123,
+                "end": 218.08104,
+                "speaker": 0,
+                "punctuated_word": "this"
+            },
+            {
+                "word": "test",
+                "start": 218.08104,
+                "end": 218.58104,
+                "speaker": 0,
+                "punctuated_word": "test."
+            }
+        ]
+    },
+    {
+        "id": "f92721c1-670d-4ee1-815e-7aa55325bf4f",
+        "start": 218.96059,
+        "end": 230.05705,
+        "transcript": "One study found that this kind of self talk was especially beneficial for reducing stress when engaging in anxiety inducing tasks such as meeting new people or public speaking.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "one",
+                "start": 218.96059,
+                "end": 219.24045,
+                "speaker": 0,
+                "punctuated_word": "One"
+            },
+            {
+                "word": "study",
+                "start": 219.24045,
+                "end": 219.56029,
+                "speaker": 0,
+                "punctuated_word": "study"
+            },
+            {
+                "word": "found",
+                "start": 219.56029,
+                "end": 219.84015,
+                "speaker": 0,
+                "punctuated_word": "found"
+            },
+            {
+                "word": "that",
+                "start": 219.84015,
+                "end": 220.00008,
+                "speaker": 0,
+                "punctuated_word": "that"
+            },
+            {
+                "word": "this",
+                "start": 220.00008,
+                "end": 220.19998,
+                "speaker": 0,
+                "punctuated_word": "this"
+            },
+            {
+                "word": "kind",
+                "start": 220.19998,
+                "end": 220.43985,
+                "speaker": 0,
+                "punctuated_word": "kind"
+            },
+            {
+                "word": "of",
+                "start": 220.43985,
+                "end": 220.59978,
+                "speaker": 0,
+                "punctuated_word": "of"
+            },
+            {
+                "word": "self",
+                "start": 220.59978,
+                "end": 220.91962,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "talk",
+                "start": 220.91962,
+                "end": 221.1595,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "was",
+                "start": 221.1595,
+                "end": 221.43936,
+                "speaker": 0,
+                "punctuated_word": "was"
+            },
+            {
+                "word": "especially",
+                "start": 221.43936,
+                "end": 221.93936,
+                "speaker": 0,
+                "punctuated_word": "especially"
+            },
+            {
+                "word": "beneficial",
+                "start": 222.159,
+                "end": 222.659,
+                "speaker": 0,
+                "punctuated_word": "beneficial"
+            },
+            {
+                "word": "for",
+                "start": 222.91861,
+                "end": 223.11852,
+                "speaker": 0,
+                "punctuated_word": "for"
+            },
+            {
+                "word": "reducing",
+                "start": 223.11852,
+                "end": 223.61852,
+                "speaker": 0,
+                "punctuated_word": "reducing"
+            },
+            {
+                "word": "stress",
+                "start": 223.71997,
+                "end": 224.21997,
+                "speaker": 0,
+                "punctuated_word": "stress"
+            },
+            {
+                "word": "when",
+                "start": 224.23972,
+                "end": 224.4796,
+                "speaker": 0,
+                "punctuated_word": "when"
+            },
+            {
+                "word": "engaging",
+                "start": 224.4796,
+                "end": 224.9796,
+                "speaker": 0,
+                "punctuated_word": "engaging"
+            },
+            {
+                "word": "in",
+                "start": 224.99933,
+                "end": 225.23921,
+                "speaker": 0,
+                "punctuated_word": "in"
+            },
+            {
+                "word": "anxiety",
+                "start": 225.23921,
+                "end": 225.73921,
+                "speaker": 0,
+                "punctuated_word": "anxiety"
+            },
+            {
+                "word": "inducing",
+                "start": 225.99884,
+                "end": 226.49884,
+                "speaker": 0,
+                "punctuated_word": "inducing"
+            },
+            {
+                "word": "tasks",
+                "start": 226.75845,
+                "end": 227.25845,
+                "speaker": 0,
+                "punctuated_word": "tasks"
+            },
+            {
+                "word": "such",
+                "start": 227.43811,
+                "end": 227.678,
+                "speaker": 0,
+                "punctuated_word": "such"
+            },
+            {
+                "word": "as",
+                "start": 227.678,
+                "end": 227.8779,
+                "speaker": 0,
+                "punctuated_word": "as"
+            },
+            {
+                "word": "meeting",
+                "start": 227.8779,
+                "end": 228.19774,
+                "speaker": 0,
+                "punctuated_word": "meeting"
+            },
+            {
+                "word": "new",
+                "start": 228.19774,
+                "end": 228.35765,
+                "speaker": 0,
+                "punctuated_word": "new"
+            },
+            {
+                "word": "people",
+                "start": 228.35765,
+                "end": 228.85765,
+                "speaker": 0,
+                "punctuated_word": "people"
+            },
+            {
+                "word": "or",
+                "start": 228.8774,
+                "end": 229.11728,
+                "speaker": 0,
+                "punctuated_word": "or"
+            },
+            {
+                "word": "public",
+                "start": 229.11728,
+                "end": 229.55705,
+                "speaker": 0,
+                "punctuated_word": "public"
+            },
+            {
+                "word": "speaking",
+                "start": 229.55705,
+                "end": 230.05705,
+                "speaker": 0,
+                "punctuated_word": "speaking."
+            }
+        ]
+    },
+    {
+        "id": "63afd6e6-f7fe-495a-a42e-67506caf92d4",
+        "start": 230.55655,
+        "end": 235.5743,
+        "transcript": "But where positive self talk can help you, negative self talk can harm you.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "but",
+                "start": 230.55655,
+                "end": 230.75645,
+                "speaker": 0,
+                "punctuated_word": "But"
+            },
+            {
+                "word": "where",
+                "start": 230.75645,
+                "end": 230.99634,
+                "speaker": 0,
+                "punctuated_word": "where"
+            },
+            {
+                "word": "positive",
+                "start": 230.99634,
+                "end": 231.49634,
+                "speaker": 0,
+                "punctuated_word": "positive"
+            },
+            {
+                "word": "self",
+                "start": 231.59604,
+                "end": 231.87589,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "talk",
+                "start": 231.87589,
+                "end": 232.11577,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "can",
+                "start": 232.11577,
+                "end": 232.31567,
+                "speaker": 0,
+                "punctuated_word": "can"
+            },
+            {
+                "word": "help",
+                "start": 232.31567,
+                "end": 232.63551,
+                "speaker": 0,
+                "punctuated_word": "help"
+            },
+            {
+                "word": "you",
+                "start": 232.63551,
+                "end": 232.99533,
+                "speaker": 0,
+                "punctuated_word": "you,"
+            },
+            {
+                "word": "negative",
+                "start": 232.99533,
+                "end": 233.49533,
+                "speaker": 0,
+                "punctuated_word": "negative"
+            },
+            {
+                "word": "self",
+                "start": 233.59503,
+                "end": 233.95485,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "talk",
+                "start": 233.95485,
+                "end": 234.45485,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "can",
+                "start": 234.4746,
+                "end": 234.71448,
+                "speaker": 0,
+                "punctuated_word": "can"
+            },
+            {
+                "word": "harm",
+                "start": 234.71448,
+                "end": 235.0743,
+                "speaker": 0,
+                "punctuated_word": "harm"
+            },
+            {
+                "word": "you",
+                "start": 235.0743,
+                "end": 235.5743,
+                "speaker": 0,
+                "punctuated_word": "you."
+            }
+        ]
+    },
+    {
+        "id": "634c3b4f-96a3-407c-8050-1d7665750f9f",
+        "start": 236.13478,
+        "end": 238.59381,
+        "transcript": "Most people are critical of themselves occasionally,",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "most",
+                "start": 236.13478,
+                "end": 236.41464,
+                "speaker": 0,
+                "punctuated_word": "Most"
+            },
+            {
+                "word": "people",
+                "start": 236.41464,
+                "end": 236.73448,
+                "speaker": 0,
+                "punctuated_word": "people"
+            },
+            {
+                "word": "are",
+                "start": 236.73448,
+                "end": 236.89441,
+                "speaker": 0,
+                "punctuated_word": "are"
+            },
+            {
+                "word": "critical",
+                "start": 236.89441,
+                "end": 237.37416,
+                "speaker": 0,
+                "punctuated_word": "critical"
+            },
+            {
+                "word": "of",
+                "start": 237.37416,
+                "end": 237.53409,
+                "speaker": 0,
+                "punctuated_word": "of"
+            },
+            {
+                "word": "themselves",
+                "start": 237.53409,
+                "end": 238.03409,
+                "speaker": 0,
+                "punctuated_word": "themselves"
+            },
+            {
+                "word": "occasionally",
+                "start": 238.09381,
+                "end": 238.59381,
+                "speaker": 0,
+                "punctuated_word": "occasionally,"
+            }
+        ]
+    },
+    {
+        "id": "fcd70174-ea2d-4ca4-8513-ef855b801f68",
+        "start": 239.25323,
+        "end": 244.31094,
+        "transcript": "but when this behavior gets too frequent or excessively negative, it can become toxic.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "but",
+                "start": 239.25323,
+                "end": 239.45312,
+                "speaker": 0,
+                "punctuated_word": "but"
+            },
+            {
+                "word": "when",
+                "start": 239.45312,
+                "end": 239.69301,
+                "speaker": 0,
+                "punctuated_word": "when"
+            },
+            {
+                "word": "this",
+                "start": 239.69301,
+                "end": 239.93289,
+                "speaker": 0,
+                "punctuated_word": "this"
+            },
+            {
+                "word": "behavior",
+                "start": 239.93289,
+                "end": 240.41264,
+                "speaker": 0,
+                "punctuated_word": "behavior"
+            },
+            {
+                "word": "gets",
+                "start": 240.41264,
+                "end": 240.6925,
+                "speaker": 0,
+                "punctuated_word": "gets"
+            },
+            {
+                "word": "too",
+                "start": 240.6925,
+                "end": 240.93239,
+                "speaker": 0,
+                "punctuated_word": "too"
+            },
+            {
+                "word": "frequent",
+                "start": 240.93239,
+                "end": 241.41214,
+                "speaker": 0,
+                "punctuated_word": "frequent"
+            },
+            {
+                "word": "or",
+                "start": 241.41214,
+                "end": 241.61205,
+                "speaker": 0,
+                "punctuated_word": "or"
+            },
+            {
+                "word": "excessively",
+                "start": 241.61205,
+                "end": 242.11205,
+                "speaker": 0,
+                "punctuated_word": "excessively"
+            },
+            {
+                "word": "negative",
+                "start": 242.41165,
+                "end": 242.91165,
+                "speaker": 0,
+                "punctuated_word": "negative,"
+            },
+            {
+                "word": "it",
+                "start": 243.01135,
+                "end": 243.17126,
+                "speaker": 0,
+                "punctuated_word": "it"
+            },
+            {
+                "word": "can",
+                "start": 243.17126,
+                "end": 243.37117,
+                "speaker": 0,
+                "punctuated_word": "can"
+            },
+            {
+                "word": "become",
+                "start": 243.37117,
+                "end": 243.81094,
+                "speaker": 0,
+                "punctuated_word": "become"
+            },
+            {
+                "word": "toxic",
+                "start": 243.81094,
+                "end": 244.31094,
+                "speaker": 0,
+                "punctuated_word": "toxic."
+            }
+        ]
+    },
+    {
+        "id": "9f52da73-d42d-4a21-b994-54122027dae5",
+        "start": 245.01035,
+        "end": 255.43784,
+        "transcript": "High levels of negative self talk are often predictive of anxiety in children and adults. And those who constantly blame themselves for their problems and ruminate on those situations",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "high",
+                "start": 245.01035,
+                "end": 245.2902,
+                "speaker": 0,
+                "punctuated_word": "High"
+            },
+            {
+                "word": "levels",
+                "start": 245.2902,
+                "end": 245.69,
+                "speaker": 0,
+                "punctuated_word": "levels"
+            },
+            {
+                "word": "of",
+                "start": 245.69,
+                "end": 245.92989,
+                "speaker": 0,
+                "punctuated_word": "of"
+            },
+            {
+                "word": "negative",
+                "start": 245.92989,
+                "end": 246.42989,
+                "speaker": 0,
+                "punctuated_word": "negative"
+            },
+            {
+                "word": "self",
+                "start": 246.48961,
+                "end": 246.76947,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "talk",
+                "start": 246.76947,
+                "end": 247.08931,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "are",
+                "start": 247.08931,
+                "end": 247.24922,
+                "speaker": 0,
+                "punctuated_word": "are"
+            },
+            {
+                "word": "often",
+                "start": 247.24922,
+                "end": 247.60905,
+                "speaker": 0,
+                "punctuated_word": "often"
+            },
+            {
+                "word": "predictive",
+                "start": 247.60905,
+                "end": 248.10905,
+                "speaker": 0,
+                "punctuated_word": "predictive"
+            },
+            {
+                "word": "of",
+                "start": 248.20874,
+                "end": 248.32869,
+                "speaker": 0,
+                "punctuated_word": "of"
+            },
+            {
+                "word": "anxiety",
+                "start": 248.32869,
+                "end": 248.82869,
+                "speaker": 0,
+                "punctuated_word": "anxiety"
+            },
+            {
+                "word": "in",
+                "start": 248.92839,
+                "end": 249.1283,
+                "speaker": 0,
+                "punctuated_word": "in"
+            },
+            {
+                "word": "children",
+                "start": 249.1283,
+                "end": 249.6283,
+                "speaker": 0,
+                "punctuated_word": "children"
+            },
+            {
+                "word": "and",
+                "start": 249.64803,
+                "end": 249.88791,
+                "speaker": 0,
+                "punctuated_word": "and"
+            },
+            {
+                "word": "adults",
+                "start": 249.88791,
+                "end": 250.38791,
+                "speaker": 0,
+                "punctuated_word": "adults."
+            },
+            {
+                "word": "and",
+                "start": 250.65997,
+                "end": 250.85988,
+                "speaker": 0,
+                "punctuated_word": "And"
+            },
+            {
+                "word": "those",
+                "start": 250.85988,
+                "end": 251.17972,
+                "speaker": 0,
+                "punctuated_word": "those"
+            },
+            {
+                "word": "who",
+                "start": 251.17972,
+                "end": 251.4196,
+                "speaker": 0,
+                "punctuated_word": "who"
+            },
+            {
+                "word": "constantly",
+                "start": 251.4196,
+                "end": 251.9196,
+                "speaker": 0,
+                "punctuated_word": "constantly"
+            },
+            {
+                "word": "blame",
+                "start": 252.05928,
+                "end": 252.37912,
+                "speaker": 0,
+                "punctuated_word": "blame"
+            },
+            {
+                "word": "themselves",
+                "start": 252.37912,
+                "end": 252.87912,
+                "speaker": 0,
+                "punctuated_word": "themselves"
+            },
+            {
+                "word": "for",
+                "start": 252.89885,
+                "end": 253.09875,
+                "speaker": 0,
+                "punctuated_word": "for"
+            },
+            {
+                "word": "their",
+                "start": 253.09875,
+                "end": 253.33864,
+                "speaker": 0,
+                "punctuated_word": "their"
+            },
+            {
+                "word": "problems",
+                "start": 253.33864,
+                "end": 253.77841,
+                "speaker": 0,
+                "punctuated_word": "problems"
+            },
+            {
+                "word": "and",
+                "start": 253.77841,
+                "end": 254.0183,
+                "speaker": 0,
+                "punctuated_word": "and"
+            },
+            {
+                "word": "ruminate",
+                "start": 254.0183,
+                "end": 254.5183,
+                "speaker": 0,
+                "punctuated_word": "ruminate"
+            },
+            {
+                "word": "on",
+                "start": 254.53804,
+                "end": 254.73793,
+                "speaker": 0,
+                "punctuated_word": "on"
+            },
+            {
+                "word": "those",
+                "start": 254.73793,
+                "end": 254.93784,
+                "speaker": 0,
+                "punctuated_word": "those"
+            },
+            {
+                "word": "situations",
+                "start": 254.93784,
+                "end": 255.43784,
+                "speaker": 0,
+                "punctuated_word": "situations"
+            }
+        ]
+    },
+    {
+        "id": "e299d64d-d088-41b3-b290-870036666076",
+        "start": 255.89735,
+        "end": 259.03604,
+        "transcript": "typically experience more intense feelings of depression.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "typically",
+                "start": 255.89735,
+                "end": 256.39734,
+                "speaker": 0,
+                "punctuated_word": "typically"
+            },
+            {
+                "word": "experience",
+                "start": 256.53705,
+                "end": 257.03705,
+                "speaker": 0,
+                "punctuated_word": "experience"
+            },
+            {
+                "word": "more",
+                "start": 257.13675,
+                "end": 257.33664,
+                "speaker": 0,
+                "punctuated_word": "more"
+            },
+            {
+                "word": "intense",
+                "start": 257.33664,
+                "end": 257.83664,
+                "speaker": 0,
+                "punctuated_word": "intense"
+            },
+            {
+                "word": "feelings",
+                "start": 257.85638,
+                "end": 258.33612,
+                "speaker": 0,
+                "punctuated_word": "feelings"
+            },
+            {
+                "word": "of",
+                "start": 258.33612,
+                "end": 258.53604,
+                "speaker": 0,
+                "punctuated_word": "of"
+            },
+            {
+                "word": "depression",
+                "start": 258.53604,
+                "end": 259.03604,
+                "speaker": 0,
+                "punctuated_word": "depression."
+            }
+        ]
+    },
+    {
+        "id": "5d4ec8d3-2c1f-4a1d-af8d-993c140c7a26",
+        "start": 260.1752,
+        "end": 262.07452,
+        "transcript": "Today, there's a field of psychological",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "today",
+                "start": 260.1752,
+                "end": 260.6752,
+                "speaker": 0,
+                "punctuated_word": "Today,"
+            },
+            {
+                "word": "there's",
+                "start": 260.69495,
+                "end": 261.05478,
+                "speaker": 0,
+                "punctuated_word": "there's"
+            },
+            {
+                "word": "a",
+                "start": 261.05478,
+                "end": 261.1747,
+                "speaker": 0,
+                "punctuated_word": "a"
+            },
+            {
+                "word": "field",
+                "start": 261.1747,
+                "end": 261.4546,
+                "speaker": 0,
+                "punctuated_word": "field"
+            },
+            {
+                "word": "of",
+                "start": 261.4546,
+                "end": 261.57452,
+                "speaker": 0,
+                "punctuated_word": "of"
+            },
+            {
+                "word": "psychological",
+                "start": 261.57452,
+                "end": 262.07452,
+                "speaker": 0,
+                "punctuated_word": "psychological"
+            }
+        ]
+    },
+    {
+        "id": "8c9652b6-7c5a-42c3-9201-bdb9749e87a4",
+        "start": 262.4141,
+        "end": 266.49463,
+        "transcript": "treatment called cognitive behavioral therapy or CBT,",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "treatment",
+                "start": 262.4141,
+                "end": 262.9141,
+                "speaker": 0,
+                "punctuated_word": "treatment"
+            },
+            {
+                "word": "called",
+                "start": 262.97382,
+                "end": 263.37363,
+                "speaker": 0,
+                "punctuated_word": "called"
+            },
+            {
+                "word": "cognitive",
+                "start": 263.37363,
+                "end": 263.87363,
+                "speaker": 0,
+                "punctuated_word": "cognitive"
+            },
+            {
+                "word": "behavioral",
+                "start": 264.09326,
+                "end": 264.59326,
+                "speaker": 0,
+                "punctuated_word": "behavioral"
+            },
+            {
+                "word": "therapy",
+                "start": 264.8129,
+                "end": 265.275,
+                "speaker": 0,
+                "punctuated_word": "therapy"
+            },
+            {
+                "word": "or",
+                "start": 265.55484,
+                "end": 265.99463,
+                "speaker": 0,
+                "punctuated_word": "or"
+            },
+            {
+                "word": "cbt",
+                "start": 265.99463,
+                "end": 266.49463,
+                "speaker": 0,
+                "punctuated_word": "CBT,"
+            }
+        ]
+    },
+    {
+        "id": "2a465f04-d0d2-48d2-ab09-ec7ee39dd82a",
+        "start": 267.0741,
+        "end": 270.01288,
+        "transcript": "which is partially focused on regulating the tone",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "which",
+                "start": 267.0741,
+                "end": 267.31396,
+                "speaker": 0,
+                "punctuated_word": "which"
+            },
+            {
+                "word": "is",
+                "start": 267.31396,
+                "end": 267.4739,
+                "speaker": 0,
+                "punctuated_word": "is"
+            },
+            {
+                "word": "partially",
+                "start": 267.4739,
+                "end": 267.9739,
+                "speaker": 0,
+                "punctuated_word": "partially"
+            },
+            {
+                "word": "focused",
+                "start": 267.99362,
+                "end": 268.39343,
+                "speaker": 0,
+                "punctuated_word": "focused"
+            },
+            {
+                "word": "on",
+                "start": 268.39343,
+                "end": 268.59332,
+                "speaker": 0,
+                "punctuated_word": "on"
+            },
+            {
+                "word": "regulating",
+                "start": 268.59332,
+                "end": 269.09332,
+                "speaker": 0,
+                "punctuated_word": "regulating"
+            },
+            {
+                "word": "the",
+                "start": 269.27298,
+                "end": 269.51288,
+                "speaker": 0,
+                "punctuated_word": "the"
+            },
+            {
+                "word": "tone",
+                "start": 269.51288,
+                "end": 270.01288,
+                "speaker": 0,
+                "punctuated_word": "tone"
+            }
+        ]
+    },
+    {
+        "id": "eed9f97a-18bf-45d8-a9a0-6ab32d19e02c",
+        "start": 270.4324,
+        "end": 271.45215,
+        "transcript": "of self talk.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "of",
+                "start": 270.4324,
+                "end": 270.59235,
+                "speaker": 0,
+                "punctuated_word": "of"
+            },
+            {
+                "word": "self",
+                "start": 270.59235,
+                "end": 270.95215,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "talk",
+                "start": 270.95215,
+                "end": 271.45215,
+                "speaker": 0,
+                "punctuated_word": "talk."
+            }
+        ]
+    },
+    {
+        "id": "e34d839f-4af3-4f7a-8557-798ed0c1386b",
+        "start": 272.0716,
+        "end": 275.88992,
+        "transcript": "Cognitive behavioral therapists often teach strategies to identify",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "cognitive",
+                "start": 272.0716,
+                "end": 272.5716,
+                "speaker": 0,
+                "punctuated_word": "Cognitive"
+            },
+            {
+                "word": "behavioral",
+                "start": 272.59134,
+                "end": 273.09134,
+                "speaker": 0,
+                "punctuated_word": "behavioral"
+            },
+            {
+                "word": "therapists",
+                "start": 273.271,
+                "end": 273.771,
+                "speaker": 0,
+                "punctuated_word": "therapists"
+            },
+            {
+                "word": "often",
+                "start": 273.91068,
+                "end": 274.23053,
+                "speaker": 0,
+                "punctuated_word": "often"
+            },
+            {
+                "word": "teach",
+                "start": 274.23053,
+                "end": 274.59033,
+                "speaker": 0,
+                "punctuated_word": "teach"
+            },
+            {
+                "word": "strategies",
+                "start": 274.59033,
+                "end": 275.09033,
+                "speaker": 0,
+                "punctuated_word": "strategies"
+            },
+            {
+                "word": "to",
+                "start": 275.23,
+                "end": 275.38992,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "identify",
+                "start": 275.38992,
+                "end": 275.88992,
+                "speaker": 0,
+                "punctuated_word": "identify"
+            }
+        ]
+    },
+    {
+        "id": "72cb7908-7dd5-40bb-a941-79df9e212e82",
+        "start": 276.2695,
+        "end": 280.48764,
+        "transcript": "cycles of negative thoughts and replace them with neutral or more compassionate",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "cycles",
+                "start": 276.2695,
+                "end": 276.66928,
+                "speaker": 0,
+                "punctuated_word": "cycles"
+            },
+            {
+                "word": "of",
+                "start": 276.66928,
+                "end": 276.8692,
+                "speaker": 0,
+                "punctuated_word": "of"
+            },
+            {
+                "word": "negative",
+                "start": 276.8692,
+                "end": 277.3692,
+                "speaker": 0,
+                "punctuated_word": "negative"
+            },
+            {
+                "word": "thoughts",
+                "start": 277.42892,
+                "end": 277.92892,
+                "speaker": 0,
+                "punctuated_word": "thoughts"
+            },
+            {
+                "word": "and",
+                "start": 277.94867,
+                "end": 278.14856,
+                "speaker": 0,
+                "punctuated_word": "and"
+            },
+            {
+                "word": "replace",
+                "start": 278.14856,
+                "end": 278.54834,
+                "speaker": 0,
+                "punctuated_word": "replace"
+            },
+            {
+                "word": "them",
+                "start": 278.54834,
+                "end": 278.78824,
+                "speaker": 0,
+                "punctuated_word": "them"
+            },
+            {
+                "word": "with",
+                "start": 278.78824,
+                "end": 279.0281,
+                "speaker": 0,
+                "punctuated_word": "with"
+            },
+            {
+                "word": "neutral",
+                "start": 279.0281,
+                "end": 279.5281,
+                "speaker": 0,
+                "punctuated_word": "neutral"
+            },
+            {
+                "word": "or",
+                "start": 279.54785,
+                "end": 279.74774,
+                "speaker": 0,
+                "punctuated_word": "or"
+            },
+            {
+                "word": "more",
+                "start": 279.74774,
+                "end": 279.98764,
+                "speaker": 0,
+                "punctuated_word": "more"
+            },
+            {
+                "word": "compassionate",
+                "start": 279.98764,
+                "end": 280.48764,
+                "speaker": 0,
+                "punctuated_word": "compassionate"
+            }
+        ]
+    },
+    {
+        "id": "9035dbe6-14c1-4c6f-b8f3-14cf8c1a73f0",
+        "start": 281.19992,
+        "end": 281.69992,
+        "transcript": "reflections.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "reflections",
+                "start": 281.19992,
+                "end": 281.69992,
+                "speaker": 0,
+                "punctuated_word": "reflections."
+            }
+        ]
+    },
+    {
+        "id": "3c0d3059-bc42-4ccc-bf5a-636d977e4c1f",
+        "start": 282.55923,
+        "end": 286.77737,
+        "transcript": "Over time, these tools can improve one's mental health.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "over",
+                "start": 282.55923,
+                "end": 282.91907,
+                "speaker": 0,
+                "punctuated_word": "Over"
+            },
+            {
+                "word": "time",
+                "start": 282.91907,
+                "end": 283.41907,
+                "speaker": 0,
+                "punctuated_word": "time,"
+            },
+            {
+                "word": "these",
+                "start": 283.55875,
+                "end": 283.99854,
+                "speaker": 0,
+                "punctuated_word": "these"
+            },
+            {
+                "word": "tools",
+                "start": 283.99854,
+                "end": 284.4783,
+                "speaker": 0,
+                "punctuated_word": "tools"
+            },
+            {
+                "word": "can",
+                "start": 284.4783,
+                "end": 284.71817,
+                "speaker": 0,
+                "punctuated_word": "can"
+            },
+            {
+                "word": "improve",
+                "start": 284.71817,
+                "end": 285.21817,
+                "speaker": 0,
+                "punctuated_word": "improve"
+            },
+            {
+                "word": "one's",
+                "start": 285.47778,
+                "end": 285.79764,
+                "speaker": 0,
+                "punctuated_word": "one's"
+            },
+            {
+                "word": "mental",
+                "start": 285.79764,
+                "end": 286.27737,
+                "speaker": 0,
+                "punctuated_word": "mental"
+            },
+            {
+                "word": "health",
+                "start": 286.27737,
+                "end": 286.77737,
+                "speaker": 0,
+                "punctuated_word": "health."
+            }
+        ]
+    },
+    {
+        "id": "970bebde-8a54-46b4-9ed7-d466699ea608",
+        "start": 287.39682,
+        "end": 290.7354,
+        "transcript": "So the next time you find yourself chatting with yourself,",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "so",
+                "start": 287.39682,
+                "end": 287.59674,
+                "speaker": 0,
+                "punctuated_word": "So"
+            },
+            {
+                "word": "the",
+                "start": 287.59674,
+                "end": 287.75665,
+                "speaker": 0,
+                "punctuated_word": "the"
+            },
+            {
+                "word": "next",
+                "start": 287.75665,
+                "end": 288.07648,
+                "speaker": 0,
+                "punctuated_word": "next"
+            },
+            {
+                "word": "time",
+                "start": 288.07648,
+                "end": 288.35635,
+                "speaker": 0,
+                "punctuated_word": "time"
+            },
+            {
+                "word": "you",
+                "start": 288.35635,
+                "end": 288.59622,
+                "speaker": 0,
+                "punctuated_word": "you"
+            },
+            {
+                "word": "find",
+                "start": 288.59622,
+                "end": 288.8761,
+                "speaker": 0,
+                "punctuated_word": "find"
+            },
+            {
+                "word": "yourself",
+                "start": 288.8761,
+                "end": 289.3761,
+                "speaker": 0,
+                "punctuated_word": "yourself"
+            },
+            {
+                "word": "chatting",
+                "start": 289.39584,
+                "end": 289.89584,
+                "speaker": 0,
+                "punctuated_word": "chatting"
+            },
+            {
+                "word": "with",
+                "start": 289.95554,
+                "end": 290.2354,
+                "speaker": 0,
+                "punctuated_word": "with"
+            },
+            {
+                "word": "yourself",
+                "start": 290.2354,
+                "end": 290.7354,
+                "speaker": 0,
+                "punctuated_word": "yourself,"
+            }
+        ]
+    },
+    {
+        "id": "f46bdcb6-ad80-41fd-a90f-0381d4cff041",
+        "start": 291.11496,
+        "end": 292.77438,
+        "transcript": "remember to be kind.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "remember",
+                "start": 291.11496,
+                "end": 291.61496,
+                "speaker": 0,
+                "punctuated_word": "remember"
+            },
+            {
+                "word": "to",
+                "start": 291.8346,
+                "end": 292.03452,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "be",
+                "start": 292.03452,
+                "end": 292.27438,
+                "speaker": 0,
+                "punctuated_word": "be"
+            },
+            {
+                "word": "kind",
+                "start": 292.27438,
+                "end": 292.77438,
+                "speaker": 0,
+                "punctuated_word": "kind."
+            }
+        ]
+    },
+    {
+        "id": "e1709e9e-0886-413a-a5d1-bbc37979c85f",
+        "start": 293.35385,
+        "end": 297.64484,
+        "transcript": "That inner voice is a partner you'll be talking to for many years to come.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "that",
+                "start": 293.35385,
+                "end": 293.59372,
+                "speaker": 0,
+                "punctuated_word": "That"
+            },
+            {
+                "word": "inner",
+                "start": 293.59372,
+                "end": 293.83362,
+                "speaker": 0,
+                "punctuated_word": "inner"
+            },
+            {
+                "word": "voice",
+                "start": 293.83362,
+                "end": 294.15344,
+                "speaker": 0,
+                "punctuated_word": "voice"
+            },
+            {
+                "word": "is",
+                "start": 294.15344,
+                "end": 294.31335,
+                "speaker": 0,
+                "punctuated_word": "is"
+            },
+            {
+                "word": "a",
+                "start": 294.31335,
+                "end": 294.43332,
+                "speaker": 0,
+                "punctuated_word": "a"
+            },
+            {
+                "word": "partner",
+                "start": 294.43332,
+                "end": 294.8331,
+                "speaker": 0,
+                "punctuated_word": "partner"
+            },
+            {
+                "word": "you'll",
+                "start": 294.8331,
+                "end": 295.073,
+                "speaker": 0,
+                "punctuated_word": "you'll"
+            },
+            {
+                "word": "be",
+                "start": 295.073,
+                "end": 295.2329,
+                "speaker": 0,
+                "punctuated_word": "be"
+            },
+            {
+                "word": "talking",
+                "start": 295.2329,
+                "end": 295.55273,
+                "speaker": 0,
+                "punctuated_word": "talking"
+            },
+            {
+                "word": "to",
+                "start": 295.55273,
+                "end": 295.75266,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "for",
+                "start": 295.75266,
+                "end": 295.99252,
+                "speaker": 0,
+                "punctuated_word": "for"
+            },
+            {
+                "word": "many",
+                "start": 295.99252,
+                "end": 296.35236,
+                "speaker": 0,
+                "punctuated_word": "many"
+            },
+            {
+                "word": "years",
+                "start": 296.35236,
+                "end": 296.85236,
+                "speaker": 0,
+                "punctuated_word": "years"
+            },
+            {
+                "word": "to",
+                "start": 296.94495,
+                "end": 297.14484,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "come",
+                "start": 297.14484,
+                "end": 297.64484,
+                "speaker": 0,
+                "punctuated_word": "come."
+            }
+        ]
+    },
+    {
+        "id": "de5367f7-d120-4e5c-be73-fc6ef699b443",
+        "start": 299.22382,
+        "end": 301.00317,
+        "transcript": "Do you ever have trouble concentrating",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "do",
+                "start": 299.22382,
+                "end": 299.4237,
+                "speaker": 0,
+                "punctuated_word": "Do"
+            },
+            {
+                "word": "you",
+                "start": 299.4237,
+                "end": 299.54364,
+                "speaker": 0,
+                "punctuated_word": "you"
+            },
+            {
+                "word": "ever",
+                "start": 299.54364,
+                "end": 299.82352,
+                "speaker": 0,
+                "punctuated_word": "ever"
+            },
+            {
+                "word": "have",
+                "start": 299.82352,
+                "end": 300.0634,
+                "speaker": 0,
+                "punctuated_word": "have"
+            },
+            {
+                "word": "trouble",
+                "start": 300.0634,
+                "end": 300.50317,
+                "speaker": 0,
+                "punctuated_word": "trouble"
+            },
+            {
+                "word": "concentrating",
+                "start": 300.50317,
+                "end": 301.00317,
+                "speaker": 0,
+                "punctuated_word": "concentrating"
+            }
+        ]
+    },
+    {
+        "id": "19581b5f-7b0b-474d-99bd-dd8447d4bca0",
+        "start": 301.34274,
+        "end": 306.52042,
+        "transcript": "on and completing tasks? Learn more about the relationship between self talk and procrastination",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "on",
+                "start": 301.34274,
+                "end": 301.70258,
+                "speaker": 0,
+                "punctuated_word": "on"
+            },
+            {
+                "word": "and",
+                "start": 301.70258,
+                "end": 301.94244,
+                "speaker": 0,
+                "punctuated_word": "and"
+            },
+            {
+                "word": "completing",
+                "start": 301.94244,
+                "end": 302.44244,
+                "speaker": 0,
+                "punctuated_word": "completing"
+            },
+            {
+                "word": "tasks",
+                "start": 302.58212,
+                "end": 303.08212,
+                "speaker": 0,
+                "punctuated_word": "tasks?"
+            },
+            {
+                "word": "learn",
+                "start": 303.26178,
+                "end": 303.6216,
+                "speaker": 0,
+                "punctuated_word": "Learn"
+            },
+            {
+                "word": "more",
+                "start": 303.6216,
+                "end": 303.8215,
+                "speaker": 0,
+                "punctuated_word": "more"
+            },
+            {
+                "word": "about",
+                "start": 303.8215,
+                "end": 304.0614,
+                "speaker": 0,
+                "punctuated_word": "about"
+            },
+            {
+                "word": "the",
+                "start": 304.0614,
+                "end": 304.18134,
+                "speaker": 0,
+                "punctuated_word": "the"
+            },
+            {
+                "word": "relationship",
+                "start": 304.18134,
+                "end": 304.68134,
+                "speaker": 0,
+                "punctuated_word": "relationship"
+            },
+            {
+                "word": "between",
+                "start": 304.78104,
+                "end": 305.18082,
+                "speaker": 0,
+                "punctuated_word": "between"
+            },
+            {
+                "word": "self",
+                "start": 305.18082,
+                "end": 305.54065,
+                "speaker": 0,
+                "punctuated_word": "self"
+            },
+            {
+                "word": "talk",
+                "start": 305.54065,
+                "end": 305.8205,
+                "speaker": 0,
+                "punctuated_word": "talk"
+            },
+            {
+                "word": "and",
+                "start": 305.8205,
+                "end": 306.02042,
+                "speaker": 0,
+                "punctuated_word": "and"
+            },
+            {
+                "word": "procrastination",
+                "start": 306.02042,
+                "end": 306.52042,
+                "speaker": 0,
+                "punctuated_word": "procrastination"
+            }
+        ]
+    },
+    {
+        "id": "e15422bc-dcb4-423a-b05f-3180be6acdc6",
+        "start": 307.13986,
+        "end": 316.09702,
+        "transcript": "with this video. Or for more actionable science based advice on how to build strengths of heart, mind, and will visit ed dot ted dot com slash build character.",
+        "speaker": 0,
+        "words": [
+            {
+                "word": "with",
+                "start": 307.13986,
+                "end": 307.33975,
+                "speaker": 0,
+                "punctuated_word": "with"
+            },
+            {
+                "word": "this",
+                "start": 307.33975,
+                "end": 307.57962,
+                "speaker": 0,
+                "punctuated_word": "this"
+            },
+            {
+                "word": "video",
+                "start": 307.57962,
+                "end": 308.07962,
+                "speaker": 0,
+                "punctuated_word": "video."
+            },
+            {
+                "word": "or",
+                "start": 308.2407,
+                "end": 308.4806,
+                "speaker": 0,
+                "punctuated_word": "Or"
+            },
+            {
+                "word": "for",
+                "start": 308.4806,
+                "end": 308.68048,
+                "speaker": 0,
+                "punctuated_word": "for"
+            },
+            {
+                "word": "more",
+                "start": 308.68048,
+                "end": 308.88037,
+                "speaker": 0,
+                "punctuated_word": "more"
+            },
+            {
+                "word": "actionable",
+                "start": 308.88037,
+                "end": 309.38037,
+                "speaker": 0,
+                "punctuated_word": "actionable"
+            },
+            {
+                "word": "science",
+                "start": 309.56003,
+                "end": 309.95984,
+                "speaker": 0,
+                "punctuated_word": "science"
+            },
+            {
+                "word": "based",
+                "start": 309.95984,
+                "end": 310.27966,
+                "speaker": 0,
+                "punctuated_word": "based"
+            },
+            {
+                "word": "advice",
+                "start": 310.27966,
+                "end": 310.67947,
+                "speaker": 0,
+                "punctuated_word": "advice"
+            },
+            {
+                "word": "on",
+                "start": 310.67947,
+                "end": 310.8394,
+                "speaker": 0,
+                "punctuated_word": "on"
+            },
+            {
+                "word": "how",
+                "start": 310.8394,
+                "end": 311.0393,
+                "speaker": 0,
+                "punctuated_word": "how"
+            },
+            {
+                "word": "to",
+                "start": 311.0393,
+                "end": 311.15924,
+                "speaker": 0,
+                "punctuated_word": "to"
+            },
+            {
+                "word": "build",
+                "start": 311.15924,
+                "end": 311.3991,
+                "speaker": 0,
+                "punctuated_word": "build"
+            },
+            {
+                "word": "strengths",
+                "start": 311.3991,
+                "end": 311.71896,
+                "speaker": 0,
+                "punctuated_word": "strengths"
+            },
+            {
+                "word": "of",
+                "start": 311.71896,
+                "end": 311.87888,
+                "speaker": 0,
+                "punctuated_word": "of"
+            },
+            {
+                "word": "heart",
+                "start": 311.87888,
+                "end": 312.15875,
+                "speaker": 0,
+                "punctuated_word": "heart,"
+            },
+            {
+                "word": "mind",
+                "start": 312.15875,
+                "end": 312.4386,
+                "speaker": 0,
+                "punctuated_word": "mind,"
+            },
+            {
+                "word": "and",
+                "start": 312.4386,
+                "end": 312.67847,
+                "speaker": 0,
+                "punctuated_word": "and"
+            },
+            {
+                "word": "will",
+                "start": 312.67847,
+                "end": 313.0383,
+                "speaker": 0,
+                "punctuated_word": "will"
+            },
+            {
+                "word": "visit",
+                "start": 313.0383,
+                "end": 313.39813,
+                "speaker": 0,
+                "punctuated_word": "visit"
+            },
+            {
+                "word": "ed",
+                "start": 313.39813,
+                "end": 313.59802,
+                "speaker": 0,
+                "punctuated_word": "ed"
+            },
+            {
+                "word": "dot",
+                "start": 313.59802,
+                "end": 313.7979,
+                "speaker": 0,
+                "punctuated_word": "dot"
+            },
+            {
+                "word": "ted",
+                "start": 313.7979,
+                "end": 314.0378,
+                "speaker": 0,
+                "punctuated_word": "ted"
+            },
+            {
+                "word": "dot",
+                "start": 314.0378,
+                "end": 314.2377,
+                "speaker": 0,
+                "punctuated_word": "dot"
+            },
+            {
+                "word": "com",
+                "start": 314.2377,
+                "end": 314.55753,
+                "speaker": 0,
+                "punctuated_word": "com"
+            },
+            {
+                "word": "slash",
+                "start": 314.55753,
+                "end": 315.05753,
+                "speaker": 0,
+                "punctuated_word": "slash"
+            },
+            {
+                "word": "build",
+                "start": 315.2372,
+                "end": 315.59702,
+                "speaker": 0,
+                "punctuated_word": "build"
+            },
+            {
+                "word": "character",
+                "start": 315.59702,
+                "end": 316.09702,
+                "speaker": 0,
+                "punctuated_word": "character."
+            }
+        ]
+    }
+]

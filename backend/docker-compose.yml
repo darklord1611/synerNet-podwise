@@ -1,0 +1,27 @@
+services:  
+  chunking_service:
+    container_name: podwise-chunking-service
+    build:
+      context: . 
+      dockerfile: services/chunking_service/Dockerfile
+    ports:
+      - 8000:8000
+  
+  llm_service:
+    container_name: podwise-llm-service
+    build:
+      context: . 
+      dockerfile: services/LLM_service/Dockerfile
+    ports:
+      - 8001:8001
+
+  backend:
+    depends_on:
+      - chunking_service
+      - llm_service
+    container_name: podwise-backend
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
