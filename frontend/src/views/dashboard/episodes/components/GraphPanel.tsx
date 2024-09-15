@@ -873,7 +873,7 @@ const [value, setValue] = useState(transformedMarkdown);
 
     return (
             <React.Fragment>
-                <svg className="flex-1" ref={refSvg} width='100%' height='500px'/>
+                <svg className="flex-1" ref={refSvg} width='100%' height='500px' />
             </React.Fragment>
         );
 }

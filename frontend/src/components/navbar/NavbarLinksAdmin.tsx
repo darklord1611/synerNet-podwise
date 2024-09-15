@@ -20,14 +20,15 @@ import {
 	ModalCloseButton,
 	ModalContent,
 	ModalBody,
-	ModalFooter
+	ModalFooter,
+	// useToast
 } from '@chakra-ui/react';
 // Custom Components
 import { ItemContent } from 'components/menu/ItemContent';
 import { SearchBar } from 'components/navbar/searchBar/SearchBar';
 import { SidebarResponsive } from 'components/sidebar/Sidebar';
 import PropTypes from 'prop-types';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // Assets
 import navImage from 'assets/img/layout/Navbar.png';
 import { MdInfo } from 'react-icons/md';
@@ -55,18 +56,31 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 		'14px 17px 40px 4px rgba(112, 144, 176, 0.06)'
 	);
 	const borderButton = useColorModeValue('secondaryGray.500', 'whiteAlpha.200');
+	const [isProcessing, setIsProcessing] = useState(false);
+	// const toast = useToast();
 
-	const handleSubmit = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+	const handleSubmit = async (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
 		event.preventDefault();
 		const url = (event.target as HTMLButtonElement).previousElementSibling?.querySelector('input')?.value;
-		if (url) {
-			fetch('http://localhost:8000/api/transcript', {
+		setIsProcessing(true);
+
+		try {
+			const response = await fetch('https://8080-01j7q9srfa9kc6yyskwzg2mbqb.cloudspaces.litng.ai/process_input', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
 				},
-				body: JSON.stringify({ url: url })
+				body: JSON.stringify({
+					audio_url: url,
+					is_youtube_url: true
+				})
 			});
+			const data = await response.json();
+			console.log(data);
+		} catch (error) {
+			console.error('Error importing YouTube URL:', error);
+		} finally {
+			setIsProcessing(false);
 		}
 	}
 
@@ -136,15 +150,9 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 							me='10px'
 							borderRadius='30px'
 						/>
-						<Button 
-							variant='brand'
-							onClick={handleSubmit}
-							mt='10px'
-							w='100%'
-							h='44px'
-							>
-							Import
-							</Button>
+						<Button variant='brand' onClick={handleSubmit} mt='10px' w='100%' h='44px'>
+							{isProcessing ? 'Processing...' : 'Import'}
+						</Button>
 					</ModalBody>
 
 					<ModalFooter>

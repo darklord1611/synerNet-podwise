@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   Box, Input, Button, VStack, HStack, Text, Avatar, FormControl, Accordion, AccordionItem,
   AccordionButton, AccordionIcon, AccordionPanel, useColorModeValue, Tab, TabList, Divider, 
@@ -12,6 +12,7 @@ import { ChevronDownIcon } from '@chakra-ui/icons';
 import { text } from 'd3';
 import Timestamp from './Timestamp';
 import { TypeAnimation } from 'react-type-animation';
+import { useLocation } from 'react-router-dom';
 
 interface Message {
   sender: 'user' | 'bot';
@@ -45,6 +46,25 @@ const ChatMessage = (props: { message: Message, onSeek?: (time: number) => void 
   const textColorSecondary = useColorModeValue('secondaryGray.400', 'brand.300');
   const [currentContext, setCurrentContext] = useState(0);
   const brandColor = useColorModeValue('white', 'brand.400');
+  const location = useLocation();
+
+  // useEffect(() => {
+  //   const getContext = async () => {
+  //     try {
+  //       const response = await fetch('https://0af3-123-30-177-118.ngrok-free.app/load-context', {
+  //         method: 'POST',
+  //         headers: {
+  //           'Content-Type': 'application/json',
+  //         },
+  //         body: JSON.stringify({ id: location.pathname.split('/')[2] }),
+  //       })
+  //     } catch (error) {
+  //       console.error('Error when calling chatbot', error);
+  //     }
+  //   }
+
+  //   getContext();
+  // }, [location.pathname])
 
   return (
     <HStack alignSelf={sender === 'user' ? 'flex-end' : 'flex-start'} spacing={3}>
@@ -59,7 +79,7 @@ const ChatMessage = (props: { message: Message, onSeek?: (time: number) => void 
       >
       {sender === 'bot' && 
         <TypeAnimation sequence={[text]} wrapper="span"
-        speed={50}
+        speed={85}
         cursor={false}
         style={{ fontSize: '16px', display: 'inline-block', color: textColor }}/>
       }
@@ -168,20 +188,61 @@ export default function ChatbotPanel(props: { onSeek?: (time: number) => void })
   const textColorSecondary = useColorModeValue('secondaryGray.900', 'white');
   const btnColor = useColorModeValue('secondaryGray.400', 'navy.600');
   const brandColor = useColorModeValue('secondaryGray.400', 'brand.400');
+  const location = useLocation();
 
-  const handleSendMessage = () => {
+  useEffect(() => {
+    const getContext = async () => {
+      try {
+        const response = await fetch('https://5f2e-123-30-177-118.ngrok-free.app/load-context', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ id: location.pathname.split('/')[3] }),
+        })
+      } catch (error) {
+        console.error('Error when calling chatbot', error);
+      }
+    }
+
+    getContext();
+  }, [location.pathname])
+
+  const handleSendMessage = async () => {
     if (input.trim() === '') return;
 
     setMessages([...messages, { sender: 'user', text: input }]);
 
     setInput('');
 
-    setTimeout(() => {
-      setMessages((prevMessages) => [
-        ...prevMessages,
-        { sender: 'bot', text: 'This is a response from the bot!', source: 10 }
-      ]);
-    }, 1000);
+    // useEffect(() => {
+    //   const callChatbot = async () => {
+        try {
+          const response = await fetch('https://5f2e-123-30-177-118.ngrok-free.app/ask-question', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ question: input }),
+          })
+          const data = await response.json();
+          console.log(data);
+
+          setMessages((prevMessages) => [
+            ...prevMessages,
+            { sender: 'bot', text: data.answer, source: 10 }
+          ]);
+        } catch (error) {
+          console.error('Error when calling chatbot', error);
+        }
+      // }
+
+    //   callChatbot();
+    // }, [input])
+
+    // setTimeout(() => {
+      
+    // }, 1000);
   };
 
   return (

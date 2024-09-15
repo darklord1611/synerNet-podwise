@@ -1,8 +1,8 @@
 import { Box, Card, Divider, HStack, Icon, Text, useColorModeValue, VStack } from "@chakra-ui/react";
 import { FaRegLightbulb } from "react-icons/fa6";
 
-export default function Sentence(props: { content: string[], start: number, onSeek?: (time: number) => void }) {
-    const { content, start, onSeek } = props;
+export default function Sentence(props: { transcript: string[], start: number, onSeek?: (time: number) => void }) {
+    const { transcript, start, onSeek } = props;
     const textColor = useColorModeValue('secondaryGray.900', 'white');
 	const textColorSecondary = useColorModeValue('secondaryGray.900', 'yellow');
 	const brandColor = useColorModeValue('brand.100', 'brand.300');
@@ -16,7 +16,7 @@ export default function Sentence(props: { content: string[], start: number, onSe
     
     return (
         <Box p={3} alignItems='start' bg={boxBg} borderRadius='10px'>
-            {content.map((sentence) => {
+            {transcript.map((sentence) => {
                 return (
                     <Text 
                         fontWeight={400} 

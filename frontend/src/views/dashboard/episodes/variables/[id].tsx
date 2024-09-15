@@ -23,6 +23,7 @@ import SummaryPanel from '../components/SummaryPanel';
 import ShowNotesPanel from '../components/ShowNotesPanel';
 import ChatbotPanel from '../components/ChatbotPanel';
 import { useSupabase } from 'contexts/SupabaseContext';
+import UnProcessedPanel from '../components/UnProcessedPanel';
 
 const episodes=[
     {
@@ -241,22 +242,37 @@ export default function EpisodeDetail() {
             <TabIndicator mt='-1.5px' height='4px' bg={brandColor} borderRadius='1px' />
             <TabPanels>
                 <TabPanel>
-                    <SummaryPanel summary={episode.summary} onSeek={handleSeek}/>
+                    {episode.summary ? 
+                    (<SummaryPanel summary={episode.summary} onSeek={handleSeek}/>):
+                    <UnProcessedPanel url={episode.audio_url}/>
+                }
                 </TabPanel>
                 <TabPanel>
-                    <GraphPanel keypoints={episode.keypoints.keypoints} onSeek={handleSeek}/>
+                    {episode.keypoints ? 
+                    (<GraphPanel keypoints={episode.keypoints.keypoints} onSeek={handleSeek}/>):
+                    <UnProcessedPanel url={episode.audio_url}/>
+                }
                 </TabPanel>
                 <TabPanel>
-                    <TranscriptPanel 
+                    {episode.transcript ?
+                    (<TranscriptPanel 
                         transcripts={episode.transcript}
                         onSeek={handleSeek}
-                        />
+                        />):
+                    <UnProcessedPanel url={episode.audio_url}/>
+                    }
                 </TabPanel>
                 <TabPanel alignItems='center'>
-                    <KeywordPanel keywords={episode.keywords.keywords}/>
+                    {episode.keywords ?
+                    (<KeywordPanel keywords={episode.keywords.keywords}/>):
+                    <UnProcessedPanel url={episode.audio_url}/>
+                    }
                 </TabPanel>
                 <TabPanel alignItems='center'>
-                    <HighlightPanel highlights={episode.highlights} onSeek={handleSeek}/>
+                    {episode.highlights ?
+                    (<HighlightPanel highlights={episode.highlights} onSeek={handleSeek}/>):
+                    <UnProcessedPanel url={episode.audio_url}/>
+                    }
                 </TabPanel>
                 <TabPanel>
                     <ShowNotesPanel />
