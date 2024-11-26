@@ -1,8 +1,0 @@
-venv
-
-logs
-__pycache__
-
-.env
-/output
-/sample
