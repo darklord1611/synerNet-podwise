@@ -106,26 +106,28 @@ async def process_input(request: EpisodeProcessingRequest):
         
         # Transcript
         transcript = { "utterances": audio_response["results"]["utterances"] }
-        # res = insert_transcript(transcript, episode_id)
+        res = insert_transcript(transcript, episode_id)
+        
+        
+        if res.data:
+            print("Transcript saved successfully")
 
-        # if res.data:
-        #     print("Transcript saved successfully")
-
-        #     episode_id = res.data[0]["id"]
-        # else:
-        #     raise Exception("Insert Transcript error")
+            episode_id = res.data[0]["id"]
+        else:
+            raise Exception("Insert Transcript error")
         
 
         # Chunks
         chunking_response = requests.post(f"{CHUNKING_SERVICE_URL}/call_chunking", json=audio_response).json()
+        
 
-        # res = insert_chunks(chunking_response, episode_id)
+        res = insert_chunks(chunking_response, episode_id)
 
-        # if res.data:
-        #     print("chunks saved successfully")
+        if res.data:
+            print("chunks saved successfully")
 
-        # else:
-        #     raise Exception("Insert chunks error")
+        else:
+            raise Exception("Insert chunks error")
 
         # send chunked outputs to LLM service
         # get LLM outputs: summary, keywords, highlights, keypoints(for mindmap)
@@ -144,20 +146,20 @@ async def process_input(request: EpisodeProcessingRequest):
             "keywords": keywords,
             "highlights": highlights,
             "keypoints": keypoints,
-            "transcript": transcript,
-            "chunks": chunking_response
         }
 
-        with open("temp_data.json", "w") as file:
-            json.dumps(data, file, indent=4, ensure_ascii=False)
+        # print(data)
 
-        # res = insert_summaries(data, episode_id)
+        # with open("temp_data.json", "w") as file:
+        #     json.dumps(data, file, indent=4, ensure_ascii=False)
 
-        # if res.data:
-        #     print("Summaries saved successfully")
+        res = insert_summaries(data, episode_id)
 
-        # else:
-        #     raise Exception("Insert summaries error")
+        if res.data:
+            print("Summaries saved successfully")
+
+        else:
+            raise Exception("Insert summaries error")
 
         return {"status": "success", "message": "Episode processes successfully"}
     except Exception as e:
