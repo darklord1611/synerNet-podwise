@@ -1,0 +1,6 @@
+deepgram-sdk==2.12.0
+uvicorn
+fastapi
+yt-dlp
+python-dotenv
+pytube
