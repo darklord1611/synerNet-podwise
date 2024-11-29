@@ -8,14 +8,11 @@ A brief description of what this project does and who it's for
 To run this service, you will need to add the following environment variables to your .env file
 
 ```
+OPENAI_API_KEY=
+GROQ_API_KEY=
+GROQ_MODEL_NAME=
 SUPABASE_URL=
 SUPABASE_KEY=
-
-# services
-AUDIO_SERVICE_URL=http://localhost:8002
-CHUNKING_SERVICE_URL=http://localhost:8000
-LLM_SERVICE_URL=http://localhost:8001
-CHATBOT_SERVICE_URL=http://localhost:8003
 ```
 
 ## Run Locally

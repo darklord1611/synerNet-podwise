@@ -8,15 +8,9 @@ To run this project, you will need to add the following environment variables to
 
 `DEEPGRAM_API_KEY`
 
-`FFMPEG`
+`FFMPEG_PATH`
 
 ## Installation
-
-Install my-project with pip
-
-```bash
-  pip install -r requirements.txt
-```
 
 ### FFMPEG
 
@@ -33,7 +27,27 @@ sudo apt update
 sudo apt install ffmpeg
 ```
 
-## How to run
+## Run Locally
+
+Create separate environment
+
+```bash
+  python -m venv venv
+```
+
+Activate the newly created environment
+
+```bash
+  source ./venv/bin/activate 
+```
+
+Install dependencies
+
+```bash
+  pip install -r requirements.txt
+```
+
+Start the server at http://localhost:8001
 
 ```bash
   source start.sh

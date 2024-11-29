@@ -7,16 +7,12 @@ A brief description of what this project does and who it's for
 
 To run this service, you will need to add the following environment variables to your .env file
 
-```
-SUPABASE_URL=
-SUPABASE_KEY=
+`SUPABASE_URL`
 
-# services
-AUDIO_SERVICE_URL=http://localhost:8002
-CHUNKING_SERVICE_URL=http://localhost:8000
-LLM_SERVICE_URL=http://localhost:8001
-CHATBOT_SERVICE_URL=http://localhost:8003
-```
+`SUPABASE_KEY`
+
+`GROQ_API_KEY`
+
 
 ## Run Locally
 
@@ -38,7 +34,7 @@ Install dependencies
   pip install -r requirements.txt
 ```
 
-Start the server at http://localhost:8001
+Start the server at http://localhost:8003
 
 ```bash
   source start.sh
