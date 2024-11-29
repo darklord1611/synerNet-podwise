@@ -7,7 +7,7 @@ from PIL import Image as PILImage
 import typing as t
 import bentoml
 from time import time
-from config import LLM_SERVICE_PORT, GROQ_API_KEY
+from config import GROQ_API_KEY
 from utils.requests import BaseRequest
 from groq import Groq
 
@@ -20,7 +20,6 @@ import json
     resources={"cpu": "2"},
     traffic={"timeout": 100000},
     http={
-        "port": int(LLM_SERVICE_PORT),
         "cors": {
             "enabled": True,
             "access_control_allow_origins": ["*"],
