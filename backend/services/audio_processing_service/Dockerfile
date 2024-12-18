@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app
 
 # Mở cổng 8082 để chạy server
-EXPOSE 8082
+EXPOSE 8002
 
 # Lệnh để khởi động ứng dụng FastAPI
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8082"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8002"]

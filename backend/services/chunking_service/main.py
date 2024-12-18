@@ -63,6 +63,3 @@ def check_time_length(transcript: dict):
     if time_len <= 30:
         return 'model'
     return 'no_model'
-
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)

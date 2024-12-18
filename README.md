@@ -1,17 +1,5 @@
 # IAI_HACKATHON2024
 
-
-## Team: SynerNet  
-### Rank: First Place
-
-### Team Members:
-  - [Nguyễn Bá Thịnh](https://www.facebook.com/profile.php?id=61559925006655)
-  - [Nguyễn Hữu Dũng](https://www.facebook.com/hmon2k4](https://www.facebook.com/huudzung0804))
-  - [Nguyễn Chí Nghĩa](https://www.facebook.com/cheesedz86)
-  - [Tạ Việt Anh](https://www.facebook.com/vietanh.ta.1611)
-
-![image](https://github.com/user-attachments/assets/c94f05e6-8335-4964-bfd0-bad19bb2049e)
-
 ## Introduction
 **Podcast Knowledge Extractor** is a powerful tool designed to extract and organize knowledge from podcast episodes available on YouTube. By providing a podcast URL, the tool automatically processes the content and outputs valuable insights, including:
 
@@ -57,6 +45,22 @@ This tool is particularly useful for research, learning, or quickly capturing ke
 ![image](https://github.com/user-attachments/assets/f89cfb85-96c6-4e33-8a14-fab19d65777f)
 
 ---
+
+## How to run
+
+### Frontend
+
+Follow the instructions at `frontend/README.md`
+
+### Backend
+
+Follow the instructions at `backend/README.md`
+
+
+## Note
+- If you want to see the demo only, you can run only the `frontend` with environment variables in this [link](https://docs.google.com/document/d/18ZtEXC0dlvbM4FY9vixdakgLAjMjx9v_wc9UoDauAjQ/edit?usp=sharing).
+- If you want to dive deeper into the techniques or how we generate such output for each podcast, setup `backend` and other services accordingly, also a report of our approach is at this [link](https://drive.google.com/file/d/10VIqcAYxrZOKXohJRM_j4vyYw38J7Pqy/view).
+
 
 
 

@@ -16,7 +16,7 @@ import HighlightCard from 'components/card/HightlightCard';
 import { useRef } from 'react';
 import { AudioPlayerComponent, AudioPlayerRef } from './AudioPlayerComponent';
 
-const hightlights=[
+const hightlights = [
     {
         "timestamp": 100,
         "highlight": "What makes urban legends so fascinating is their ability to persist through the ages, often with no clear origin, yet somehow they seem familiar to everyone."

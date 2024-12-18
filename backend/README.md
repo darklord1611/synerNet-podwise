@@ -38,9 +38,12 @@ Install dependencies
   pip install -r requirements.txt
 ```
 
-Start the server at http://localhost:8001
+Start the server at http://localhost:8080
 
 ```bash
   source start.sh
 ```
+
+
+For each of the service, you need to follow the instructions at each `services` subfolder.
 

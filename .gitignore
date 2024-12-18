@@ -1,3 +1,4 @@
 .venv
 __pycache__/
 
+backend/services/audio_processing_service/cookies.txt

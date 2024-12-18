@@ -61,7 +61,3 @@ async def load_context(id: str = Body(..., embed=True)):
     with open("summary.json", "w") as f:
         json.dump(response_summary.data[0]['summary']['summary'], f, indent=4)
 
-# Khởi chạy server
-if __name__ == "__main__":
-    # Thay đổi port nếu cần, ví dụ từ 8080 thành 8000 hoặc một cổng khác
-    uvicorn.run(app, host="127.0.0.1", port=8003)

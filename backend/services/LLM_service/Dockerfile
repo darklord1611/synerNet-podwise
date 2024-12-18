@@ -13,5 +13,4 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 COPY . /code
 
-
-CMD ["bentoml", "serve", "service:LLMService"]
+CMD ["bentoml", "serve", "service:LLMService", "--port", "8001"]

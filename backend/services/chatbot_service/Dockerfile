@@ -17,7 +17,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Khai báo port ứng dụng sẽ chạy
-EXPOSE 8087
+EXPOSE 8003
 
 # Khởi chạy ứng dụng với Uvicorn
-CMD ["uvicorn", "main:app", "--port", "8087"]
+CMD ["uvicorn", "main:app", "--port", "8003"]

@@ -15,10 +15,28 @@ services:
     ports:
       - 8001:8001
 
+  audio_service:
+    container_name: podwise-audio-service
+    build:
+      context: . 
+      dockerfile: services/audio_processing_service/Dockerfile
+    ports:
+      - 8002:8002
+  
+  chatbot_service:
+    container_name: podwise-chatbot-service
+    build:
+      context: . 
+      dockerfile: services/chatbot_service/Dockerfile
+    ports:
+      - 8003:8003
+
   backend:
     depends_on:
       - chunking_service
       - llm_service
+      - audio_service
+      - chatbot_service
     container_name: podwise-backend
     build: 
       context: .
