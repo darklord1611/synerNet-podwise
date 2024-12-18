@@ -11,3 +11,6 @@ class ChunkInput(BaseModel):
 class BaseRequest(BaseModel):
     transcript: List[ChunkInput]
 
+class SummaryOptimization(BaseModel):
+    original_content: str
+    initial_summary: str

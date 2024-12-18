@@ -8,7 +8,7 @@ import typing as t
 import bentoml
 from time import time
 from config import GROQ_API_KEY
-from utils.requests import BaseRequest
+from utils.requests import BaseRequest, SummaryOptimization
 from groq import Groq
 
 from utils.pipeline import LLMPipeline
@@ -48,7 +48,7 @@ class LLMService():
             
             print("Current chunk: ", i)
             article = " ".join(chunk_input.text)
-            summary, title = self.pipeline.summarize(article)
+            summary, title = self.pipeline.summarize(article, optimize=True)
             chunk_summaries.append(summary)
             outline_temp = {
                 "timestamp": chunk_input.timestamp,
@@ -146,5 +146,32 @@ class LLMService():
         json_data = {"status": "success", "combined_chunks": combined_chunks}
 
         with open("./output/temp_combination.json", "w") as f:
+            json.dump(json_data, f, default=lambda o: o.__dict__, indent=4, ensure_ascii=False)
+        return json_data
+
+    @bentoml.api(input_spec=SummaryOptimization, route="/optimize_summary")
+    def combine_chunks(self, **params: t.Any) -> dict:
+        """Extract keypoints of an epsiode of a podcast."""
+
+        original_content = params["original_content"]
+        initial_summary = params["initial_summary"]
+        optimized_summary, evaluation = self.pipeline._optimize_summary(original_content, initial_summary)
+        
+        with open("./demo/temp_original_content.txt", "w") as f:
+            f.write(original_content)
+        
+        with open("./demo/temp_initial_summary.txt", "w") as f:
+            f.write(initial_summary)
+            
+        with open("./demo/temp_optimized_summary.txt", "w") as f:
+            f.write(optimized_summary)
+        
+        with open("./demo/temp_evaluation.txt", "w") as f:
+            f.write(evaluation)
+        
+        
+        json_data = {"status": "success", "optimized_summary": optimized_summary}
+
+        with open("./output/temp_optimization.json", "w") as f:
             json.dump(json_data, f, default=lambda o: o.__dict__, indent=4, ensure_ascii=False)
         return json_data
