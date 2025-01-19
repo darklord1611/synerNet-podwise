@@ -1,4 +1,4 @@
-# Podcast Knowledge Extracter
+# PodwiseAI
 
 ## Introduction
 **Podcast Knowledge Extracter** is a powerful tool designed to extract and organize knowledge from podcast episodes available on YouTube. By providing a podcast URL, the tool automatically processes the content and outputs valuable insights, including:
@@ -59,7 +59,7 @@ Follow the instructions at `backend/README.md`
 
 ## Note
 - If you want to see the demo only, you can run only the `frontend` with environment variables in this [link](https://docs.google.com/document/d/18ZtEXC0dlvbM4FY9vixdakgLAjMjx9v_wc9UoDauAjQ/edit?usp=sharing).
-- If you want to dive deeper into the techniques or how we generate such output for each podcast, setup `backend` and other services accordingly, also a report of our approach is at this [link](https://drive.google.com/file/d/10VIqcAYxrZOKXohJRM_j4vyYw38J7Pqy/view).
+- If you want to dive deeper into the techniques or how we generate such output for each podcast, setup `backend` and other services accordingly, also a report of our approach is at this [link](https://docs.google.com/document/d/1Fx9CYMfnzzjQhA3uc-y8_eKvVPper5-bjmkMMj9jeGk).
 
 
 
