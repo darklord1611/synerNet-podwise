@@ -18,21 +18,21 @@ This tool is particularly useful for research, learning, or quickly capturing ke
 
 ### 1. Podcast Summary
 - Provides a brief yet informative summary of the podcast.
-- Helps users decide whether to listen to the entire episode.
+- Helps users decide whether to listen to the entire episode
   
-![image](https://github.com/user-attachments/assets/e1296eee-5c9f-4c8e-84be-91993e036563)
+![image](https://rqrfqewauxwlizbxuekr.supabase.co/storage/v1/object/public/QAirline-assets/1.png)
 
 ### 2. Podcast Mindmap
 - Visualizes podcast content as a mindmap.
 - Enables users to understand relationships between main ideas and subtopics easily.
   
-![image](https://github.com/user-attachments/assets/573267e5-e2d4-4ea6-af31-44fe3ffa727c)
+![image](https://rqrfqewauxwlizbxuekr.supabase.co/storage/v1/object/public/QAirline-assets/2.png)
 
 ### 3. Podcast Transcript
 - Automatically converts spoken content into text format.
 - Ideal for quoting, searching, or archiving information.
 
-![image](https://github.com/user-attachments/assets/8ce4f23f-c2f4-4fa2-bef0-6bde2b16f2ab)
+![image](https://rqrfqewauxwlizbxuekr.supabase.co/storage/v1/object/public/QAirline-assets/trans.png?t=2025-01-19T11%3A40%3A15.154Z)
 
 ### 4. Keyword Extraction
 - Extracts key terms from the podcast automatically.
@@ -42,7 +42,7 @@ This tool is particularly useful for research, learning, or quickly capturing ke
 - Includes an intelligent chatbot for answering questions related to podcast content.
 - Allows users to query specific details quickly and accurately.
   
-![image](https://github.com/user-attachments/assets/f89cfb85-96c6-4e33-8a14-fab19d65777f)
+![image](https://rqrfqewauxwlizbxuekr.supabase.co/storage/v1/object/public/QAirline-assets/4.png?t=2025-01-19T11%3A40%3A27.232Z)
 
 ---
 
