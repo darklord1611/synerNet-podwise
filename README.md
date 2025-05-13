@@ -1,7 +1,7 @@
-# PodwiseAI
+# Podcast Knowledge Extractor
 
 ## Introduction
-**Podcast Knowledge Extracter** is a powerful tool designed to extract and organize knowledge from podcast episodes available on YouTube. By providing a podcast URL, the tool automatically processes the content and outputs valuable insights, including:
+**Podcast Knowledge Extractor** is a powerful tool designed to extract and organize knowledge from podcast episodes available on YouTube. By providing a podcast URL, the tool automatically processes the content and outputs valuable insights, including:
 
 - **Summary**: A concise overview of the main points of the podcast.
 - **Mindmap**: A detailed mindmap to visualize the content structure.
